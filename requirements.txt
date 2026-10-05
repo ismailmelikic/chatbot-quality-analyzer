@@ -1,0 +1,19 @@
+# Chatbot Quality Analyzer - dogrudan bagimliliklar
+# Kurulum:  ./.venv/bin/pip install -r requirements.txt
+# (Versiyonlar bu projede calisir durumda olan surumlerdir.)
+
+# --- Veri isleme ve gorsellestirme ---
+pandas==3.0.5
+numpy==2.5.2
+plotly==6.9.0
+
+# --- NLP / ML pipeline ---
+sentence-transformers==5.7.0
+scikit-learn==1.9.0
+umap-learn==0.5.12
+
+# --- LLM katmani (OpenAI uyumlu her endpoint: Hugging Face, NVIDIA, OpenAI, Ollama) ---
+openai==3.1.0
+
+# --- Dashboard ---
+streamlit==1.61.1

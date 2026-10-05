@@ -1,0 +1,25 @@
+# Bu ayarlar sadece bu proje icin gecerli (global Streamlit ayarlarini degistirmez).
+
+[server]
+# Panel yalnizca bu bilgisayardan erisilebilir. Streamlit varsayilan olarak
+# tum ag arayuzlerini dinliyor; ayni Wi-Fi'deki biri yuklenen loglari gorebilir
+# ve ortam degiskenindeki API anahtariyla LLM cagrisi yaptirabilirdi.
+address = "localhost"
+
+[browser]
+# Streamlit'e kullanim istatistigi gonderme. Ilk calistirmada cikan
+# "Collecting usage statistics" mesajini da susturur.
+gatherUsageStats = false
+
+[client]
+# Sag ustteki "Deploy" butonunu ve gelistirici menusunu gizler.
+# Gelistirirken geri almak icin: "developer" veya "auto" yap.
+toolbarMode = "viewer"
+
+# --- Tema ---
+# Tema SABITLENDI. Sebep: dashboard.py grafik paletini st.get_option("theme.base")
+# degerine gore seciyor; tema serbest birakilirsa tarayici koyu gosterirken
+# palet acik yuzey icin hesaplanir ve kontrast bozulur.
+# Koyu isteniyorsa base = "dark" yap; palet otomatik koyu surumune gecer.
+[theme]
+base = "light"

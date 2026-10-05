@@ -1,0 +1,701 @@
+﻿tarih,saat,oturum_id,sira_no,kullanici_mesaji,chatbot_cevabi,gercek_konu,alt_niyet,belirsiz_mesaj,sonuc_durumu
+2026-05-01,13:27,1615,1,"Merhaba, semtimizde toplu bir arıza olduğunu duydum, doğru mu ne yapmalıyım?","Adresinizde şu an aktif bir altyapı arızası görünüyor, ekiplerimiz sahada çalışıyor.",internet_kesintisi,bolge_kesintisi,hayir,basarili
+2026-05-01,14:25,1042,1,"Merhaba, internetim gitti geldi gidiyor sürekli","Modeminizi 30 saniye kapatıp açmanızı rica ederim, bu genellikle kopma sorununu giderir.",internet_kesintisi,kesintili_baglanti,hayir,basarili
+2026-05-01,18:51,1017,1,Modem elektriği alıyor ama açılmıyor ne yapmalıyım,"Modeminizin garanti durumunu kontrol ettim, ücretsiz değişim hakkınız var, kargo ile göndereceğiz.",modem_ariza,modem_acilmiyor,hayir,basarili
+2026-05-01,19:05,1459,1,"Merhabalar, komsularimin da interneti yok, genel bir sorun mu","Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",internet_kesintisi,bolge_kesintisi,hayir,fallback
+2026-05-01,19:10,1459,2,"Bot ile konuşmak istemiyorum, insan istiyorum","Bu konuda size bir temsilcimiz daha iyi yardımcı olabilir, aktarıyorum.",internet_kesintisi,bolge_kesintisi,hayir,yetkiliye_yonlendirme
+2026-05-01,19:20,1366,1,Daha yeni model bir modem alabilir miyim lütfen,"Bu talebinizi bir müşteri temsilcisine yönlendiriyorum, en kısa sürede sizinle iletişime geçilecek.",modem_ariza,cihaz_degisim_talebi,hayir,yetkiliye_yonlendirme
+2026-05-01,20:05,1391,1,Randevumu haftaya ertelemek istiyorum,"Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",randevu_kurulum,randevu_degisiklik,hayir,fallback
+2026-05-01,20:50,1533,1,"Merhaba, modemim açılmıyor","Adaptörü farklı bir prizde denemenizi rica ederim, sorun devam ederse değişim başlatacağım.",modem_ariza,modem_acilmiyor,hayir,basarili
+2026-05-02,09:18,1109,1,Wifi çok yavaş ama kabloyla da fark yok ne yapmalıyım,"Hız ölçüm sonuçlarınızı teknik ekibe ilettim, 24 saat içinde dönüş yapılacak.",hiz_performans,belirsiz,evet,basarili
+2026-05-02,10:18,1185,1,Daha yeni model bir modem alabilir miyim?,"Cihaz yenileme talebinizi oluşturdum, uygunluk kontrolü sonrası bilgi verilecek.",modem_ariza,cihaz_degisim_talebi,hayir,basarili
+2026-05-02,11:36,1562,1,"İyi günler, internetim çok yavaş","Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",hiz_performans,genel_yavaslik,hayir,fallback
+2026-05-02,11:40,1562,2,Tekrar ediyorum: internetim çok yavaş,"Bu talebinizi bir müşteri temsilcisine yönlendiriyorum, en kısa sürede sizinle iletişime geçilecek.",hiz_performans,genel_yavaslik,hayir,yetkiliye_yonlendirme
+2026-05-02,13:32,1219,1,"Selam, servisi kullanamıyorum","Yeni SIM kart talebiniz alındı, en yakın bayiden teslim alabilirsiniz.",hat_sim,belirsiz,evet,basarili
+2026-05-02,19:08,1142,1,En erken hangi güne randevu var,"Size en yakın uygun randevu perşembe sabahı, oluşturmamı ister misiniz?",randevu_kurulum,randevu_alma,hayir,basarili
+2026-05-02,19:14,1535,1,İki gündür internetim çalışmıyor yardımcı olur musunuz!,"Hattınızı uzaktan yeniden başlattım, lütfen 5 dakika sonra tekrar deneyin.",internet_kesintisi,tam_kesinti,hayir,basarili
+2026-05-03,09:05,1325,1,"İyi günler, randevumu iptal etmek istiyorum yardımcı olur musunuz","Randevunuzu talep ettiğiniz güne taşıdım, onay SMS'i gönderildi.",randevu_kurulum,randevu_degisiklik,hayir,basarili
+2026-05-03,13:00,1516,1,"Selam, mevcut tarifemi düşürmek istiyorum lütfen","Hattınıza uygun üç kampanya bulunuyor, detaylarını iletiyorum.",fatura_paket,paket_degisikligi,hayir,basarili
+2026-05-03,15:23,1358,1,"İyi günler, taşıma başvurum ne durumda","Numara taşıma talebinizi başlattım, işlem 1-2 iş günü içinde tamamlanacak.",hat_sim,numara_tasima,hayir,basarili
+2026-05-03,21:28,1411,1,"İnternetim tamamen gitti, telefondan yazıyorum","Hattınızda arıza kaydı oluşturdum, teknik ekip en kısa sürede sizinle iletişime geçecek.",internet_kesintisi,tam_kesinti,hayir,basarili
+2026-05-04,11:16,1453,1,"İyi günler, indirme hızım normalden çok düşük lütfen","Paketinizin üst limitini kontrol ettim, hattınızda kayıp tespit edildi, kayıt açıyorum.",hiz_performans,paket_hizi_alamama,hayir,basarili
+2026-05-04,11:33,1165,1,Borcumu öğrenebilir miyim lütfen,"Güncel borcunuz 340 TL, son ödeme tarihiniz bu ayın 18'i.",fatura_paket,borc_sorgu,hayir,basarili
+2026-05-04,17:59,1235,1,Ödenmemiş faturam var mı,"Güncel borcunuz 340 TL, son ödeme tarihiniz bu ayın 18'i.",fatura_paket,borc_sorgu,hayir,basarili
+2026-05-04,19:15,1175,1,"Teknisyen gelmedi, randevum kacti","Kaçan randevunuz için yeni bir tarih oluşturdum, teknisyen sizi arayacak.",randevu_kurulum,kurulum_gecikmesi,hayir,basarili
+2026-05-04,19:22,1093,1,"Merhaba, ödeme yaptım ama hala açılmadı","Faturanızı inceledim, ek ücretin yurt dışı kullanımdan kaynaklandığını görüyorum.",fatura_paket,belirsiz,evet,basarili
+2026-05-05,10:13,1067,1,"Randevu günü kimse gelmedi, haber de vermediniz","Kaçan randevunuz için yeni bir tarih oluşturdum, teknisyen sizi arayacak.",randevu_kurulum,kurulum_gecikmesi,hayir,basarili
+2026-05-05,10:57,1166,1,"Selam, randevu almak icin ne yapmam gerekiyor","Randevunuzu yarın 14:00-16:00 saat aralığına oluşturdum, teknisyen sizi arayacaktır.",randevu_kurulum,randevu_alma,hayir,basarili
+2026-05-05,11:02,1361,1,"Bağlantım sürekli düşüyor, kesik kesik gidiyor ne yapmalıyım","Modeminizi 30 saniye kapatıp açmanızı rica ederim, bu genellikle kopma sorununu giderir.",internet_kesintisi,kesintili_baglanti,hayir,basarili
+2026-05-05,11:40,1220,1,"Selam, modem bağlı ama internet gelmiyor?","Modeminizin garanti durumunu kontrol ettim, ücretsiz değişim hakkınız var, kargo ile göndereceğiz.",modem_ariza,belirsiz,evet,basarili
+2026-05-05,15:41,1424,1,Randevumu haftaya ertelemek istiyorum lütfen,"Randevunuzu talep ettiğiniz güne taşıdım, onay SMS'i gönderildi.",randevu_kurulum,randevu_degisiklik,hayir,basarili
+2026-05-05,16:55,1488,1,"Selam, kurulum yapılmadı, modem de gelmedi","Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",randevu_kurulum,kurulum_gecikmesi,hayir,fallback
+2026-05-05,16:59,1488,2,"Hala çözülmedi, bir daha anlatıyorum: kurulum yapılmadı, modem de gelmedi","Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",randevu_kurulum,kurulum_gecikmesi,hayir,tekrarli_soru
+2026-05-05,17:06,1249,1,"İyi günler, bu ayki fatura tutarım nedir","Güncel borcunuz 340 TL, son ödeme tarihiniz bu ayın 18'i.",fatura_paket,borc_sorgu,hayir,basarili
+2026-05-06,10:43,1370,1,"Selam, ödediğim hızı alamıyorum","Paketinizin üst limitini kontrol ettim, hattınızda kayıp tespit edildi, kayıt açıyorum.",hiz_performans,paket_hizi_alamama,hayir,basarili
+2026-05-06,14:32,1508,1,"Selam, semtimizde toplu bir arıza olduğunu duydum, doğru mu yardımcı olur musunuz","Adresinizde şu an aktif bir altyapı arızası görünüyor, ekiplerimiz sahada çalışıyor.",internet_kesintisi,bolge_kesintisi,hayir,basarili
+2026-05-06,16:03,1072,1,Modemim tamamen öldü galiba,"Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",modem_ariza,modem_acilmiyor,hayir,fallback
+2026-05-06,16:05,1072,2,"Anlamadınız galiba, tekrar söylüyorum: modemim tamamen öldü galiba","Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",modem_ariza,modem_acilmiyor,hayir,tekrarli_soru
+2026-05-06,16:13,1189,1,"Merhaba, hattım çalışmıyor, ne yapmalıyım","Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",modem_ariza,belirsiz,evet,fallback
+2026-05-06,16:51,1059,1,"İyi günler, teknisyen gelmedi, randevum kaçtı yardımcı olur musunuz","Kurulum talebinizi kontrol ettim, 3 iş günü içinde planlanmış görünüyor.",randevu_kurulum,kurulum_gecikmesi,hayir,basarili
+2026-05-06,17:04,1577,1,"Merhabalar, internet gelmiyor","Fiziksel arıza kaydı açtım, cihaz değişimi için yönlendirme yapılacak.",modem_ariza,belirsiz,evet,basarili
+2026-05-06,18:49,1210,1,Ödenmemiş faturam var mı,"Güncel borcunuz 340 TL, son ödeme tarihiniz bu ayın 18'i.",fatura_paket,borc_sorgu,hayir,basarili
+2026-05-06,18:58,1290,1,"Merhabalar, ödeme yaptım ama hala açılmadı","Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",fatura_paket,belirsiz,evet,fallback
+2026-05-06,21:20,1339,1,"Merhaba, görüntülü görüşmede sürekli kesiliyor yardımcı olur musunuz","Gecikme değerlerinizi ölçtüm, yoğun saatlerde dalgalanma görülebiliyor.",hiz_performans,uygulama_bazli,hayir,basarili
+2026-05-07,12:19,1447,1,Modemim tamamen oldu galiba yardimci olur musunuz,"Modeminizin garanti durumunu kontrol ettim, ücretsiz değişim hakkınız var, kargo ile göndereceğiz.",modem_ariza,modem_acilmiyor,hayir,basarili
+2026-05-07,14:06,1082,1,"Merhaba, bu ayki fatura tutarım nedir lütfen","Güncel borcunuz 340 TL, son ödeme tarihiniz bu ayın 18'i.",fatura_paket,borc_sorgu,hayir,basarili
+2026-05-07,16:31,1188,1,Hattımı geçici olarak dondurmak istiyorum,"Hat dondurma talebinizi oluşturdum, 6 aya kadar hattınızı dondurabilirsiniz.",hat_sim,hat_durumu,hayir,basarili
+2026-05-07,16:40,1333,1,"Kurulum yapılmadı, modem de gelmedi ne yapmalıyım?","Kaçan randevunuz için yeni bir tarih oluşturdum, teknisyen sizi arayacak.",randevu_kurulum,kurulum_gecikmesi,hayir,basarili
+2026-05-07,17:27,1087,1,Modem portlarından biri çalışmıyor?,"Bu konuda size yardımcı olamıyorum, başka bir sorunuz var mı?",modem_ariza,fiziksel_hasar,hayir,fallback
+2026-05-07,18:16,1243,1,Modemim asiri isiniyor ve kapaniyor,"Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",modem_ariza,fiziksel_hasar,hayir,fallback
+2026-05-07,20:29,1342,1,"İyi günler, randevu saatimi değiştirmek istiyorum yardımcı olur musunuz!","Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",randevu_kurulum,randevu_degisiklik,hayir,fallback
+2026-05-07,21:40,1029,1,Dizi izlerken kalite otomatik düşüyor?,"Gecikme değerlerinizi ölçtüm, yoğun saatlerde dalgalanma görülebiliyor.",hiz_performans,uygulama_bazli,hayir,basarili
+2026-05-07,21:41,1076,1,Teknisyen randevusu almak istiyorum,"Randevunuzu yarın 14:00-16:00 saat aralığına oluşturdum, teknisyen sizi arayacaktır.",randevu_kurulum,randevu_alma,hayir,basarili
+2026-05-08,08:54,1304,1,Teknisyen randevusunu erkene alabilir miyim,"Randevunuzu iptal ettim, dilediğinizde yeni bir tarih için tekrar yazabilirsiniz.",randevu_kurulum,randevu_degisiklik,hayir,basarili
+2026-05-08,09:02,1196,1,"Merhaba, komşularımın da interneti yok, genel bir sorun mu","Bölgenizde toplu bir kesinti kaydı bulunmuyor, hattınızı ayrıca kontrol ediyorum.",internet_kesintisi,bolge_kesintisi,hayir,basarili
+2026-05-08,10:59,1382,1,"Yeni SIM kart talep ediyorum, eskisi kayboldu ne yapmalıyım","SIM kartınızı aktivasyon için sisteme tanımladım, 10 dakika içinde aktif olacaktır.",hat_sim,sim_islemleri,hayir,basarili
+2026-05-08,11:55,1308,1,"Merhabalar, internet bazen çalışıyor bazen çok yavaş ne yapmalıyım!","Gecikme değerlerinizi ölçtüm, yoğun saatlerde dalgalanma görülebiliyor.",hiz_performans,belirsiz,evet,basarili
+2026-05-08,12:16,1326,1,Her yarım saatte bir internet kopuyor yardımcı olur musunuz,"Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",internet_kesintisi,kesintili_baglanti,hayir,fallback
+2026-05-08,12:18,1326,2,Beni bir yetkiliye aktarın,"Konunuzu ilgili birime aktarıyorum, bir uzmanımız sizi arayacaktır.",internet_kesintisi,kesintili_baglanti,hayir,yetkiliye_yonlendirme
+2026-05-08,13:07,1183,1,"İyi günler, modemin ışıkları hiç yanmıyor ne yapmalıyım","Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",modem_ariza,modem_acilmiyor,hayir,fallback
+2026-05-08,13:47,1008,1,Akşamları internet hızı düşüyor ne yapmalıyım,"Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",hiz_performans,zamana_bagli,hayir,fallback
+2026-05-08,13:50,1008,2,Aynı sorunum devam ediyor: akşamları internet hızı düşüyor,"Bu konuda size bir temsilcimiz daha iyi yardımcı olabilir, aktarıyorum.",hiz_performans,zamana_bagli,hayir,yetkiliye_yonlendirme
+2026-05-08,14:36,1007,1,"İyi günler, randevumu haftaya ertelemek istiyorum","Randevunuzu talep ettiğiniz güne taşıdım, onay SMS'i gönderildi.",randevu_kurulum,randevu_degisiklik,hayir,basarili
+2026-05-08,15:58,1216,1,"Kurulum yapilmadi, modem de gelmedi","Sorunuzu anlamadım, biraz daha detay verebilir misiniz?",randevu_kurulum,kurulum_gecikmesi,hayir,fallback
+2026-05-08,16:33,1594,1,"Merhaba, yeni SIM kart talep ediyorum, eskisi kayboldu","SIM kartınızı aktivasyon için sisteme tanımladım, 10 dakika içinde aktif olacaktır.",hat_sim,sim_islemleri,hayir,basarili
+2026-05-08,16:36,1564,1,Güncel borcum ne kadar lütfen,"Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",fatura_paket,borc_sorgu,hayir,fallback
+2026-05-08,19:41,1521,1,"Merhaba, borcumu ogrenebilir miyim yardimci olur musunuz","Sistemde ödenmemiş faturanız görünmüyor, son ödemeniz geçen ay alınmış.",fatura_paket,borc_sorgu,hayir,basarili
+2026-05-08,21:28,1296,1,İnternet bazen çalışıyor bazen çok yavaş yardımcı olur musunuz,"Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",hiz_performans,belirsiz,evet,fallback
+2026-05-08,21:33,1296,2,"Bot ile konuşmak istemiyorum, insan istiyorum","Konunuzu ilgili birime aktarıyorum, bir uzmanımız sizi arayacaktır.",hiz_performans,belirsiz,evet,yetkiliye_yonlendirme
+2026-05-08,22:09,1139,1,"Kac gundur kurulum bekliyorum, kimse aramadi ne yapmaliyim","Gecikme için özür dileriz, talebinizi öncelikli listeye aldım.",randevu_kurulum,kurulum_gecikmesi,hayir,basarili
+2026-05-09,09:09,1579,1,Guncel borcum ne kadar yardimci olur musunuz,"Sistemde ödenmemiş faturanız görünmüyor, son ödemeniz geçen ay alınmış.",fatura_paket,borc_sorgu,hayir,basarili
+2026-05-09,13:47,1460,1,"İnternet birden gitti, hiçbir cihazda çalışmıyor ne yapmalıyım","Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",internet_kesintisi,tam_kesinti,hayir,fallback
+2026-05-09,15:45,1168,1,Modemin adaptoru bozuldu,"Adaptör kablosu talebinizi oluşturdum, 3-5 iş günü içinde adresinize ulaşacak.",modem_ariza,fiziksel_hasar,hayir,basarili
+2026-05-09,19:14,1332,1,"İyi günler, hızımı yükseltmek için paket değişikliği yapmak istiyorum çok mağdur oldum","Hattınıza uygun üç kampanya bulunuyor, detaylarını iletiyorum.",fatura_paket,paket_degisikligi,hayir,basarili
+2026-05-10,09:51,1359,1,"Selam, bölgemizde genel bir kesinti mi var","Bölgenizde planlı bir bakım çalışması bulunuyor, tahmini bitiş süresi 2 saat.",internet_kesintisi,bolge_kesintisi,hayir,basarili
+2026-05-10,11:16,1222,1,İndirme hızım normalden çok düşük acil,"Hat mesafeniz nedeniyle maksimum hız sınırlı olabiliyor, detaylı ölçüm talebi oluşturdum.",hiz_performans,paket_hizi_alamama,hayir,basarili
+2026-05-10,15:17,1043,1,En erken hangi güne randevu var,"Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",randevu_kurulum,randevu_alma,hayir,fallback
+2026-05-10,15:18,1043,2,Beni bir yetkiliye aktarın,"Bu konuda size bir temsilcimiz daha iyi yardımcı olabilir, aktarıyorum.",randevu_kurulum,randevu_alma,hayir,yetkiliye_yonlendirme
+2026-05-10,17:07,1377,1,Taşıma başvurum ne durumda,"Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",hat_sim,numara_tasima,hayir,fallback
+2026-05-10,17:08,1613,1,Akşamları internet hızı düşüyor,"Bölgenizdeki kapasite raporunu talep ettim, sonucu sizinle paylaşacağım.",hiz_performans,zamana_bagli,hayir,basarili
+2026-05-10,20:38,1335,1,"Selam, randevu almak için ne yapmam gerekiyor yardımcı olur musunuz","Randevu talebiniz alındı, saat aralığı SMS ile bildirilecek.",randevu_kurulum,randevu_alma,hayir,basarili
+2026-05-11,08:56,1471,1,"İyi günler, dondurulmuş hattımı tekrar açtırmak istiyorum ne yapmalıyım","Hat dondurma talebinizi oluşturdum, 6 aya kadar hattınızı dondurabilirsiniz.",hat_sim,hat_durumu,hayir,basarili
+2026-05-11,11:08,1018,1,İki gündür internetim çalışmıyor lütfen,"Hattınızı uzaktan yeniden başlattım, lütfen 5 dakika sonra tekrar deneyin.",internet_kesintisi,tam_kesinti,hayir,basarili
+2026-05-11,15:10,1062,1,"İyi günler, hem yavaş hem kopuyor","Hattınızda gecikme ölçümü başlattım, sonuçlara göre yönlendirme yapacağım.",hiz_performans,belirsiz,evet,basarili
+2026-05-11,15:45,1063,1,"Merhabalar, randevu almak için ne yapmam gerekiyor lütfen","Randevu talebiniz alındı, saat aralığı SMS ile bildirilecek.",randevu_kurulum,randevu_alma,hayir,basarili
+2026-05-11,18:27,1501,1,"Merhabalar, her yarım saatte bir internet kopuyor","Hattınızda kararlılık testi başlattım, sonuçları birkaç dakika içinde paylaşacağım.",internet_kesintisi,kesintili_baglanti,hayir,basarili
+2026-05-11,19:02,1482,1,"Merhaba, gece geç saatlerde hız normale dönüyor yardımcı olur musunuz","Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",hiz_performans,zamana_bagli,hayir,fallback
+2026-05-11,19:04,1482,2,Demin de söyledim ama tekrar yazıyorum: gece geç saatlerde hız normale dönüyor,"Konunuzu ilgili birime aktarıyorum, bir uzmanımız sizi arayacaktır.",hiz_performans,zamana_bagli,hayir,yetkiliye_yonlendirme
+2026-05-11,21:27,1426,1,Kurulum ne zaman yapılacak!,"Bu konuda size yardımcı olamıyorum, başka bir sorunuz var mı?",randevu_kurulum,kurulum_gecikmesi,hayir,fallback
+2026-05-11,21:29,1426,2,Aynı sorunum devam ediyor: kurulum ne zaman yapılacak,"Bu konuda size bir temsilcimiz daha iyi yardımcı olabilir, aktarıyorum.",randevu_kurulum,kurulum_gecikmesi,hayir,yetkiliye_yonlendirme
+2026-05-12,10:14,1432,1,Eski modemimi değiştirmek istiyorum,"Cihaz değişim talebiniz alındı, 5 iş günü içinde teslim edilecek.",modem_ariza,cihaz_degisim_talebi,hayir,basarili
+2026-05-12,10:25,1034,1,Modem portlarından biri çalışmıyor,"Yedek parça talebiniz alındı, kargo takip numarası SMS ile iletilecek.",modem_ariza,fiziksel_hasar,hayir,basarili
+2026-05-12,11:26,1320,1,"İyi günler, param gitti ama hizmet yok acil","Bu konuda size yardımcı olamıyorum, başka bir sorunuz var mı?",fatura_paket,belirsiz,evet,fallback
+2026-05-12,11:48,1299,1,Randevumu haftaya ertelemek istiyorum,"Konunuzu ilgili birime aktarıyorum, bir uzmanımız sizi arayacaktır.",randevu_kurulum,randevu_degisiklik,hayir,yetkiliye_yonlendirme
+2026-05-12,14:06,1602,1,"İyi günler, eski modemimi değiştirmek istiyorum ne yapmalıyım","Cihaz yenileme talebinizi oluşturdum, uygunluk kontrolü sonrası bilgi verilecek.",modem_ariza,cihaz_degisim_talebi,hayir,basarili
+2026-05-12,14:07,1491,1,"İyi günler, paketimi değiştirmek istiyorum?","Hattınıza uygun üç kampanya bulunuyor, detaylarını iletiyorum.",fatura_paket,paket_degisikligi,hayir,basarili
+2026-05-12,14:36,1378,1,"Modem kasası çatladı, düşürdüm","Adaptör kablosu talebinizi oluşturdum, 3-5 iş günü içinde adresinize ulaşacak.",modem_ariza,fiziksel_hasar,hayir,basarili
+2026-05-12,20:11,1495,1,"İyi gunler, yeni modem talep etmek istiyorum, eskisi bozuldu lutfen","Cihaz yenileme talebinizi oluşturdum, uygunluk kontrolü sonrası bilgi verilecek.",modem_ariza,cihaz_degisim_talebi,hayir,basarili
+2026-05-12,20:56,1371,1,"Bağlantı yok, hiçbir siteye giremiyorum","Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",internet_kesintisi,tam_kesinti,hayir,fallback
+2026-05-12,21:26,1571,1,"İnternetim çok yavaş, bazen hiç gitmiyor","Yoğun saatlerde bölgesel trafik artışı yaşanabiliyor, kapasite talebi ilettim.",hiz_performans,belirsiz,evet,basarili
+2026-05-12,21:47,1071,1,Ödeme yaptim ama hala acilmadi,"Fatura itirazınızı oluşturdum, 24 saat içinde sonuç bilgisi tarafınıza iletilecek.",fatura_paket,belirsiz,evet,basarili
+2026-05-13,15:22,1354,1,"Merhabalar, eski modemimi değiştirmek istiyorum lütfen?","Modem yenileme hakkınız bulunuyor, kargo süreci başlatıldı.",modem_ariza,cihaz_degisim_talebi,hayir,basarili
+2026-05-13,17:41,1160,1,"Merhabalar, faturama tanımadığım bir hizmet eklenmiş acil","Fatura itirazınızı oluşturdum, 24 saat içinde sonuç bilgisi tarafınıza iletilecek.",fatura_paket,fatura_itiraz,hayir,basarili
+2026-05-13,18:05,1563,1,"Selam, dondurulmuş hattımı tekrar açtırmak istiyorum yardımcı olur musunuz?","Hat dondurma talebinizi oluşturdum, 6 aya kadar hattınızı dondurabilirsiniz.",hat_sim,hat_durumu,hayir,basarili
+2026-05-13,19:16,1145,1,Baglanti bir aciliyor bir kapaniyor ne yapmaliyim,"Hattınızda kararlılık testi başlattım, sonuçları birkaç dakika içinde paylaşacağım.",internet_kesintisi,kesintili_baglanti,hayir,basarili
+2026-05-13,20:26,1117,1,"İyi günler, hattımı geçici olarak dondurmak istiyorum","Hattınız ödeme gecikmesi nedeniyle kapatılmış, ödeme sonrası otomatik açılacaktır.",hat_sim,hat_durumu,hayir,basarili
+2026-05-14,09:05,1559,1,Daha yeni model bir modem alabilir miyim!,"Modem yenileme hakkınız bulunuyor, kargo süreci başlatıldı.",modem_ariza,cihaz_degisim_talebi,hayir,basarili
+2026-05-14,10:37,1379,1,"Selam, randevumu haftaya ertelemek istiyorum","Randevunuzu iptal ettim, dilediğinizde yeni bir tarih için tekrar yazabilirsiniz.",randevu_kurulum,randevu_degisiklik,hayir,basarili
+2026-05-14,13:31,1396,1,"Merhabalar, hem yavaş hem kopuyor","Bölgenizde toplu bir kesinti kaydı bulunmuyor, hattınızı ayrıca kontrol ediyorum.",internet_kesintisi,belirsiz,evet,basarili
+2026-05-14,14:24,1558,1,"SIM kartım okunmuyor, arızalı galiba lütfen?","Bu konuda size bir temsilcimiz daha iyi yardımcı olabilir, aktarıyorum.",hat_sim,sim_islemleri,hayir,yetkiliye_yonlendirme
+2026-05-15,14:12,1543,1,Fatura son ödeme tarihi ne zaman!,"Sistemde ödenmemiş faturanız görünmüyor, son ödemeniz geçen ay alınmış.",fatura_paket,borc_sorgu,hayir,basarili
+2026-05-15,14:43,1409,1,"Merhabalar, bağlantım sürekli düşüyor, kesik kesik gidiyor yardımcı olur musunuz","Hat kalitenizde dalgalanma tespit ettim, teknik ekip yönlendirmesi yapıyorum.",internet_kesintisi,kesintili_baglanti,hayir,basarili
+2026-05-15,16:25,1398,1,"Selam, randevu almak için ne yapmam gerekiyor?","Size en yakın uygun randevu perşembe sabahı, oluşturmamı ister misiniz?",randevu_kurulum,randevu_alma,hayir,basarili
+2026-05-15,18:02,1225,1,"İyi günler, iki haftadır kurulum bekliyorum ne yapmalıyım","Gecikme için özür dileriz, talebinizi öncelikli listeye aldım.",randevu_kurulum,kurulum_gecikmesi,hayir,basarili
+2026-05-15,18:24,1285,1,"Komşularımın da interneti yok, genel bir sorun mu","Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",internet_kesintisi,bolge_kesintisi,hayir,fallback
+2026-05-15,18:58,1518,1,"İyi günler, sayfalar çok geç açılıyor yardımcı olur musunuz!","Hattınızda hız testi başlattım, sonuçlara göre gerekirse teknik ekip yönlendirmesi yapacağım.",hiz_performans,genel_yavaslik,hayir,basarili
+2026-05-15,20:45,1493,1,"Selam, modemim acilmiyor","Modem arıza kaydınızı oluşturdum, teknisyen 2 iş günü içinde sizi arayacak.",modem_ariza,modem_acilmiyor,hayir,basarili
+2026-05-15,21:05,1253,1,Modemim tamamen oldu galiba,"Bu konuda size yardımcı olamıyorum, başka bir sorunuz var mı?",modem_ariza,modem_acilmiyor,hayir,fallback
+2026-05-15,21:57,1336,1,"Merhaba, modemin ışıkları hiç yanmıyor ne yapmalıyım","Adaptörü farklı bir prizde denemenizi rica ederim, sorun devam ederse değişim başlatacağım.",modem_ariza,modem_acilmiyor,hayir,basarili
+2026-05-16,12:36,1251,1,"Merhaba, güncel borcum ne kadar acil","Toplam bakiyeniz 512 TL, ödeme kanallarını iletiyorum.",fatura_paket,borc_sorgu,hayir,basarili
+2026-05-17,09:04,1412,1,"Merhaba, mahallede herkesin interneti gitmiş, kesinti mi var","Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",internet_kesintisi,bolge_kesintisi,hayir,fallback
+2026-05-17,16:37,1524,1,Teknisyen randevusu almak istiyorum lütfen,"Bu konuda size yardımcı olamıyorum, başka bir sorunuz var mı?",randevu_kurulum,randevu_alma,hayir,fallback
+2026-05-17,19:54,1619,1,"Selam, hız düşüklüğünden şikayetçiyim çok mağdur oldum","Hat profilinizi optimize ettim, birkaç dakika içinde iyileşme gözlemlemelisiniz.",hiz_performans,genel_yavaslik,hayir,basarili
+2026-05-17,19:57,1049,1,SIM kartımı aktifleştiremiyorum acil,"Yeni SIM kart talebiniz alındı, en yakın bayiden teslim alabilirsiniz.",hat_sim,sim_islemleri,hayir,basarili
+2026-05-17,21:23,1616,1,Ek paket satin almak istiyorum,"Sizi uygun kampanyalara yönlendiriyorum, mevcut paketinizden %20 daha ucuz bir seçenek var.",fatura_paket,paket_degisikligi,hayir,basarili
+2026-05-18,08:14,1221,1,"İyi günler, modem bağlı ama internet gelmiyor ne yapmalıyım?","Adaptörü farklı bir prizde denemenizi rica ederim, sorun devam ederse değişim başlatacağım.",modem_ariza,belirsiz,evet,basarili
+2026-05-18,16:30,1181,1,"İyi günler, sadece belli saatlerde yavaşlıyor","Yoğun saatlerde bölgesel trafik artışı yaşanabiliyor, kapasite talebi ilettim.",hiz_performans,zamana_bagli,hayir,basarili
+2026-05-18,17:35,1542,1,"Selam, kurulum icin randevu olusturabilir miyiz cok magdur oldum?","Size en yakın uygun randevu perşembe sabahı, oluşturmamı ister misiniz?",randevu_kurulum,randevu_alma,hayir,basarili
+2026-05-18,17:45,1195,1,"Randevu günü kimse gelmedi, haber de vermediniz ne yapmalıyım","Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",randevu_kurulum,kurulum_gecikmesi,hayir,fallback
+2026-05-18,17:47,1195,2,"Bot ile konuşmak istemiyorum, insan istiyorum","Bu konuda size bir temsilcimiz daha iyi yardımcı olabilir, aktarıyorum.",randevu_kurulum,kurulum_gecikmesi,hayir,yetkiliye_yonlendirme
+2026-05-18,20:19,1509,1,"Modemim çok eskidi, yenilenebilir mi","Cihaz değişim talebiniz alındı, 5 iş günü içinde teslim edilecek.",modem_ariza,cihaz_degisim_talebi,hayir,basarili
+2026-05-18,20:45,1083,1,"Merhaba, hattım çalışmıyor, ne yapmalıyım acil","Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",internet_kesintisi,belirsiz,evet,fallback
+2026-05-18,20:50,1083,2,Beni bir yetkiliye aktarın,"Bu konuda size bir temsilcimiz daha iyi yardımcı olabilir, aktarıyorum.",internet_kesintisi,belirsiz,evet,yetkiliye_yonlendirme
+2026-05-18,21:13,1328,1,"Selam, semtimizde toplu bir arıza olduğunu duydum, doğru mu çok mağdur oldum","Bu konuda size yardımcı olamıyorum, başka bir sorunuz var mı?",internet_kesintisi,bolge_kesintisi,hayir,fallback
+2026-05-18,21:16,1328,2,"Hala çözülmedi, bir daha anlatıyorum: semtimizde toplu bir arıza olduğunu duydum, doğru mu","Bu konuda size bir temsilcimiz daha iyi yardımcı olabilir, aktarıyorum.",internet_kesintisi,bolge_kesintisi,hayir,yetkiliye_yonlendirme
+2026-05-19,10:07,1381,1,"Modem hiç açılmıyor, internetim de yok çok mağdur oldum","Adaptörü farklı bir prizde denemenizi rica ederim, sorun devam ederse değişim başlatacağım.",modem_ariza,modem_acilmiyor,hayir,basarili
+2026-05-19,11:53,1532,1,"Merhaba, modem kasası çatladı, düşürdüm çok mağdur oldum","Adaptör kablosu talebinizi oluşturdum, 3-5 iş günü içinde adresinize ulaşacak.",modem_ariza,fiziksel_hasar,hayir,basarili
+2026-05-19,13:48,1204,1,"Selam, odedigim hizi alamiyorum yardimci olur musunuz","Hat mesafeniz nedeniyle maksimum hız sınırlı olabiliyor, detaylı ölçüm talebi oluşturdum.",hiz_performans,paket_hizi_alamama,hayir,basarili
+2026-05-19,14:16,1013,1,Paketimi değiştirmek istiyorum çok mağdur oldum,"Hattınıza uygun üç kampanya bulunuyor, detaylarını iletiyorum.",fatura_paket,paket_degisikligi,hayir,basarili
+2026-05-19,14:46,1206,1,"Modem kablosu koptu, yeni kablo lazım lütfen","Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",modem_ariza,fiziksel_hasar,hayir,fallback
+2026-05-19,17:42,1273,1,En erken hangi gune randevu var acil?,"Randevunuzu yarın 14:00-16:00 saat aralığına oluşturdum, teknisyen sizi arayacaktır.",randevu_kurulum,randevu_alma,hayir,basarili
+2026-05-19,19:00,1100,1,"Selam, eSIM'e geçiş yapabilir miyim","SIM değişim işleminiz için bayi yönlendirmesi yapıldı, kimliğinizi yanınıza almayı unutmayın.",hat_sim,sim_islemleri,hayir,basarili
+2026-05-19,19:07,1474,1,"Merhaba, geçen ayki faturamı itiraz etmek istiyorum çok mağdur oldum","Fatura itirazınızı oluşturdum, 24 saat içinde sonuç bilgisi tarafınıza iletilecek.",fatura_paket,fatura_itiraz,hayir,basarili
+2026-05-19,21:05,1360,1,"Merhabalar, hattım çalışmıyor, ne yapmalıyım acil","Taşıma işlemi için kimlik doğrulaması gerekiyor, adımları iletiyorum.",hat_sim,belirsiz,evet,basarili
+2026-05-19,21:35,1364,1,Hızımı yükseltmek için paket değişikliği yapmak istiyorum,"Sizi uygun kampanyalara yönlendiriyorum, mevcut paketinizden %20 daha ucuz bir seçenek var.",fatura_paket,paket_degisikligi,hayir,basarili
+2026-05-20,09:26,1367,1,Randevumu iptal etmek istiyorum lütfen!,"Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",randevu_kurulum,randevu_degisiklik,hayir,fallback
+2026-05-20,10:00,1019,1,"Selam, numara taşıma işlemi ne kadar sürer","Taşıma başvurunuz onay aşamasında, sonucu SMS ile bildirilecek.",hat_sim,numara_tasima,hayir,basarili
+2026-05-20,17:09,1419,1,"Merhaba, gece gec saatlerde hiz normale donuyor","Yoğun saatlerde bölgesel trafik artışı yaşanabiliyor, kapasite talebi ilettim.",hiz_performans,zamana_bagli,hayir,basarili
+2026-05-20,17:45,1611,1,Servisi kullanamıyorum çok mağdur oldum,"Hattınızda arıza kaydı oluşturdum, teknik ekip en kısa sürede sizinle iletişime geçecek.",internet_kesintisi,belirsiz,evet,basarili
+2026-05-20,18:21,1212,1,"Merhaba, akşamları internet hızı düşüyor çok mağdur oldum",Yoğunluk kaynaklı yavaşlama için hat profilinizi güncelledim.,hiz_performans,zamana_bagli,hayir,basarili
+2026-05-20,18:23,1024,1,Sabahtan beri internetim yok acil,"Hattınızda arıza kaydı oluşturdum, teknik ekip en kısa sürede sizinle iletişime geçecek.",internet_kesintisi,tam_kesinti,hayir,basarili
+2026-05-20,19:13,1497,1,Randevu almak için ne yapmam gerekiyor,"Size en yakın uygun randevu perşembe sabahı, oluşturmamı ister misiniz?",randevu_kurulum,randevu_alma,hayir,basarili
+2026-05-20,20:46,1099,1,"Merhaba, internetim çok yavaş","Bu talebinizi bir müşteri temsilcisine yönlendiriyorum, en kısa sürede sizinle iletişime geçilecek.",hiz_performans,genel_yavaslik,hayir,yetkiliye_yonlendirme
+2026-05-20,21:39,1191,1,"İyi günler, gün içinde defalarca bağlantı kopuyor lütfen","Hat kalitenizde dalgalanma tespit ettim, teknik ekip yönlendirmesi yapıyorum.",internet_kesintisi,kesintili_baglanti,hayir,basarili
+2026-05-21,08:16,1540,1,"Merhaba, akşamları internet hızı düşüyor!","Bölgenizdeki kapasite raporunu talep ettim, sonucu sizinle paylaşacağım.",hiz_performans,zamana_bagli,hayir,basarili
+2026-05-21,09:43,1397,1,"Selam, teknisyen randevusu almak istiyorum acil","Randevunuzu yarın 14:00-16:00 saat aralığına oluşturdum, teknisyen sizi arayacaktır.",randevu_kurulum,randevu_alma,hayir,basarili
+2026-05-21,10:15,1073,1,Teknisyen randevusu almak istiyorum yardimci olur musunuz,"Randevu talebiniz alındı, saat aralığı SMS ile bildirilecek.",randevu_kurulum,randevu_alma,hayir,basarili
+2026-05-21,10:16,1403,1,"Merhabalar, taşıma başvurum ne durumda?","Numara taşıma talebinizi başlattım, işlem 1-2 iş günü içinde tamamlanacak.",hat_sim,numara_tasima,hayir,basarili
+2026-05-21,11:58,1416,1,"Mahallede herkesin interneti gitmiş, kesinti mi var yardımcı olur musunuz","Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",internet_kesintisi,bolge_kesintisi,hayir,fallback
+2026-05-21,14:32,1291,1,Numaramı başka operatörden taşımak istiyorum çok mağdur oldum?,"Taşıma işlemi için kimlik doğrulaması gerekiyor, adımları iletiyorum.",hat_sim,numara_tasima,hayir,basarili
+2026-05-21,14:56,1088,1,"Merhabalar, bu ayki fatura tutarım nedir ne yapmalıyım","Sistemde ödenmemiş faturanız görünmüyor, son ödemeniz geçen ay alınmış.",fatura_paket,borc_sorgu,hayir,basarili
+2026-05-21,16:14,1201,1,"İyi günler, en erken hangi güne randevu var çok mağdur oldum","Randevunuzu yarın 14:00-16:00 saat aralığına oluşturdum, teknisyen sizi arayacaktır.",randevu_kurulum,randevu_alma,hayir,basarili
+2026-05-21,16:45,1469,1,Randevu almak için ne yapmam gerekiyor,"Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",randevu_kurulum,randevu_alma,hayir,fallback
+2026-05-21,18:19,1303,1,Modem elektriği alıyor ama açılmıyor,"Modeminizin garanti durumunu kontrol ettim, ücretsiz değişim hakkınız var, kargo ile göndereceğiz.",modem_ariza,modem_acilmiyor,hayir,basarili
+2026-05-21,21:23,1612,1,Param gitti ama hizmet yok,"SIM değişim işleminiz için bayi yönlendirmesi yapıldı, kimliğinizi yanınıza almayı unutmayın.",hat_sim,belirsiz,evet,basarili
+2026-05-21,22:25,1025,1,"İyi günler, video izlerken sürekli donuyor","Kablolu bağlantı denemenizi öneririm, kablosuz bağlantıda gecikme daha yüksek olabilir.",hiz_performans,uygulama_bazli,hayir,basarili
+2026-05-22,08:51,1190,1,Faturama tanımadığım bir hizmet eklenmiş çok mağdur oldum,"Fatura detayınızı e-posta adresinize gönderdim, kalem kalem inceleyebilirsiniz.",fatura_paket,fatura_itiraz,hayir,basarili
+2026-05-22,11:25,1545,1,"Baglanti yok, hicbir siteye giremiyorum","Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",internet_kesintisi,tam_kesinti,hayir,fallback
+2026-05-22,11:26,1545,2,"Anlamadınız galiba, tekrar söylüyorum: bağlantı yok, hiçbir siteye giremiyorum","Bu talebinizi bir müşteri temsilcisine yönlendiriyorum, en kısa sürede sizinle iletişime geçilecek.",internet_kesintisi,tam_kesinti,hayir,yetkiliye_yonlendirme
+2026-05-22,12:16,1350,1,İndirme hızım normalden çok düşük,"Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",hiz_performans,paket_hizi_alamama,hayir,fallback
+2026-05-22,12:18,1350,2,Demin de söyledim ama tekrar yazıyorum: indirme hızım normalden çok düşük,"Konunuzu ilgili birime aktarıyorum, bir uzmanımız sizi arayacaktır.",hiz_performans,paket_hizi_alamama,hayir,yetkiliye_yonlendirme
+2026-05-22,14:08,1255,1,Her yarım saatte bir internet kopuyor,"Hat kalitenizde dalgalanma tespit ettim, teknik ekip yönlendirmesi yapıyorum.",internet_kesintisi,kesintili_baglanti,hayir,basarili
+2026-05-22,15:46,1407,1,"Selam, bağlantı yok, hiçbir siteye giremiyorum","Bu konuda size yardımcı olamıyorum, başka bir sorunuz var mı?",internet_kesintisi,tam_kesinti,hayir,fallback
+2026-05-22,16:18,1517,1,Ödeme yaptım ama hala açılmadı ne yapmalıyım,"Hattınıza uygun üç kampanya bulunuyor, detaylarını iletiyorum.",fatura_paket,belirsiz,evet,basarili
+2026-05-22,17:54,1385,1,"Merhaba, hattimi gecici olarak dondurmak istiyorum cok magdur oldum?","Hattınızı yeniden aktif ettim, birkaç dakika içinde kullanabilirsiniz.",hat_sim,hat_durumu,hayir,basarili
+2026-05-22,19:43,1242,1,Hattım neden kapalı görünüyor,"Hat dondurma talebinizi oluşturdum, 6 aya kadar hattınızı dondurabilirsiniz.",hat_sim,hat_durumu,hayir,basarili
+2026-05-22,20:38,1122,1,"Merhabalar, gün içinde defalarca bağlantı kopuyor ne yapmalıyım!","Hat kalitenizde dalgalanma tespit ettim, teknik ekip yönlendirmesi yapıyorum.",internet_kesintisi,kesintili_baglanti,hayir,basarili
+2026-05-22,22:07,1597,1,"Kurulum yapılmadı, modem de gelmedi acil","Gecikme için özür dileriz, talebinizi öncelikli listeye aldım.",randevu_kurulum,kurulum_gecikmesi,hayir,basarili
+2026-05-23,17:58,1232,1,"Merhabalar, akşamları internet hızı düşüyor",Yoğunluk kaynaklı yavaşlama için hat profilinizi güncelledim.,hiz_performans,zamana_bagli,hayir,basarili
+2026-05-23,19:01,1314,1,"Faturamda fazladan ücret var, neden lütfen","Fatura detayınızı e-posta adresinize gönderdim, kalem kalem inceleyebilirsiniz.",fatura_paket,fatura_itiraz,hayir,basarili
+2026-05-24,11:15,1132,1,"İyi günler, en erken hangi güne randevu var","Randevunuzu yarın 14:00-16:00 saat aralığına oluşturdum, teknisyen sizi arayacaktır.",randevu_kurulum,randevu_alma,hayir,basarili
+2026-05-24,14:27,1118,1,Faturama tanımadığım bir hizmet eklenmiş,"Fatura itirazınızı oluşturdum, 24 saat içinde sonuç bilgisi tarafınıza iletilecek.",fatura_paket,fatura_itiraz,hayir,basarili
+2026-05-24,14:42,1329,1,"Merhabalar, kurulum için randevu oluşturabilir miyiz yardımcı olur musunuz","Size en yakın uygun randevu perşembe sabahı, oluşturmamı ister misiniz?",randevu_kurulum,randevu_alma,hayir,basarili
+2026-05-24,17:05,1510,1,"Merhabalar, bağlantım sürekli düşüyor, kesik kesik gidiyor lütfen","Hattınızda kararlılık testi başlattım, sonuçları birkaç dakika içinde paylaşacağım.",internet_kesintisi,kesintili_baglanti,hayir,basarili
+2026-05-24,18:56,1348,1,SIM kartımı aktifleştiremiyorum,"SIM değişim işleminiz için bayi yönlendirmesi yapıldı, kimliğinizi yanınıza almayı unutmayın.",hat_sim,sim_islemleri,hayir,basarili
+2026-05-24,21:56,1056,1,"İyi günler, wifi çok yavaş ama kabloyla da fark yok","Hat profilinizi optimize ettim, birkaç dakika içinde iyileşme gözlemlemelisiniz.",hiz_performans,belirsiz,evet,basarili
+2026-05-25,11:04,1141,1,"İyi günler, yeni modem talep etmek istiyorum, eskisi bozuldu yardımcı olur musunuz","Cihaz yenileme talebinizi oluşturdum, uygunluk kontrolü sonrası bilgi verilecek.",modem_ariza,cihaz_degisim_talebi,hayir,basarili
+2026-05-25,11:41,1437,1,"Merhabalar, mahallede herkesin interneti gitmiş, kesinti mi var çok mağdur oldum?","Konunuzu ilgili birime aktarıyorum, bir uzmanımız sizi arayacaktır.",internet_kesintisi,bolge_kesintisi,hayir,yetkiliye_yonlendirme
+2026-05-25,11:42,1386,1,"İnternetim tamamen kesildi, hic baglanamiyorum ne yapmaliyim","Hattınızda arıza kaydı oluşturdum, teknik ekip en kısa sürede sizinle iletişime geçecek.",internet_kesintisi,tam_kesinti,hayir,basarili
+2026-05-25,14:05,1479,1,Wifi çok yavaş ama kabloyla da fark yok çok mağdur oldum,"Sorunuzu anlamadım, biraz daha detay verebilir misiniz?",hiz_performans,belirsiz,evet,fallback
+2026-05-25,16:55,1337,1,"Merhaba, numaramı başka operatörden taşımak istiyorum çok mağdur oldum","Taşıma işlemi için kimlik doğrulaması gerekiyor, adımları iletiyorum.",hat_sim,numara_tasima,hayir,basarili
+2026-05-25,20:12,1066,1,"Merhaba, randevu almak icin ne yapmam gerekiyor","Randevunuzu yarın 14:00-16:00 saat aralığına oluşturdum, teknisyen sizi arayacaktır.",randevu_kurulum,randevu_alma,hayir,basarili
+2026-05-25,20:37,1234,1,Borcumu öğrenebilir miyim ne yapmalıyım,"Toplam bakiyeniz 512 TL, ödeme kanallarını iletiyorum.",fatura_paket,borc_sorgu,hayir,basarili
+2026-05-25,20:47,1015,1,SIM kart değişikliği ne kadar sürer,"SIM değişim işleminiz için bayi yönlendirmesi yapıldı, kimliğinizi yanınıza almayı unutmayın.",hat_sim,sim_islemleri,hayir,basarili
+2026-05-25,21:42,1483,1,İnternetim gitti geldi gidiyor sürekli,"Modeminizi 30 saniye kapatıp açmanızı rica ederim, bu genellikle kopma sorununu giderir.",internet_kesintisi,kesintili_baglanti,hayir,basarili
+2026-05-25,22:28,1446,1,Ödeme yaptim ama hala acilmadi ne yapmaliyim,"Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",fatura_paket,belirsiz,evet,fallback
+2026-05-25,22:29,1446,2,Aynı sorunum devam ediyor: ödeme yaptım ama hala açılmadı,"Bu konuda size yardımcı olamıyorum, başka bir sorunuz var mı?",fatura_paket,belirsiz,evet,tekrarli_soru
+2026-05-26,11:43,1374,1,"Merhabalar, mahallede herkesin interneti gitmiş, kesinti mi var ne yapmalıyım","Bölgenizde toplu bir kesinti kaydı bulunmuyor, hattınızı ayrıca kontrol ediyorum.",internet_kesintisi,bolge_kesintisi,hayir,basarili
+2026-05-26,11:48,1281,1,"Yeni modem talep etmek istiyorum, eskisi bozuldu","Cihaz değişim talebiniz alındı, 5 iş günü içinde teslim edilecek.",modem_ariza,cihaz_degisim_talebi,hayir,basarili
+2026-05-26,12:17,1414,1,"Merhaba, numara tasima islemi ne kadar surer acil?","Taşıma başvurunuz onay aşamasında, sonucu SMS ile bildirilecek.",hat_sim,numara_tasima,hayir,basarili
+2026-05-26,13:57,1247,1,Hattımı iptal etmek istiyorum lütfen,"Hat dondurma talebinizi oluşturdum, 6 aya kadar hattınızı dondurabilirsiniz.",hat_sim,hat_durumu,hayir,basarili
+2026-05-26,17:49,1536,1,"Komsularimin da interneti yok, genel bir sorun mu","Bölgenizde planlı bir bakım çalışması bulunuyor, tahmini bitiş süresi 2 saat.",internet_kesintisi,bolge_kesintisi,hayir,basarili
+2026-05-26,19:26,1047,1,"Merhaba, faturama tanımadığım bir hizmet eklenmiş yardımcı olur musunuz","Fatura itirazınızı oluşturdum, 24 saat içinde sonuç bilgisi tarafınıza iletilecek.",fatura_paket,fatura_itiraz,hayir,basarili
+2026-05-26,19:47,1438,1,"Selam, iki haftadır kurulum bekliyorum çok mağdur oldum","Sorunuzu anlamadım, biraz daha detay verebilir misiniz?",randevu_kurulum,kurulum_gecikmesi,hayir,fallback
+2026-05-26,19:51,1438,2,"Anlamadınız galiba, tekrar söylüyorum: iki haftadır kurulum bekliyorum","Bu talebinizi bir müşteri temsilcisine yönlendiriyorum, en kısa sürede sizinle iletişime geçilecek.",randevu_kurulum,kurulum_gecikmesi,hayir,yetkiliye_yonlendirme
+2026-05-26,21:55,1197,1,Toplantıda kameram sürekli donuyor,"Kablolu bağlantı denemenizi öneririm, kablosuz bağlantıda gecikme daha yüksek olabilir.",hiz_performans,uygulama_bazli,hayir,basarili
+2026-05-26,22:27,1362,1,"Merhabalar, sadece belli saatlerde yavaşlıyor","Bu konuda size yardımcı olamıyorum, başka bir sorunuz var mı?",hiz_performans,zamana_bagli,hayir,fallback
+2026-05-27,09:54,1091,1,"Merhabalar, en erken hangi güne randevu var","Size en yakın uygun randevu perşembe sabahı, oluşturmamı ister misiniz?",randevu_kurulum,randevu_alma,hayir,basarili
+2026-05-27,10:16,1012,1,Randevumu iptal etmek istiyorum ne yapmalıyım,"Randevunuzu iptal ettim, dilediğinizde yeni bir tarih için tekrar yazabilirsiniz.",randevu_kurulum,randevu_degisiklik,hayir,basarili
+2026-05-27,14:58,1178,1,"Bağlantı yok, hiçbir siteye giremiyorum","Hattınızı uzaktan yeniden başlattım, lütfen 5 dakika sonra tekrar deneyin.",internet_kesintisi,tam_kesinti,hayir,basarili
+2026-05-27,15:54,1405,1,Görüntülü görüşmede sürekli kesiliyor lütfen,"Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",hiz_performans,uygulama_bazli,hayir,fallback
+2026-05-27,15:57,1405,2,"Hala çözülmedi, bir daha anlatıyorum: görüntülü görüşmede sürekli kesiliyor","Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",hiz_performans,uygulama_bazli,hayir,tekrarli_soru
+2026-05-27,16:11,1473,1,"İyi gunler, modemin adaptoru bozuldu","Yedek parça talebiniz alındı, kargo takip numarası SMS ile iletilecek.",modem_ariza,fiziksel_hasar,hayir,basarili
+2026-05-27,17:46,1603,1,Gece geç saatlerde hız normale dönüyor acil,"Bölgenizdeki kapasite raporunu talep ettim, sonucu sizinle paylaşacağım.",hiz_performans,zamana_bagli,hayir,basarili
+2026-05-27,17:49,1004,1,"Merhaba, hafta sonları internet çok yavaşlıyor",Yoğunluk kaynaklı yavaşlama için hat profilinizi güncelledim.,hiz_performans,zamana_bagli,hayir,basarili
+2026-05-27,17:59,1345,1,"Merhabalar, teknisyen randevusu almak istiyorum lütfen?","Konunuzu ilgili birime aktarıyorum, bir uzmanımız sizi arayacaktır.",randevu_kurulum,randevu_alma,hayir,yetkiliye_yonlendirme
+2026-05-27,20:04,1309,1,"İnternet birden gitti, hicbir cihazda calismiyor cok magdur oldum","Hattınızda arıza kaydı oluşturdum, teknik ekip en kısa sürede sizinle iletişime geçecek.",internet_kesintisi,tam_kesinti,hayir,basarili
+2026-05-27,20:26,1553,1,Borcumu öğrenebilir miyim,"Sistemde ödenmemiş faturanız görünmüyor, son ödemeniz geçen ay alınmış.",fatura_paket,borc_sorgu,hayir,basarili
+2026-05-27,21:33,1369,1,"Merhabalar, ek paket satın almak istiyorum yardımcı olur musunuz","Sizi uygun kampanyalara yönlendiriyorum, mevcut paketinizden %20 daha ucuz bir seçenek var.",fatura_paket,paket_degisikligi,hayir,basarili
+2026-05-27,22:07,1489,1,Taşıma başvurum ne durumda,"Taşıma başvurunuz onay aşamasında, sonucu SMS ile bildirilecek.",hat_sim,numara_tasima,hayir,basarili
+2026-05-27,22:39,1293,1,Randevumu iptal etmek istiyorum,"Sorunuzu anlamadım, biraz daha detay verebilir misiniz?",randevu_kurulum,randevu_degisiklik,hayir,fallback
+2026-05-28,09:43,1237,1,"Selam, bölgesel kesinti varsa ne zaman düzelecek lütfen","Sorunuzu anlamadım, biraz daha detay verebilir misiniz?",internet_kesintisi,bolge_kesintisi,hayir,fallback
+2026-05-28,09:46,1237,2,"Hala çözülmedi, bir daha anlatıyorum: bölgesel kesinti varsa ne zaman düzelecek","Bu talebinizi bir müşteri temsilcisine yönlendiriyorum, en kısa sürede sizinle iletişime geçilecek.",internet_kesintisi,bolge_kesintisi,hayir,yetkiliye_yonlendirme
+2026-05-28,14:29,1202,1,Görüntülü görüşmede sürekli kesiliyor yardımcı olur musunuz,"Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",hiz_performans,uygulama_bazli,hayir,fallback
+2026-05-28,14:30,1202,2,"Hala çözülmedi, bir daha anlatıyorum: görüntülü görüşmede sürekli kesiliyor","Bu talebinizi bir müşteri temsilcisine yönlendiriyorum, en kısa sürede sizinle iletişime geçilecek.",hiz_performans,uygulama_bazli,hayir,yetkiliye_yonlendirme
+2026-05-28,14:51,1215,1,"Faturamda fazladan ücret var, neden","Fatura itirazınızı oluşturdum, 24 saat içinde sonuç bilgisi tarafınıza iletilecek.",fatura_paket,fatura_itiraz,hayir,basarili
+2026-05-28,14:53,1031,1,"İyi günler, randevu almak için ne yapmam gerekiyor?","Size en yakın uygun randevu perşembe sabahı, oluşturmamı ister misiniz?",randevu_kurulum,randevu_alma,hayir,basarili
+2026-05-28,16:13,1598,1,"Merhabalar, internet sik sik kesiliyor, cok rahatsiz edici","Hat kalitenizde dalgalanma tespit ettim, teknik ekip yönlendirmesi yapıyorum.",internet_kesintisi,kesintili_baglanti,hayir,basarili
+2026-05-28,16:57,1208,1,"Yeni modem talep etmek istiyorum, eskisi bozuldu","Cihaz yenileme talebinizi oluşturdum, uygunluk kontrolü sonrası bilgi verilecek.",modem_ariza,cihaz_degisim_talebi,hayir,basarili
+2026-05-28,20:07,1138,1,"Merhaba, dizi izlerken kalite otomatik düşüyor?","Gecikme değerlerinizi ölçtüm, yoğun saatlerde dalgalanma görülebiliyor.",hiz_performans,uygulama_bazli,hayir,basarili
+2026-05-28,21:35,1349,1,"Selam, internetim çok yavaş, bazen hiç gitmiyor","Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",internet_kesintisi,belirsiz,evet,fallback
+2026-05-28,21:39,1349,2,"Anlamadınız galiba, tekrar söylüyorum: internetim çok yavaş, bazen hiç gitmiyor","Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",internet_kesintisi,belirsiz,evet,tekrarli_soru
+2026-05-28,22:40,1421,1,"İyi gunler, eski modemimi degistirmek istiyorum yardimci olur musunuz","Cihaz yenileme talebinizi oluşturdum, uygunluk kontrolü sonrası bilgi verilecek.",modem_ariza,cihaz_degisim_talebi,hayir,basarili
+2026-05-29,09:48,1228,1,"İyi günler, daha uygun bir kampanyalı pakete geçmek istiyorum","Sizi uygun kampanyalara yönlendiriyorum, mevcut paketinizden %20 daha ucuz bir seçenek var.",fatura_paket,paket_degisikligi,hayir,basarili
+2026-05-29,12:49,1511,1,"Selam, kurulum için randevu oluşturabilir miyiz ne yapmalıyım?","Randevunuzu yarın 14:00-16:00 saat aralığına oluşturdum, teknisyen sizi arayacaktır.",randevu_kurulum,randevu_alma,hayir,basarili
+2026-05-29,18:08,1392,1,Mevcut tarifemi düşürmek istiyorum,"Hattınıza uygun üç kampanya bulunuyor, detaylarını iletiyorum.",fatura_paket,paket_degisikligi,hayir,basarili
+2026-05-29,22:03,1383,1,Bu ay faturam iki katina cikmis?,"Faturanızı inceledim, ek ücretin yurt dışı kullanımdan kaynaklandığını görüyorum.",fatura_paket,fatura_itiraz,hayir,basarili
+2026-05-30,09:30,1327,1,"Merhabalar, komşularımın da interneti yok, genel bir sorun mu","Adresinizde şu an aktif bir altyapı arızası görünüyor, ekiplerimiz sahada çalışıyor.",internet_kesintisi,bolge_kesintisi,hayir,basarili
+2026-05-30,14:47,1618,1,"Merhabalar, odeme yaptim ama hala acilmadi?","Fatura itirazınızı oluşturdum, 24 saat içinde sonuç bilgisi tarafınıza iletilecek.",fatura_paket,belirsiz,evet,basarili
+2026-05-30,16:47,1547,1,"Merhaba, modemin adaptörü bozuldu","Fiziksel arıza kaydı açtım, cihaz değişimi için yönlendirme yapılacak.",modem_ariza,fiziksel_hasar,hayir,basarili
+2026-05-30,17:23,1187,1,Teknisyen randevusu almak istiyorum lütfen,"Size en yakın uygun randevu perşembe sabahı, oluşturmamı ister misiniz?",randevu_kurulum,randevu_alma,hayir,basarili
+2026-05-30,18:31,1343,1,"Merhaba, sIM kartım okunmuyor, arızalı galiba ne yapmalıyım","SIM değişim işleminiz için bayi yönlendirmesi yapıldı, kimliğinizi yanınıza almayı unutmayın.",hat_sim,sim_islemleri,hayir,basarili
+2026-05-31,09:11,1078,1,"Selam, fatura son ödeme tarihi ne zaman","Güncel borcunuz 340 TL, son ödeme tarihiniz bu ayın 18'i.",fatura_paket,borc_sorgu,hayir,basarili
+2026-05-31,10:45,1442,1,"Merhabalar, fatura tutarım neden bu kadar yüksek geldi?","Faturanızı inceledim, ek ücretin yurt dışı kullanımdan kaynaklandığını görüyorum.",fatura_paket,fatura_itiraz,hayir,basarili
+2026-05-31,10:55,1538,1,"Merhaba, taahhüt ettiğiniz hızın yarısını bile alamıyorum çok mağdur oldum","Sorunuzu anlamadım, biraz daha detay verebilir misiniz?",hiz_performans,paket_hizi_alamama,hayir,fallback
+2026-05-31,14:46,1171,1,"Merhaba, daha uygun bir kampanyalı pakete geçmek istiyorum ne yapmalıyım","Sizi uygun kampanyalara yönlendiriyorum, mevcut paketinizden %20 daha ucuz bir seçenek var.",fatura_paket,paket_degisikligi,hayir,basarili
+2026-05-31,16:15,1258,1,"Randevu günü kimse gelmedi, haber de vermediniz acil","Kurulum talebinizi kontrol ettim, 3 iş günü içinde planlanmış görünüyor.",randevu_kurulum,kurulum_gecikmesi,hayir,basarili
+2026-05-31,22:36,1433,1,Param gitti ama hizmet yok?,"Hattınızı yeniden aktif ettim, birkaç dakika içinde kullanabilirsiniz.",hat_sim,belirsiz,evet,basarili
+2026-06-01,09:06,1022,1,"İyi günler, faturama tanımadığım bir hizmet eklenmiş lütfen","Fatura itirazınızı oluşturdum, 24 saat içinde sonuç bilgisi tarafınıza iletilecek.",fatura_paket,fatura_itiraz,hayir,basarili
+2026-06-01,11:27,1158,1,"Merhaba, teknisyen randevusu almak istiyorum lütfen","Size en yakın uygun randevu perşembe sabahı, oluşturmamı ister misiniz?",randevu_kurulum,randevu_alma,hayir,basarili
+2026-06-01,17:21,1297,1,Video izlerken sürekli donuyor yardımcı olur musunuz,"Bu konuda size bir temsilcimiz daha iyi yardımcı olabilir, aktarıyorum.",hiz_performans,uygulama_bazli,hayir,yetkiliye_yonlendirme
+2026-06-01,18:50,1617,1,İki gündür internetim çalışmıyor,"Hattınızı uzaktan yeniden başlattım, lütfen 5 dakika sonra tekrar deneyin.",internet_kesintisi,tam_kesinti,hayir,basarili
+2026-06-01,19:38,1218,1,"İyi günler, kurulum için randevu oluşturabilir miyiz","Sorunuzu anlamadım, biraz daha detay verebilir misiniz?",randevu_kurulum,randevu_alma,hayir,fallback
+2026-06-01,19:39,1218,2,Yetkiliye bağlayın lütfen,"Bu talebinizi bir müşteri temsilcisine yönlendiriyorum, en kısa sürede sizinle iletişime geçilecek.",randevu_kurulum,randevu_alma,hayir,yetkiliye_yonlendirme
+2026-06-01,21:05,1300,1,"Modem kasası çatladı, düşürdüm","Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",modem_ariza,fiziksel_hasar,hayir,fallback
+2026-06-01,21:22,1454,1,"İyi günler, her yarım saatte bir internet kopuyor","Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",internet_kesintisi,kesintili_baglanti,hayir,fallback
+2026-06-02,09:34,1520,1,"Selam, video izlerken sürekli donuyor lütfen","Sorunuzu anlamadım, biraz daha detay verebilir misiniz?",hiz_performans,uygulama_bazli,hayir,fallback
+2026-06-02,09:37,1520,2,"Anlamadınız galiba, tekrar söylüyorum: video izlerken sürekli donuyor","Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",hiz_performans,uygulama_bazli,hayir,tekrarli_soru
+2026-06-02,09:59,1484,1,"Merhabalar, güncel borcum ne kadar","Toplam bakiyeniz 512 TL, ödeme kanallarını iletiyorum.",fatura_paket,borc_sorgu,hayir,basarili
+2026-06-02,10:13,1239,1,Ödenmemiş faturam var mı yardımcı olur musunuz,"Toplam bakiyeniz 512 TL, ödeme kanallarını iletiyorum.",fatura_paket,borc_sorgu,hayir,basarili
+2026-06-02,11:50,1103,1,"Merhabalar, randevumu iptal etmek istiyorum çok mağdur oldum","Konunuzu ilgili birime aktarıyorum, bir uzmanımız sizi arayacaktır.",randevu_kurulum,randevu_degisiklik,hayir,yetkiliye_yonlendirme
+2026-06-02,16:01,1102,1,"İyi günler, eski modemimi değiştirmek istiyorum","Cihaz yenileme talebinizi oluşturdum, uygunluk kontrolü sonrası bilgi verilecek.",modem_ariza,cihaz_degisim_talebi,hayir,basarili
+2026-06-02,20:08,1061,1,"Kaç gündür kurulum bekliyorum, kimse aramadı lütfen","Kaçan randevunuz için yeni bir tarih oluşturdum, teknisyen sizi arayacak.",randevu_kurulum,kurulum_gecikmesi,hayir,basarili
+2026-06-02,20:18,1114,1,"Merhaba, online oyunda gecikme çok fazla çok mağdur oldum","Gecikme değerlerinizi ölçtüm, yoğun saatlerde dalgalanma görülebiliyor.",hiz_performans,uygulama_bazli,hayir,basarili
+2026-06-03,11:49,1180,1,Modemim açılmıyor yardımcı olur musunuz?,"Modeminizin garanti durumunu kontrol ettim, ücretsiz değişim hakkınız var, kargo ile göndereceğiz.",modem_ariza,modem_acilmiyor,hayir,basarili
+2026-06-03,14:35,1033,1,"İyi gunler, wifi cok yavas ama kabloyla da fark yok","Paketinizin üst limitini kontrol ettim, hattınızda kayıp tespit edildi, kayıt açıyorum.",hiz_performans,belirsiz,evet,basarili
+2026-06-03,16:21,1028,1,Randevu saatimi değiştirmek istiyorum çok mağdur oldum,"Randevunuzu talep ettiğiniz güne taşıdım, onay SMS'i gönderildi.",randevu_kurulum,randevu_degisiklik,hayir,basarili
+2026-06-03,16:23,1172,1,Daha uygun bir kampanyalı pakete geçmek istiyorum?,"Hattınıza uygun üç kampanya bulunuyor, detaylarını iletiyorum.",fatura_paket,paket_degisikligi,hayir,basarili
+2026-06-03,17:10,1096,1,Faturama tanımadığım bir hizmet eklenmiş çok mağdur oldum,"Faturanızı inceledim, ek ücretin yurt dışı kullanımdan kaynaklandığını görüyorum.",fatura_paket,fatura_itiraz,hayir,basarili
+2026-06-03,18:52,1565,1,En erken hangi güne randevu var?,"Size en yakın uygun randevu perşembe sabahı, oluşturmamı ister misiniz?",randevu_kurulum,randevu_alma,hayir,basarili
+2026-06-03,19:41,1133,1,"İyi günler, numara taşıma işlemi ne kadar sürer","Taşıma işlemi için kimlik doğrulaması gerekiyor, adımları iletiyorum.",hat_sim,numara_tasima,hayir,basarili
+2026-06-04,09:16,1203,1,"Hız testinde çok düşük çıkıyor, paket hızımı almıyorum","Hat mesafeniz nedeniyle maksimum hız sınırlı olabiliyor, detaylı ölçüm talebi oluşturdum.",hiz_performans,paket_hizi_alamama,hayir,basarili
+2026-06-04,15:55,1380,1,"Selam, modem elektriği alıyor ama açılmıyor","Bu konuda size bir temsilcimiz daha iyi yardımcı olabilir, aktarıyorum.",modem_ariza,modem_acilmiyor,hayir,yetkiliye_yonlendirme
+2026-06-04,15:57,1485,1,Bölgesel kesinti varsa ne zaman düzelecek ne yapmalıyım,"Bölgenizde planlı bir bakım çalışması bulunuyor, tahmini bitiş süresi 2 saat.",internet_kesintisi,bolge_kesintisi,hayir,basarili
+2026-06-04,16:32,1146,1,Servisi kullanamıyorum çok mağdur oldum,"Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",hat_sim,belirsiz,evet,fallback
+2026-06-04,16:34,1146,2,"Anlamadınız galiba, tekrar söylüyorum: servisi kullanamıyorum","Konunuzu ilgili birime aktarıyorum, bir uzmanımız sizi arayacaktır.",hat_sim,belirsiz,evet,yetkiliye_yonlendirme
+2026-06-04,17:56,1321,1,"Merhabalar, faturama tanımadığım bir hizmet eklenmiş yardımcı olur musunuz","Fatura itirazınızı oluşturdum, 24 saat içinde sonuç bilgisi tarafınıza iletilecek.",fatura_paket,fatura_itiraz,hayir,basarili
+2026-06-04,19:53,1098,1,"İyi günler, modem hiç açılmıyor, internetim de yok","Bu konuda size yardımcı olamıyorum, başka bir sorunuz var mı?",modem_ariza,modem_acilmiyor,hayir,fallback
+2026-06-04,19:54,1098,2,Müşteri temsilcisine bağlanmak istiyorum,"Konunuzu ilgili birime aktarıyorum, bir uzmanımız sizi arayacaktır.",modem_ariza,modem_acilmiyor,hayir,yetkiliye_yonlendirme
+2026-06-05,10:24,1238,1,Gece geç saatlerde hız normale dönüyor,Yoğunluk kaynaklı yavaşlama için hat profilinizi güncelledim.,hiz_performans,zamana_bagli,hayir,basarili
+2026-06-05,11:06,1580,1,Hem yavaş hem kopuyor yardımcı olur musunuz,"Paketinizin üst limitini kontrol ettim, hattınızda kayıp tespit edildi, kayıt açıyorum.",hiz_performans,belirsiz,evet,basarili
+2026-06-05,13:36,1434,1,"Merhaba, ek paket satın almak istiyorum çok mağdur oldum","Hattınıza uygun üç kampanya bulunuyor, detaylarını iletiyorum.",fatura_paket,paket_degisikligi,hayir,basarili
+2026-06-05,17:47,1155,1,Teknisyen randevusunu erkene alabilir miyim acil?,"Erken randevu için bekleme listesine eklendiniz, yer açılırsa bilgilendirileceksiniz.",randevu_kurulum,randevu_degisiklik,hayir,basarili
+2026-06-05,18:56,1052,1,"Selam, hiz testinde cok dusuk cikiyor, paket hizimi almiyorum","Hız ölçüm sonuçlarınızı teknik ekibe ilettim, 24 saat içinde dönüş yapılacak.",hiz_performans,paket_hizi_alamama,hayir,basarili
+2026-06-05,20:16,1607,1,Daha uygun bir kampanyalı pakete geçmek istiyorum ne yapmalıyım,"Hattınıza uygun üç kampanya bulunuyor, detaylarını iletiyorum.",fatura_paket,paket_degisikligi,hayir,basarili
+2026-06-05,21:49,1130,1,"Modem hiç açılmıyor, internetim de yok yardımcı olur musunuz","Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",modem_ariza,modem_acilmiyor,hayir,fallback
+2026-06-05,22:37,1277,1,"Merhabalar, bu ay faturam iki katına çıkmış","Fatura itirazınızı oluşturdum, 24 saat içinde sonuç bilgisi tarafınıza iletilecek.",fatura_paket,fatura_itiraz,hayir,basarili
+2026-06-07,15:21,1169,1,Borcumu öğrenebilir miyim acil,"Güncel borcunuz 340 TL, son ödeme tarihiniz bu ayın 18'i.",fatura_paket,borc_sorgu,hayir,basarili
+2026-06-07,16:20,1427,1,Fatura tutarım neden bu kadar yüksek geldi,"Fatura detayınızı e-posta adresinize gönderdim, kalem kalem inceleyebilirsiniz.",fatura_paket,fatura_itiraz,hayir,basarili
+2026-06-07,17:23,1064,1,Sadece belli saatlerde yavaşlıyor,"Yoğun saatlerde bölgesel trafik artışı yaşanabiliyor, kapasite talebi ilettim.",hiz_performans,zamana_bagli,hayir,basarili
+2026-06-07,22:33,1186,1,"Merhaba, teknisyen randevusu almak istiyorum lütfen","Size en yakın uygun randevu perşembe sabahı, oluşturmamı ister misiniz?",randevu_kurulum,randevu_alma,hayir,basarili
+2026-06-08,11:34,1588,1,"Selam, hızımı yükseltmek için paket değişikliği yapmak istiyorum yardımcı olur musunuz","Hattınıza uygun üç kampanya bulunuyor, detaylarını iletiyorum.",fatura_paket,paket_degisikligi,hayir,basarili
+2026-06-08,11:58,1441,1,Dün akşamdan beri hiç internet gelmiyor ne yapmalıyım,"Konunuzu ilgili birime aktarıyorum, bir uzmanımız sizi arayacaktır.",internet_kesintisi,tam_kesinti,hayir,yetkiliye_yonlendirme
+2026-06-08,16:06,1429,1,"Merhabalar, geçen ayki faturamı itiraz etmek istiyorum acil","Faturanızı inceledim, ek ücretin yurt dışı kullanımdan kaynaklandığını görüyorum.",fatura_paket,fatura_itiraz,hayir,basarili
+2026-06-08,17:11,1347,1,Faturadaki ek ücretin açıklamasını istiyorum lütfen,"Faturanızı inceledim, ek ücretin yurt dışı kullanımdan kaynaklandığını görüyorum.",fatura_paket,fatura_itiraz,hayir,basarili
+2026-06-08,18:04,1312,1,"Merhabalar, gecen ayki faturami itiraz etmek istiyorum","Fatura detayınızı e-posta adresinize gönderdim, kalem kalem inceleyebilirsiniz.",fatura_paket,fatura_itiraz,hayir,basarili
+2026-06-08,19:30,1402,1,Param gitti ama hizmet yok lütfen,"Paket değişikliği talebinizi oluşturdum, bir sonraki fatura döneminde geçerli olacak.",fatura_paket,belirsiz,evet,basarili
+2026-06-08,20:29,1254,1,"Selam, modemin adaptoru bozuldu","Yedek parça talebiniz alındı, kargo takip numarası SMS ile iletilecek.",modem_ariza,fiziksel_hasar,hayir,basarili
+2026-06-08,20:44,1014,1,En erken hangi güne randevu var çok mağdur oldum,"Randevu talebiniz alındı, saat aralığı SMS ile bildirilecek.",randevu_kurulum,randevu_alma,hayir,basarili
+2026-06-08,20:46,1005,1,"Selam, faturamda fazladan ücret var, neden","Faturanızı inceledim, ek ücretin yurt dışı kullanımdan kaynaklandığını görüyorum.",fatura_paket,fatura_itiraz,hayir,basarili
+2026-06-09,09:31,1068,1,Param gitti ama hizmet yok cok magdur oldum,"Sistemde ödenmemiş faturanız görünmüyor, son ödemeniz geçen ay alınmış.",fatura_paket,belirsiz,evet,basarili
+2026-06-09,10:09,1575,1,"Merhabalar, randevu almak için ne yapmam gerekiyor","Randevunuzu yarın 14:00-16:00 saat aralığına oluşturdum, teknisyen sizi arayacaktır.",randevu_kurulum,randevu_alma,hayir,basarili
+2026-06-09,10:23,1394,1,"Merhaba, numaramı size taşımak istiyorum, nasıl yapacağım yardımcı olur musunuz","Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",hat_sim,numara_tasima,hayir,fallback
+2026-06-09,10:38,1294,1,Modemim acilmiyor,"Modeminizin garanti durumunu kontrol ettim, ücretsiz değişim hakkınız var, kargo ile göndereceğiz.",modem_ariza,modem_acilmiyor,hayir,basarili
+2026-06-09,11:46,1272,1,"İyi günler, modemin adaptörü bozuldu acil","Adaptör kablosu talebinizi oluşturdum, 3-5 iş günü içinde adresinize ulaşacak.",modem_ariza,fiziksel_hasar,hayir,basarili
+2026-06-09,13:52,1174,1,Modemin adaptörü bozuldu,"Yedek parça talebiniz alındı, kargo takip numarası SMS ile iletilecek.",modem_ariza,fiziksel_hasar,hayir,basarili
+2026-06-09,14:15,1074,1,"Merhabalar, bu ayki fatura tutarim nedir","Güncel borcunuz 340 TL, son ödeme tarihiniz bu ayın 18'i.",fatura_paket,borc_sorgu,hayir,basarili
+2026-06-09,15:37,1089,1,Bolgemizde genel bir kesinti mi var,"Bölgenizde planlı bir bakım çalışması bulunuyor, tahmini bitiş süresi 2 saat.",internet_kesintisi,bolge_kesintisi,hayir,basarili
+2026-06-09,17:17,1476,1,"İyi günler, her yarım saatte bir internet kopuyor","Konunuzu ilgili birime aktarıyorum, bir uzmanımız sizi arayacaktır.",internet_kesintisi,kesintili_baglanti,hayir,yetkiliye_yonlendirme
+2026-06-09,19:56,1276,1,Hattımı geçici olarak dondurmak istiyorum yardımcı olur musunuz,"Hattınız ödeme gecikmesi nedeniyle kapatılmış, ödeme sonrası otomatik açılacaktır.",hat_sim,hat_durumu,hayir,basarili
+2026-06-09,19:58,1458,1,"Merhabalar, hattim neden kapali gorunuyor","Hat dondurma talebinizi oluşturdum, 6 aya kadar hattınızı dondurabilirsiniz.",hat_sim,hat_durumu,hayir,basarili
+2026-06-09,21:46,1265,1,Modemin adaptörü bozuldu,"Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",modem_ariza,fiziksel_hasar,hayir,fallback
+2026-06-09,21:47,1265,2,Aynı sorunum devam ediyor: modemin adaptörü bozuldu,"Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",modem_ariza,fiziksel_hasar,hayir,tekrarli_soru
+2026-06-10,09:24,1557,1,"Hattım çalışmıyor, ne yapmalıyım","Hattınızda arıza kaydı oluşturdum, teknik ekip en kısa sürede sizinle iletişime geçecek.",internet_kesintisi,belirsiz,evet,basarili
+2026-06-10,09:36,1240,1,"Merhaba, hiçbir şey çalışmıyor","Fiziksel arıza kaydı açtım, cihaz değişimi için yönlendirme yapılacak.",modem_ariza,belirsiz,evet,basarili
+2026-06-10,12:22,1092,1,"İyi günler, her yarım saatte bir internet kopuyor lütfen","Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",internet_kesintisi,kesintili_baglanti,hayir,fallback
+2026-06-10,15:09,1457,1,Modem portlarından biri çalışmıyor,"Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",modem_ariza,fiziksel_hasar,hayir,fallback
+2026-06-10,15:10,1457,2,"Hala çözülmedi, bir daha anlatıyorum: modem portlarından biri çalışmıyor","Bu talebinizi bir müşteri temsilcisine yönlendiriyorum, en kısa sürede sizinle iletişime geçilecek.",modem_ariza,fiziksel_hasar,hayir,yetkiliye_yonlendirme
+2026-06-10,16:01,1322,1,Fatura son ödeme tarihi ne zaman,"Toplam bakiyeniz 512 TL, ödeme kanallarını iletiyorum.",fatura_paket,borc_sorgu,hayir,basarili
+2026-06-10,16:22,1609,1,"Hattım çalışmıyor, ne yapmalıyım ne yapmalıyım","Bu konuda size yardımcı olamıyorum, başka bir sorunuz var mı?",internet_kesintisi,belirsiz,evet,fallback
+2026-06-10,16:24,1609,2,"Demin de söyledim ama tekrar yazıyorum: hattım çalışmıyor, ne yapmalıyım","Bu konuda size yardımcı olamıyorum, başka bir sorunuz var mı?",internet_kesintisi,belirsiz,evet,tekrarli_soru
+2026-06-10,19:14,1081,1,"İyi günler, dün akşamdan beri hiç internet gelmiyor","Hattınızda arıza kaydı oluşturdum, teknik ekip en kısa sürede sizinle iletişime geçecek.",internet_kesintisi,tam_kesinti,hayir,basarili
+2026-06-10,19:19,1244,1,Kurulum için randevu oluşturabilir miyiz acil,"Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",randevu_kurulum,randevu_alma,hayir,fallback
+2026-06-10,22:17,1269,1,"Selam, bağlantı bir açılıyor bir kapanıyor","Bu konuda size bir temsilcimiz daha iyi yardımcı olabilir, aktarıyorum.",internet_kesintisi,kesintili_baglanti,hayir,yetkiliye_yonlendirme
+2026-06-11,11:39,1569,1,Sabahtan beri internetim yok,"Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",internet_kesintisi,tam_kesinti,hayir,fallback
+2026-06-11,12:15,1065,1,"Komsularimin da interneti yok, genel bir sorun mu","Sorunuzu anlamadım, biraz daha detay verebilir misiniz?",internet_kesintisi,bolge_kesintisi,hayir,fallback
+2026-06-11,12:16,1065,2,"Demin de söyledim ama tekrar yazıyorum: komşularımın da interneti yok, genel bir sorun mu","Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",internet_kesintisi,bolge_kesintisi,hayir,tekrarli_soru
+2026-06-11,15:03,1001,1,"İnternetim tamamen gitti, telefondan yazıyorum çok mağdur oldum?","Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",internet_kesintisi,tam_kesinti,hayir,fallback
+2026-06-11,15:40,1108,1,"Selam, semtimizde toplu bir ariza oldugunu duydum, dogru mu","Sorunuzu anlamadım, biraz daha detay verebilir misiniz?",internet_kesintisi,bolge_kesintisi,hayir,fallback
+2026-06-11,15:45,1108,2,Yetkiliye bağlayın lütfen,"Bu konuda size bir temsilcimiz daha iyi yardımcı olabilir, aktarıyorum.",internet_kesintisi,bolge_kesintisi,hayir,yetkiliye_yonlendirme
+2026-06-11,16:40,1136,1,İnternetim gitti geldi gidiyor sürekli ne yapmalıyım!,"Hat kalitenizde dalgalanma tespit ettim, teknik ekip yönlendirmesi yapıyorum.",internet_kesintisi,kesintili_baglanti,hayir,basarili
+2026-06-11,17:17,1587,1,"İyi günler, bağlantım sürekli düşüyor, kesik kesik gidiyor?","Hat kalitenizde dalgalanma tespit ettim, teknik ekip yönlendirmesi yapıyorum.",internet_kesintisi,kesintili_baglanti,hayir,basarili
+2026-06-11,17:19,1541,1,Faturadaki ek ücretin açıklamasını istiyorum,"Fatura itirazınızı oluşturdum, 24 saat içinde sonuç bilgisi tarafınıza iletilecek.",fatura_paket,fatura_itiraz,hayir,basarili
+2026-06-11,18:12,1128,1,"İyi günler, servisi kullanamıyorum lütfen","Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",internet_kesintisi,belirsiz,evet,fallback
+2026-06-11,18:52,1267,1,"Mahallede herkesin interneti gitmiş, kesinti mi var","Bölgenizde planlı bir bakım çalışması bulunuyor, tahmini bitiş süresi 2 saat.",internet_kesintisi,bolge_kesintisi,hayir,basarili
+2026-06-11,19:42,1614,1,İki haftadır kurulum bekliyorum,"Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",randevu_kurulum,kurulum_gecikmesi,hayir,fallback
+2026-06-11,19:54,1338,1,"İnternetim tamamen kesildi, hiç bağlanamıyorum?","Arıza kaydınız açıldı, kayıt numaranız üzerinden takip edebilirsiniz.",internet_kesintisi,tam_kesinti,hayir,basarili
+2026-06-11,20:03,1148,1,Servisi kullanamıyorum acil?,"Sorunuzu anlamadım, biraz daha detay verebilir misiniz?",internet_kesintisi,belirsiz,evet,fallback
+2026-06-11,20:03,1531,1,Gün içinde defalarca bağlantı kopuyor,"Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",internet_kesintisi,kesintili_baglanti,hayir,fallback
+2026-06-11,20:06,1531,2,"Anlamadınız galiba, tekrar söylüyorum: gün içinde defalarca bağlantı kopuyor","Bu konuda size bir temsilcimiz daha iyi yardımcı olabilir, aktarıyorum.",internet_kesintisi,kesintili_baglanti,hayir,yetkiliye_yonlendirme
+2026-06-12,08:53,1448,1,"Merhabalar, bağlantı yok, hiçbir siteye giremiyorum yardımcı olur musunuz","Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",internet_kesintisi,tam_kesinti,hayir,fallback
+2026-06-12,08:57,1513,1,İki haftadır kurulum bekliyorum,"Kurulum talebinizi kontrol ettim, 3 iş günü içinde planlanmış görünüyor.",randevu_kurulum,kurulum_gecikmesi,hayir,basarili
+2026-06-12,09:45,1399,1,Sorun bir turlu cozulmuyor,"Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",internet_kesintisi,belirsiz,evet,fallback
+2026-06-12,10:27,1182,1,"Selam, param gitti ama hizmet yok","Faturanızı inceledim, ek ücretin yurt dışı kullanımdan kaynaklandığını görüyorum.",fatura_paket,belirsiz,evet,basarili
+2026-06-12,10:30,1113,1,"Selam, mahallede herkesin interneti gitmiş, kesinti mi var","Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",internet_kesintisi,bolge_kesintisi,hayir,fallback
+2026-06-12,10:32,1113,2,"Demin de söyledim ama tekrar yazıyorum: mahallede herkesin interneti gitmiş, kesinti mi var","Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",internet_kesintisi,bolge_kesintisi,hayir,tekrarli_soru
+2026-06-12,10:50,1561,1,"Merhabalar, modemim tamamen öldü galiba","Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",modem_ariza,modem_acilmiyor,hayir,fallback
+2026-06-12,13:04,1026,1,Bölgemizde genel bir kesinti mi var,"Sorunuzu anlamadım, biraz daha detay verebilir misiniz?",internet_kesintisi,bolge_kesintisi,hayir,fallback
+2026-06-12,13:08,1026,2,Müşteri temsilcisine bağlanmak istiyorum,"Bu konuda size bir temsilcimiz daha iyi yardımcı olabilir, aktarıyorum.",internet_kesintisi,bolge_kesintisi,hayir,yetkiliye_yonlendirme
+2026-06-12,14:30,1529,1,Baglanti bir aciliyor bir kapaniyor acil?,"Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",internet_kesintisi,kesintili_baglanti,hayir,fallback
+2026-06-12,14:49,1610,1,"İyi günler, internetim tamamen kesildi, hiç bağlanamıyorum","Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",internet_kesintisi,tam_kesinti,hayir,fallback
+2026-06-12,14:52,1610,2,"Hala çözülmedi, bir daha anlatıyorum: internetim tamamen kesildi, hiç bağlanamıyorum","Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",internet_kesintisi,tam_kesinti,hayir,tekrarli_soru
+2026-06-12,16:11,1080,1,"Merhaba, online oyunda gecikme çok fazla","Hattınızda gecikme ölçümü başlattım, sonuçlara göre yönlendirme yapacağım.",hiz_performans,uygulama_bazli,hayir,basarili
+2026-06-12,18:52,1528,1,"Merhabalar, hızımı yükseltmek için paket değişikliği yapmak istiyorum acil","Sizi uygun kampanyalara yönlendiriyorum, mevcut paketinizden %20 daha ucuz bir seçenek var.",fatura_paket,paket_degisikligi,hayir,basarili
+2026-06-12,19:00,1124,1,"Selam, modem kasası çatladı, düşürdüm","Adaptör kablosu talebinizi oluşturdum, 3-5 iş günü içinde adresinize ulaşacak.",modem_ariza,fiziksel_hasar,hayir,basarili
+2026-06-12,19:08,1115,1,"Selam, internetim kaplumbağa gibi çok mağdur oldum","Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",hiz_performans,genel_yavaslik,hayir,fallback
+2026-06-13,08:57,1406,1,"Merhabalar, mahallede herkesin interneti gitmiş, kesinti mi var yardımcı olur musunuz","Adresinizde şu an aktif bir altyapı arızası görünüyor, ekiplerimiz sahada çalışıyor.",internet_kesintisi,bolge_kesintisi,hayir,basarili
+2026-06-13,09:25,1334,1,Paketimi değiştirmek istiyorum,"Hattınıza uygun üç kampanya bulunuyor, detaylarını iletiyorum.",fatura_paket,paket_degisikligi,hayir,basarili
+2026-06-13,11:49,1283,1,"İyi günler, taşıma başvurum ne durumda ne yapmalıyım","Taşıma işlemi için kimlik doğrulaması gerekiyor, adımları iletiyorum.",hat_sim,numara_tasima,hayir,basarili
+2026-06-13,12:47,1045,1,"Merhaba, kurulum yapılmadı, modem de gelmedi ne yapmalıyım","Bu konuda size yardımcı olamıyorum, başka bir sorunuz var mı?",randevu_kurulum,kurulum_gecikmesi,hayir,fallback
+2026-06-13,17:29,1298,1,Gün içinde defalarca bağlantı kopuyor acil,"Modeminizi 30 saniye kapatıp açmanızı rica ederim, bu genellikle kopma sorununu giderir.",internet_kesintisi,kesintili_baglanti,hayir,basarili
+2026-06-14,09:13,1467,1,"Selam, internetim tamamen gitti, telefondan yaziyorum cok magdur oldum","Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",internet_kesintisi,tam_kesinti,hayir,fallback
+2026-06-14,21:22,1016,1,Teknisyen randevusu almak istiyorum ne yapmalıyım,"Randevu talebiniz alındı, saat aralığı SMS ile bildirilecek.",randevu_kurulum,randevu_alma,hayir,basarili
+2026-06-15,12:45,1107,1,"Baglanti yok, hicbir siteye giremiyorum ne yapmaliyim","Sorunuzu anlamadım, biraz daha detay verebilir misiniz?",internet_kesintisi,tam_kesinti,hayir,fallback
+2026-06-15,13:10,1352,1,"İyi günler, 100 Mbps paketim var ama 20 Mbps alıyorum","Hat mesafeniz nedeniyle maksimum hız sınırlı olabiliyor, detaylı ölçüm talebi oluşturdum.",hiz_performans,paket_hizi_alamama,hayir,basarili
+2026-06-15,17:45,1502,1,"İyi günler, gün içinde defalarca bağlantı kopuyor","Konunuzu ilgili birime aktarıyorum, bir uzmanımız sizi arayacaktır.",internet_kesintisi,kesintili_baglanti,hayir,yetkiliye_yonlendirme
+2026-06-15,19:43,1355,1,Sabahtan beri internetim yok,"Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",internet_kesintisi,tam_kesinti,hayir,fallback
+2026-06-15,19:46,1207,1,Param gitti ama hizmet yok,"Hattınız ödeme gecikmesi nedeniyle kapatılmış, ödeme sonrası otomatik açılacaktır.",hat_sim,belirsiz,evet,basarili
+2026-06-15,20:38,1346,1,"Modemim çok eskidi, yenilenebilir mi acil?","Modem yenileme hakkınız bulunuyor, kargo süreci başlatıldı.",modem_ariza,cihaz_degisim_talebi,hayir,basarili
+2026-06-16,12:21,1401,1,"İyi günler, randevu saatimi değiştirmek istiyorum lütfen","Erken randevu için bekleme listesine eklendiniz, yer açılırsa bilgilendirileceksiniz.",randevu_kurulum,randevu_degisiklik,hayir,basarili
+2026-06-16,19:36,1365,1,Dün akşamdan beri hiç internet gelmiyor yardımcı olur musunuz,"Hattınızda arıza kaydı oluşturdum, teknik ekip en kısa sürede sizinle iletişime geçecek.",internet_kesintisi,tam_kesinti,hayir,basarili
+2026-06-16,19:49,1604,1,"Merhaba, iki gündür internetim çalışmıyor?","Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",internet_kesintisi,tam_kesinti,hayir,fallback
+2026-06-16,21:13,1140,1,Bölgesel kesinti varsa ne zaman düzelecek?,"Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",internet_kesintisi,bolge_kesintisi,hayir,fallback
+2026-06-16,21:16,1140,2,"Hala çözülmedi, bir daha anlatıyorum: bölgesel kesinti varsa ne zaman düzelecek","Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",internet_kesintisi,bolge_kesintisi,hayir,tekrarli_soru
+2026-06-16,21:31,1041,1,"Selam, hem yavaş hem kopuyor","Sorunuzu anlamadım, biraz daha detay verebilir misiniz?",internet_kesintisi,belirsiz,evet,fallback
+2026-06-16,21:32,1487,1,"Baglantim surekli dusuyor, kesik kesik gidiyor","Bu konuda size yardımcı olamıyorum, başka bir sorunuz var mı?",internet_kesintisi,kesintili_baglanti,hayir,fallback
+2026-06-17,10:21,1506,1,"Yeni modem talep etmek istiyorum, eskisi bozuldu lütfen?","Modem yenileme hakkınız bulunuyor, kargo süreci başlatıldı.",modem_ariza,cihaz_degisim_talebi,hayir,basarili
+2026-06-17,10:31,1554,1,"Merhabalar, bağlantım sürekli düşüyor, kesik kesik gidiyor lütfen","Hattınızda kararlılık testi başlattım, sonuçları birkaç dakika içinde paylaşacağım.",internet_kesintisi,kesintili_baglanti,hayir,basarili
+2026-06-17,15:29,1404,1,Toplantıda kameram sürekli donuyor,"Hattınızda gecikme ölçümü başlattım, sonuçlara göre yönlendirme yapacağım.",hiz_performans,uygulama_bazli,hayir,basarili
+2026-06-17,16:06,1057,1,Dün akşamdan beri hiç internet gelmiyor çok mağdur oldum,"Hattınızı uzaktan yeniden başlattım, lütfen 5 dakika sonra tekrar deneyin.",internet_kesintisi,tam_kesinti,hayir,basarili
+2026-06-17,16:24,1552,1,Randevu saatimi değiştirmek istiyorum ne yapmalıyım,"Randevunuzu iptal ettim, dilediğinizde yeni bir tarih için tekrar yazabilirsiniz.",randevu_kurulum,randevu_degisiklik,hayir,basarili
+2026-06-17,16:54,1131,1,"Selam, randevu günü kimse gelmedi, haber de vermediniz?","Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",randevu_kurulum,kurulum_gecikmesi,hayir,fallback
+2026-06-17,19:24,1233,1,"Selam, dizi izlerken kalite otomatik düşüyor lütfen","Hattınızda gecikme ölçümü başlattım, sonuçlara göre yönlendirme yapacağım.",hiz_performans,uygulama_bazli,hayir,basarili
+2026-06-17,20:10,1592,1,"İyi günler, kurulum için randevu oluşturabilir miyiz","Size en yakın uygun randevu perşembe sabahı, oluşturmamı ister misiniz?",randevu_kurulum,randevu_alma,hayir,basarili
+2026-06-17,20:22,1583,1,"İyi günler, eski modemimi değiştirmek istiyorum","Modem yenileme hakkınız bulunuyor, kargo süreci başlatıldı.",modem_ariza,cihaz_degisim_talebi,hayir,basarili
+2026-06-17,20:26,1423,1,"İyi günler, bölgemizde genel bir kesinti mi var","Sorunuzu anlamadım, biraz daha detay verebilir misiniz?",internet_kesintisi,bolge_kesintisi,hayir,fallback
+2026-06-17,21:43,1376,1,Eski modemimi değiştirmek istiyorum yardımcı olur musunuz,"Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",modem_ariza,cihaz_degisim_talebi,hayir,fallback
+2026-06-17,21:44,1376,2,Aynı sorunum devam ediyor: eski modemimi değiştirmek istiyorum,"Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",modem_ariza,cihaz_degisim_talebi,hayir,tekrarli_soru
+2026-06-18,10:11,1009,1,"Komşularımın da interneti yok, genel bir sorun mu!","Bölgenizde toplu bir kesinti kaydı bulunmuyor, hattınızı ayrıca kontrol ediyorum.",internet_kesintisi,bolge_kesintisi,hayir,basarili
+2026-06-18,10:41,1259,1,"Merhaba, modemim çok eskidi, yenilenebilir mi","Modem yenileme hakkınız bulunuyor, kargo süreci başlatıldı.",modem_ariza,cihaz_degisim_talebi,hayir,basarili
+2026-06-18,11:19,1157,1,eSIM'e geçiş yapabilir miyim,"SIM değişim işleminiz için bayi yönlendirmesi yapıldı, kimliğinizi yanınıza almayı unutmayın.",hat_sim,sim_islemleri,hayir,basarili
+2026-06-18,15:33,1544,1,Wifi çok yavaş ama kabloyla da fark yok çok mağdur oldum,"Arıza kaydınız açıldı, kayıt numaranız üzerinden takip edebilirsiniz.",internet_kesintisi,belirsiz,evet,basarili
+2026-06-18,16:05,1573,1,"İyi günler, taahhüt ettiğiniz hızın yarısını bile alamıyorum","Hat mesafeniz nedeniyle maksimum hız sınırlı olabiliyor, detaylı ölçüm talebi oluşturdum.",hiz_performans,paket_hizi_alamama,hayir,basarili
+2026-06-18,17:47,1468,1,Hem yavas hem kopuyor,"Sorunuzu anlamadım, biraz daha detay verebilir misiniz?",hiz_performans,belirsiz,evet,fallback
+2026-06-18,17:50,1468,2,Aynı sorunum devam ediyor: hem yavaş hem kopuyor,"Konunuzu ilgili birime aktarıyorum, bir uzmanımız sizi arayacaktır.",hiz_performans,belirsiz,evet,yetkiliye_yonlendirme
+2026-06-18,18:38,1451,1,"Selam, eski modemimi değiştirmek istiyorum lütfen","Cihaz değişim talebiniz alındı, 5 iş günü içinde teslim edilecek.",modem_ariza,cihaz_degisim_talebi,hayir,basarili
+2026-06-19,12:07,1315,1,İndirme hızım normalden çok düşük lütfen,"Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",hiz_performans,paket_hizi_alamama,hayir,fallback
+2026-06-19,12:11,1315,2,Aynı sorunum devam ediyor: indirme hızım normalden çok düşük,"Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",hiz_performans,paket_hizi_alamama,hayir,tekrarli_soru
+2026-06-19,19:09,1173,1,"İnternet hızım çok düşük, iş yapamıyorum yardımcı olur musunuz","Sorunuzu anlamadım, biraz daha detay verebilir misiniz?",hiz_performans,genel_yavaslik,hayir,fallback
+2026-06-19,19:11,1173,2,Yetkiliye bağlayın lütfen,"Bu konuda size bir temsilcimiz daha iyi yardımcı olabilir, aktarıyorum.",hiz_performans,genel_yavaslik,hayir,yetkiliye_yonlendirme
+2026-06-19,20:51,1224,1,"Merhaba, mahallede herkesin interneti gitmiş, kesinti mi var lütfen","Bölgenizde toplu bir kesinti kaydı bulunmuyor, hattınızı ayrıca kontrol ediyorum.",internet_kesintisi,bolge_kesintisi,hayir,basarili
+2026-06-19,20:55,1257,1,Mevcut tarifemi düşürmek istiyorum,"Sizi uygun kampanyalara yönlendiriyorum, mevcut paketinizden %20 daha ucuz bir seçenek var.",fatura_paket,paket_degisikligi,hayir,basarili
+2026-06-19,21:13,1040,1,"Merhaba, sorun bir türlü çözülmüyor yardımcı olur musunuz","Bölgenizde toplu bir kesinti kaydı bulunmuyor, hattınızı ayrıca kontrol ediyorum.",internet_kesintisi,belirsiz,evet,basarili
+2026-06-20,14:56,1262,1,"Selam, fatura tutarim neden bu kadar yuksek geldi cok magdur oldum","Faturanızı inceledim, ek ücretin yurt dışı kullanımdan kaynaklandığını görüyorum.",fatura_paket,fatura_itiraz,hayir,basarili
+2026-06-20,15:03,1498,1,"İyi günler, güncel borcum ne kadar","Sistemde ödenmemiş faturanız görünmüyor, son ödemeniz geçen ay alınmış.",fatura_paket,borc_sorgu,hayir,basarili
+2026-06-20,15:30,1011,1,"Merhabalar, baglanamiyorum","Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",modem_ariza,belirsiz,evet,fallback
+2026-06-20,15:31,1011,2,Demin de söyledim ama tekrar yazıyorum: bağlanamıyorum,"Bu talebinizi bir müşteri temsilcisine yönlendiriyorum, en kısa sürede sizinle iletişime geçilecek.",modem_ariza,belirsiz,evet,yetkiliye_yonlendirme
+2026-06-20,19:03,1330,1,"İyi günler, sIM kartımı aktifleştiremiyorum çok mağdur oldum","SIM kartınızı aktivasyon için sisteme tanımladım, 10 dakika içinde aktif olacaktır.",hat_sim,sim_islemleri,hayir,basarili
+2026-06-20,21:46,1555,1,"Merhaba, video izlerken sürekli donuyor lütfen","Gecikme değerlerinizi ölçtüm, yoğun saatlerde dalgalanma görülebiliyor.",hiz_performans,uygulama_bazli,hayir,basarili
+2026-06-22,10:11,1507,1,Modem portlarından biri çalışmıyor,"Bu konuda size yardımcı olamıyorum, başka bir sorunuz var mı?",modem_ariza,fiziksel_hasar,hayir,fallback
+2026-06-22,10:56,1586,1,"Merhaba, eski modemimi değiştirmek istiyorum çok mağdur oldum","Modem yenileme hakkınız bulunuyor, kargo süreci başlatıldı.",modem_ariza,cihaz_degisim_talebi,hayir,basarili
+2026-06-22,13:28,1390,1,Param gitti ama hizmet yok,"Bu talebinizi bir müşteri temsilcisine yönlendiriyorum, en kısa sürede sizinle iletişime geçilecek.",fatura_paket,belirsiz,evet,yetkiliye_yonlendirme
+2026-06-22,15:05,1537,1,"Komşularımın da interneti yok, genel bir sorun mu","Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",internet_kesintisi,bolge_kesintisi,hayir,fallback
+2026-06-22,15:07,1537,2,"Tekrar ediyorum: komşularımın da interneti yok, genel bir sorun mu","Konunuzu ilgili birime aktarıyorum, bir uzmanımız sizi arayacaktır.",internet_kesintisi,bolge_kesintisi,hayir,yetkiliye_yonlendirme
+2026-06-22,16:43,1104,1,"İyi günler, bölgesel kesinti varsa ne zaman düzelecek","Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",internet_kesintisi,bolge_kesintisi,hayir,fallback
+2026-06-22,17:18,1505,1,"Selam, hem yavaş hem kopuyor","Hat mesafeniz nedeniyle maksimum hız sınırlı olabiliyor, detaylı ölçüm talebi oluşturdum.",hiz_performans,belirsiz,evet,basarili
+2026-06-22,19:23,1387,1,Oyun oynarken ping çok yüksek çıkıyor acil,"Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",hiz_performans,uygulama_bazli,hayir,fallback
+2026-06-22,19:36,1340,1,Hattımı geçici olarak dondurmak istiyorum,"Hattınız ödeme gecikmesi nedeniyle kapatılmış, ödeme sonrası otomatik açılacaktır.",hat_sim,hat_durumu,hayir,basarili
+2026-06-23,10:19,1003,1,Bu ay faturam iki katina cikmis yardimci olur musunuz,"Fatura detayınızı e-posta adresinize gönderdim, kalem kalem inceleyebilirsiniz.",fatura_paket,fatura_itiraz,hayir,basarili
+2026-06-23,11:17,1137,1,"Merhabalar, modem hiç açılmıyor, internetim de yok","Bu konuda size bir temsilcimiz daha iyi yardımcı olabilir, aktarıyorum.",modem_ariza,modem_acilmiyor,hayir,yetkiliye_yonlendirme
+2026-06-23,12:27,1053,1,"Selam, en erken hangi güne randevu var yardımcı olur musunuz","Randevu talebiniz alındı, saat aralığı SMS ile bildirilecek.",randevu_kurulum,randevu_alma,hayir,basarili
+2026-06-23,13:09,1260,1,"Merhabalar, dizi izlerken kalite otomatik dusuyor lutfen","Gecikme değerlerinizi ölçtüm, yoğun saatlerde dalgalanma görülebiliyor.",hiz_performans,uygulama_bazli,hayir,basarili
+2026-06-23,15:19,1317,1,"Merhabalar, hattımı geçici olarak dondurmak istiyorum","Hattınız ödeme gecikmesi nedeniyle kapatılmış, ödeme sonrası otomatik açılacaktır.",hat_sim,hat_durumu,hayir,basarili
+2026-06-23,17:10,1574,1,Bağlantı bir açılıyor bir kapanıyor?,"Modeminizi 30 saniye kapatıp açmanızı rica ederim, bu genellikle kopma sorununu giderir.",internet_kesintisi,kesintili_baglanti,hayir,basarili
+2026-06-23,17:52,1162,1,Faturama tanımadığım bir hizmet eklenmiş,"Fatura detayınızı e-posta adresinize gönderdim, kalem kalem inceleyebilirsiniz.",fatura_paket,fatura_itiraz,hayir,basarili
+2026-06-23,18:42,1431,1,Kurulum ne zaman yapılacak!,"Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",randevu_kurulum,kurulum_gecikmesi,hayir,fallback
+2026-06-23,18:46,1431,2,Demin de söyledim ama tekrar yazıyorum: kurulum ne zaman yapılacak,"Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",randevu_kurulum,kurulum_gecikmesi,hayir,tekrarli_soru
+2026-06-23,19:21,1211,1,Bağlanamıyorum yardımcı olur musunuz,"Modeminizi 30 saniye kapatıp açmanızı rica ederim, bu genellikle kopma sorununu giderir.",internet_kesintisi,belirsiz,evet,basarili
+2026-06-24,09:49,1384,1,"Merhaba, kurulum için randevu oluşturabilir miyiz acil","Size en yakın uygun randevu perşembe sabahı, oluşturmamı ister misiniz?",randevu_kurulum,randevu_alma,hayir,basarili
+2026-06-24,10:04,1307,1,Ödediğim hızı alamıyorum,"Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",hiz_performans,paket_hizi_alamama,hayir,fallback
+2026-06-24,10:05,1307,2,"Anlamadınız galiba, tekrar söylüyorum: ödediğim hızı alamıyorum","Bu konuda size bir temsilcimiz daha iyi yardımcı olabilir, aktarıyorum.",hiz_performans,paket_hizi_alamama,hayir,yetkiliye_yonlendirme
+2026-06-24,13:30,1589,1,"Semtimizde toplu bir arıza olduğunu duydum, doğru mu","Bölgenizde toplu bir kesinti kaydı bulunmuyor, hattınızı ayrıca kontrol ediyorum.",internet_kesintisi,bolge_kesintisi,hayir,basarili
+2026-06-24,13:31,1217,1,"Merhaba, komşularımın da interneti yok, genel bir sorun mu","Adresinizde şu an aktif bir altyapı arızası görünüyor, ekiplerimiz sahada çalışıyor.",internet_kesintisi,bolge_kesintisi,hayir,basarili
+2026-06-24,16:26,1464,1,"Yeni modem talep etmek istiyorum, eskisi bozuldu","Cihaz değişim talebiniz alındı, 5 iş günü içinde teslim edilecek.",modem_ariza,cihaz_degisim_talebi,hayir,basarili
+2026-06-24,17:14,1002,1,"Selam, modemim tamamen öldü galiba?","Modem arıza kaydınızı oluşturdum, teknisyen 2 iş günü içinde sizi arayacak.",modem_ariza,modem_acilmiyor,hayir,basarili
+2026-06-24,19:07,1120,1,Teknisyen randevusu almak istiyorum ne yapmaliyim,"Bu konuda size yardımcı olamıyorum, başka bir sorunuz var mı?",randevu_kurulum,randevu_alma,hayir,fallback
+2026-06-24,19:08,1120,2,Demin de söyledim ama tekrar yazıyorum: teknisyen randevusu almak istiyorum,"Bu konuda size bir temsilcimiz daha iyi yardımcı olabilir, aktarıyorum.",randevu_kurulum,randevu_alma,hayir,yetkiliye_yonlendirme
+2026-06-25,09:53,1032,1,Bu ayki fatura tutarim nedir,"Güncel borcunuz 340 TL, son ödeme tarihiniz bu ayın 18'i.",fatura_paket,borc_sorgu,hayir,basarili
+2026-06-25,10:34,1341,1,"Modem hiç açılmıyor, internetim de yok yardımcı olur musunuz!","Adaptörü farklı bir prizde denemenizi rica ederim, sorun devam ederse değişim başlatacağım.",modem_ariza,modem_acilmiyor,hayir,basarili
+2026-06-25,15:52,1070,1,Dun aksamdan beri hic internet gelmiyor,"Hattınızı uzaktan yeniden başlattım, lütfen 5 dakika sonra tekrar deneyin.",internet_kesintisi,tam_kesinti,hayir,basarili
+2026-06-25,17:42,1395,1,"İyi gunler, en erken hangi gune randevu var ne yapmaliyim","Size en yakın uygun randevu perşembe sabahı, oluşturmamı ister misiniz?",randevu_kurulum,randevu_alma,hayir,basarili
+2026-06-25,19:12,1058,1,"İyi gunler, gecen ayki faturami itiraz etmek istiyorum ne yapmaliyim","Fatura itirazınızı oluşturdum, 24 saat içinde sonuç bilgisi tarafınıza iletilecek.",fatura_paket,fatura_itiraz,hayir,basarili
+2026-06-25,19:14,1149,1,"Baglanti yok, hicbir siteye giremiyorum","Sorunuzu anlamadım, biraz daha detay verebilir misiniz?",internet_kesintisi,tam_kesinti,hayir,fallback
+2026-06-25,19:15,1149,2,"Tekrar ediyorum: bağlantı yok, hiçbir siteye giremiyorum","Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",internet_kesintisi,tam_kesinti,hayir,tekrarli_soru
+2026-06-26,10:20,1134,1,"Selam, ödenmemiş faturam var mı","Güncel borcunuz 340 TL, son ödeme tarihiniz bu ayın 18'i.",fatura_paket,borc_sorgu,hayir,basarili
+2026-06-26,11:11,1241,1,Fatura tutarım neden bu kadar yüksek geldi lütfen?,"Fatura detayınızı e-posta adresinize gönderdim, kalem kalem inceleyebilirsiniz.",fatura_paket,fatura_itiraz,hayir,basarili
+2026-06-26,12:14,1167,1,"Semtimizde toplu bir arıza olduğunu duydum, doğru mu ne yapmalıyım","Adresinizde şu an aktif bir altyapı arızası görünüyor, ekiplerimiz sahada çalışıyor.",internet_kesintisi,bolge_kesintisi,hayir,basarili
+2026-06-26,13:19,1264,1,"Modem kasası çatladı, düşürdüm ne yapmalıyım","Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",modem_ariza,fiziksel_hasar,hayir,fallback
+2026-06-26,13:24,1264,2,Beni bir yetkiliye aktarın,"Konunuzu ilgili birime aktarıyorum, bir uzmanımız sizi arayacaktır.",modem_ariza,fiziksel_hasar,hayir,yetkiliye_yonlendirme
+2026-06-26,13:24,1567,1,Akşamları internet hızı düşüyor,Yoğunluk kaynaklı yavaşlama için hat profilinizi güncelledim.,hiz_performans,zamana_bagli,hayir,basarili
+2026-06-26,14:09,1200,1,"Faturamda fazladan ücret var, neden","Fatura itirazınızı oluşturdum, 24 saat içinde sonuç bilgisi tarafınıza iletilecek.",fatura_paket,fatura_itiraz,hayir,basarili
+2026-06-26,14:32,1549,1,Taahhut ettiginiz hizin yarisini bile alamiyorum cok magdur oldum,"Konunuzu ilgili birime aktarıyorum, bir uzmanımız sizi arayacaktır.",hiz_performans,paket_hizi_alamama,hayir,yetkiliye_yonlendirme
+2026-06-26,15:57,1357,1,"Merhabalar, bağlantı yok, hiçbir siteye giremiyorum","Hattınızı uzaktan yeniden başlattım, lütfen 5 dakika sonra tekrar deneyin.",internet_kesintisi,tam_kesinti,hayir,basarili
+2026-06-26,17:34,1515,1,Taahhüt ettiğiniz hızın yarısını bile alamıyorum acil,"Bu konuda size yardımcı olamıyorum, başka bir sorunuz var mı?",hiz_performans,paket_hizi_alamama,hayir,fallback
+2026-06-26,17:36,1515,2,"Hala çözülmedi, bir daha anlatıyorum: taahhüt ettiğiniz hızın yarısını bile alamıyorum","Sorunuzu anlamadım, biraz daha detay verebilir misiniz?",hiz_performans,paket_hizi_alamama,hayir,tekrarli_soru
+2026-06-26,20:05,1368,1,"Merhabalar, numaramı başka operatörden taşımak istiyorum","Taşıma başvurunuz onay aşamasında, sonucu SMS ile bildirilecek.",hat_sim,numara_tasima,hayir,basarili
+2026-06-27,08:16,1125,1,İnternet bazen çalışıyor bazen çok yavaş lütfen,"Bölgenizdeki kapasite raporunu talep ettim, sonucu sizinle paylaşacağım.",hiz_performans,belirsiz,evet,basarili
+2026-06-27,10:09,1050,1,"Komşularımın da interneti yok, genel bir sorun mu çok mağdur oldum?","Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",internet_kesintisi,bolge_kesintisi,hayir,fallback
+2026-06-27,10:12,1050,2,"Hala çözülmedi, bir daha anlatıyorum: komşularımın da interneti yok, genel bir sorun mu","Bu konuda size bir temsilcimiz daha iyi yardımcı olabilir, aktarıyorum.",internet_kesintisi,bolge_kesintisi,hayir,yetkiliye_yonlendirme
+2026-06-27,19:38,1119,1,"Selam, modem elektrigi aliyor ama acilmiyor cok magdur oldum","Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",modem_ariza,modem_acilmiyor,hayir,fallback
+2026-06-29,11:02,1135,1,"İyi günler, bölgesel kesinti varsa ne zaman düzelecek","Adresinizde şu an aktif bir altyapı arızası görünüyor, ekiplerimiz sahada çalışıyor.",internet_kesintisi,bolge_kesintisi,hayir,basarili
+2026-06-29,12:02,1170,1,Wifi çok yavaş ama kabloyla da fark yok,"Bölgenizdeki kapasite raporunu talep ettim, sonucu sizinle paylaşacağım.",hiz_performans,belirsiz,evet,basarili
+2026-06-29,14:50,1331,1,"Merhaba, odenmemis faturam var mi?","Sistemde ödenmemiş faturanız görünmüyor, son ödemeniz geçen ay alınmış.",fatura_paket,borc_sorgu,hayir,basarili
+2026-06-29,17:01,1415,1,"Selam, daha yeni model bir modem alabilir miyim","Modem yenileme hakkınız bulunuyor, kargo süreci başlatıldı.",modem_ariza,cihaz_degisim_talebi,hayir,basarili
+2026-06-29,18:11,1086,1,"İnternetim çok yavaş, bazen hiç gitmiyor yardımcı olur musunuz","Hattınızda gecikme ölçümü başlattım, sonuçlara göre yönlendirme yapacağım.",hiz_performans,belirsiz,evet,basarili
+2026-06-29,19:05,1184,1,Hattımı iptal etmek istiyorum ne yapmalıyım,"Hattınız ödeme gecikmesi nedeniyle kapatılmış, ödeme sonrası otomatik açılacaktır.",hat_sim,hat_durumu,hayir,basarili
+2026-06-29,20:39,1436,1,Sorun bir türlü çözülmüyor,"Hattınızı yeniden aktif ettim, birkaç dakika içinde kullanabilirsiniz.",hat_sim,belirsiz,evet,basarili
+2026-06-29,21:28,1151,1,"Merhaba, hem yavaş hem kopuyor?","Arıza kaydınız açıldı, kayıt numaranız üzerinden takip edebilirsiniz.",internet_kesintisi,belirsiz,evet,basarili
+2026-06-29,22:35,1039,1,"Merhaba, internetim tamamen kesildi, hic baglanamiyorum ne yapmaliyim","Hattınızı uzaktan yeniden başlattım, lütfen 5 dakika sonra tekrar deneyin.",internet_kesintisi,tam_kesinti,hayir,basarili
+2026-06-30,09:22,1075,1,Ödeme yaptim ama hala acilmadi,"Sizi uygun kampanyalara yönlendiriyorum, mevcut paketinizden %20 daha ucuz bir seçenek var.",fatura_paket,belirsiz,evet,basarili
+2026-06-30,09:27,1389,1,"Baglantim surekli dusuyor, kesik kesik gidiyor","Sorunuzu anlamadım, biraz daha detay verebilir misiniz?",internet_kesintisi,kesintili_baglanti,hayir,fallback
+2026-06-30,09:30,1389,2,"Hala çözülmedi, bir daha anlatıyorum: bağlantım sürekli düşüyor, kesik kesik gidiyor","Konunuzu ilgili birime aktarıyorum, bir uzmanımız sizi arayacaktır.",internet_kesintisi,kesintili_baglanti,hayir,yetkiliye_yonlendirme
+2026-06-30,11:41,1420,1,"Merhabalar, fatura tutarım neden bu kadar yüksek geldi","Fatura itirazınızı oluşturdum, 24 saat içinde sonuç bilgisi tarafınıza iletilecek.",fatura_paket,fatura_itiraz,hayir,basarili
+2026-06-30,14:53,1344,1,Hız düşüklüğünden şikayetçiyim ne yapmalıyım?,"Hattınızda hız testi başlattım, sonuçlara göre gerekirse teknik ekip yönlendirmesi yapacağım.",hiz_performans,genel_yavaslik,hayir,basarili
+2026-06-30,15:08,1527,1,"Merhaba, modem elektrigi aliyor ama acilmiyor cok magdur oldum","Modeminizin garanti durumunu kontrol ettim, ücretsiz değişim hakkınız var, kargo ile göndereceğiz.",modem_ariza,modem_acilmiyor,hayir,basarili
+2026-06-30,16:09,1288,1,"İnternetim tamamen kesildi, hic baglanamiyorum","Hattınızda arıza kaydı oluşturdum, teknik ekip en kısa sürede sizinle iletişime geçecek.",internet_kesintisi,tam_kesinti,hayir,basarili
+2026-06-30,16:50,1480,1,"Merhabalar, borcumu öğrenebilir miyim ne yapmalıyım","Güncel borcunuz 340 TL, son ödeme tarihiniz bu ayın 18'i.",fatura_paket,borc_sorgu,hayir,basarili
+2026-06-30,20:30,1526,1,Modemim aşırı ısınıyor ve kapanıyor,"Sorunuzu anlamadım, biraz daha detay verebilir misiniz?",modem_ariza,fiziksel_hasar,hayir,fallback
+2026-06-30,20:32,1226,1,"Selam, sadece belli saatlerde yavaşlıyor yardımcı olur musunuz",Yoğunluk kaynaklı yavaşlama için hat profilinizi güncelledim.,hiz_performans,zamana_bagli,hayir,basarili
+2026-06-30,20:32,1526,2,"Anlamadınız galiba, tekrar söylüyorum: modemim aşırı ısınıyor ve kapanıyor","Konunuzu ilgili birime aktarıyorum, bir uzmanımız sizi arayacaktır.",modem_ariza,fiziksel_hasar,hayir,yetkiliye_yonlendirme
+2026-07-01,09:03,1584,1,"İyi günler, daha uygun bir kampanyalı pakete geçmek istiyorum acil?","Paket değişikliği talebinizi oluşturdum, bir sonraki fatura döneminde geçerli olacak.",fatura_paket,paket_degisikligi,hayir,basarili
+2026-07-01,10:55,1192,1,"İnternet hızım çok düşük, iş yapamıyorum ne yapmalıyım!","Modem konumunu değiştirmenizi öneririm, duvar ve metal yüzeyler sinyali zayıflatır.",hiz_performans,genel_yavaslik,hayir,basarili
+2026-07-01,12:33,1023,1,"Merhabalar, randevu saatimi değiştirmek istiyorum","Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",randevu_kurulum,randevu_degisiklik,hayir,fallback
+2026-07-01,12:34,1023,2,"Hala çözülmedi, bir daha anlatıyorum: randevu saatimi değiştirmek istiyorum","Bu talebinizi bir müşteri temsilcisine yönlendiriyorum, en kısa sürede sizinle iletişime geçilecek.",randevu_kurulum,randevu_degisiklik,hayir,yetkiliye_yonlendirme
+2026-07-01,18:53,1417,1,"Merhaba, semtimizde toplu bir arıza olduğunu duydum, doğru mu","Bölgenizde planlı bir bakım çalışması bulunuyor, tahmini bitiş süresi 2 saat.",internet_kesintisi,bolge_kesintisi,hayir,basarili
+2026-07-02,11:57,1313,1,"Merhabalar, semtimizde toplu bir arıza olduğunu duydum, doğru mu","Adresinizde şu an aktif bir altyapı arızası görünüyor, ekiplerimiz sahada çalışıyor.",internet_kesintisi,bolge_kesintisi,hayir,basarili
+2026-07-02,16:56,1472,1,"Merhaba, semtimizde toplu bir arıza olduğunu duydum, doğru mu","Bölgenizde toplu bir kesinti kaydı bulunmuyor, hattınızı ayrıca kontrol ediyorum.",internet_kesintisi,bolge_kesintisi,hayir,basarili
+2026-07-02,18:06,1198,1,İnternetim çok yavaş,"Bu talebinizi bir müşteri temsilcisine yönlendiriyorum, en kısa sürede sizinle iletişime geçilecek.",hiz_performans,genel_yavaslik,hayir,yetkiliye_yonlendirme
+2026-07-02,19:50,1095,1,"Selam, komşularımın da interneti yok, genel bir sorun mu","Adresinizde şu an aktif bir altyapı arızası görünüyor, ekiplerimiz sahada çalışıyor.",internet_kesintisi,bolge_kesintisi,hayir,basarili
+2026-07-02,20:11,1199,1,"Selam, gün içinde defalarca bağlantı kopuyor","Hat kalitenizde dalgalanma tespit ettim, teknik ekip yönlendirmesi yapıyorum.",internet_kesintisi,kesintili_baglanti,hayir,basarili
+2026-07-02,20:13,1456,1,Randevu saatimi değiştirmek istiyorum,"Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",randevu_kurulum,randevu_degisiklik,hayir,fallback
+2026-07-02,20:16,1456,2,Müşteri temsilcisine bağlanmak istiyorum,"Bu talebinizi bir müşteri temsilcisine yönlendiriyorum, en kısa sürede sizinle iletişime geçilecek.",randevu_kurulum,randevu_degisiklik,hayir,yetkiliye_yonlendirme
+2026-07-02,20:31,1094,1,Daha yeni model bir modem alabilir miyim,"Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",modem_ariza,cihaz_degisim_talebi,hayir,fallback
+2026-07-02,21:00,1286,1,Akşamları internet hızı düşüyor lütfen,Yoğunluk kaynaklı yavaşlama için hat profilinizi güncelledim.,hiz_performans,zamana_bagli,hayir,basarili
+2026-07-03,08:51,1144,1,Ödeme yaptim ama hala acilmadi,"Faturanızı inceledim, ek ücretin yurt dışı kullanımdan kaynaklandığını görüyorum.",fatura_paket,belirsiz,evet,basarili
+2026-07-03,10:40,1129,1,"İyi günler, ödeme yaptım ama hala açılmadı?","Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",fatura_paket,belirsiz,evet,fallback
+2026-07-03,10:45,1129,2,Müşteri temsilcisine bağlanmak istiyorum,"Konunuzu ilgili birime aktarıyorum, bir uzmanımız sizi arayacaktır.",fatura_paket,belirsiz,evet,yetkiliye_yonlendirme
+2026-07-03,11:49,1486,1,"Selam, bu ay faturam iki katına çıkmış","Fatura detayınızı e-posta adresinize gönderdim, kalem kalem inceleyebilirsiniz.",fatura_paket,fatura_itiraz,hayir,basarili
+2026-07-03,14:08,1566,1,"Merhaba, randevu saatimi değiştirmek istiyorum","Bu konuda size bir temsilcimiz daha iyi yardımcı olabilir, aktarıyorum.",randevu_kurulum,randevu_degisiklik,hayir,yetkiliye_yonlendirme
+2026-07-03,15:20,1435,1,"İyi günler, ek paket satın almak istiyorum","Hattınıza uygun üç kampanya bulunuyor, detaylarını iletiyorum.",fatura_paket,paket_degisikligi,hayir,basarili
+2026-07-03,16:21,1046,1,Kurulum için randevu oluşturabilir miyiz,"Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",randevu_kurulum,randevu_alma,hayir,fallback
+2026-07-03,18:10,1375,1,"İnternetim çok yavaş, bazen hiç gitmiyor ne yapmalıyım","Sorunuzu anlamadım, biraz daha detay verebilir misiniz?",hiz_performans,belirsiz,evet,fallback
+2026-07-03,18:11,1375,2,"Demin de söyledim ama tekrar yazıyorum: internetim çok yavaş, bazen hiç gitmiyor","Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",hiz_performans,belirsiz,evet,tekrarli_soru
+2026-07-03,20:09,1550,1,"Selam, sabahtan beri internetim yok yardımcı olur musunuz","Arıza kaydınız açıldı, kayıt numaranız üzerinden takip edebilirsiniz.",internet_kesintisi,tam_kesinti,hayir,basarili
+2026-07-03,20:23,1112,1,Paketimi değiştirmek istiyorum yardımcı olur musunuz?,"Hattınıza uygun üç kampanya bulunuyor, detaylarını iletiyorum.",fatura_paket,paket_degisikligi,hayir,basarili
+2026-07-04,12:15,1205,1,"Merhabalar, teknisyen randevusu almak istiyorum acil","Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",randevu_kurulum,randevu_alma,hayir,fallback
+2026-07-04,15:33,1570,1,En erken hangi güne randevu var,"Randevu talebiniz alındı, saat aralığı SMS ile bildirilecek.",randevu_kurulum,randevu_alma,hayir,basarili
+2026-07-04,17:12,1054,1,Taahhüt ettiğiniz hızın yarısını bile alamıyorum,"Hat mesafeniz nedeniyle maksimum hız sınırlı olabiliyor, detaylı ölçüm talebi oluşturdum.",hiz_performans,paket_hizi_alamama,hayir,basarili
+2026-07-04,18:16,1020,1,"İyi günler, faturadaki ek ücretin açıklamasını istiyorum ne yapmalıyım","Fatura detayınızı e-posta adresinize gönderdim, kalem kalem inceleyebilirsiniz.",fatura_paket,fatura_itiraz,hayir,basarili
+2026-07-05,19:31,1595,1,Dizi izlerken kalite otomatik düşüyor acil,"Hattınızda gecikme ölçümü başlattım, sonuçlara göre yönlendirme yapacağım.",hiz_performans,uygulama_bazli,hayir,basarili
+2026-07-05,21:28,1351,1,"Selam, randevu günü kimse gelmedi, haber de vermediniz","Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",randevu_kurulum,kurulum_gecikmesi,hayir,fallback
+2026-07-05,21:30,1351,2,"Hala çözülmedi, bir daha anlatıyorum: randevu günü kimse gelmedi, haber de vermediniz","Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",randevu_kurulum,kurulum_gecikmesi,hayir,tekrarli_soru
+2026-07-06,11:04,1318,1,"Merhaba, modemim aşırı ısınıyor ve kapanıyor","Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",modem_ariza,fiziksel_hasar,hayir,fallback
+2026-07-06,11:09,1318,2,Beni bir yetkiliye aktarın,"Bu talebinizi bir müşteri temsilcisine yönlendiriyorum, en kısa sürede sizinle iletişime geçilecek.",modem_ariza,fiziksel_hasar,hayir,yetkiliye_yonlendirme
+2026-07-06,12:02,1150,1,"Hız testinde çok düşük çıkıyor, paket hızımı almıyorum lütfen","Paketinizin üst limitini kontrol ettim, hattınızda kayıp tespit edildi, kayıt açıyorum.",hiz_performans,paket_hizi_alamama,hayir,basarili
+2026-07-06,12:57,1084,1,Hiçbir şey çalışmıyor,"Bu konuda size yardımcı olamıyorum, başka bir sorunuz var mı?",internet_kesintisi,belirsiz,evet,fallback
+2026-07-06,12:59,1084,2,Aynı sorunum devam ediyor: hiçbir şey çalışmıyor,"Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",internet_kesintisi,belirsiz,evet,tekrarli_soru
+2026-07-06,15:14,1534,1,"Selam, bölgesel kesinti varsa ne zaman düzelecek lütfen","Bölgenizde toplu bir kesinti kaydı bulunmuyor, hattınızı ayrıca kontrol ediyorum.",internet_kesintisi,bolge_kesintisi,hayir,basarili
+2026-07-06,16:43,1177,1,"Modem hiç açılmıyor, internetim de yok lütfen?","Sorunuzu anlamadım, biraz daha detay verebilir misiniz?",modem_ariza,modem_acilmiyor,hayir,fallback
+2026-07-06,18:17,1230,1,"Merhabalar, paketimi değiştirmek istiyorum ne yapmalıyım","Sizi uygun kampanyalara yönlendiriyorum, mevcut paketinizden %20 daha ucuz bir seçenek var.",fatura_paket,paket_degisikligi,hayir,basarili
+2026-07-06,18:38,1551,1,"Teknisyen gelmedi, randevum kaçtı çok mağdur oldum","Kurulum talebinizi kontrol ettim, 3 iş günü içinde planlanmış görünüyor.",randevu_kurulum,kurulum_gecikmesi,hayir,basarili
+2026-07-06,18:58,1605,1,"Merhabalar, ödeme yaptım ama hala açılmadı çok mağdur oldum","Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",fatura_paket,belirsiz,evet,fallback
+2026-07-06,18:59,1605,2,Tekrar ediyorum: ödeme yaptım ama hala açılmadı,"Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",fatura_paket,belirsiz,evet,tekrarli_soru
+2026-07-06,19:55,1393,1,"Selam, fatura son ödeme tarihi ne zaman","Güncel borcunuz 340 TL, son ödeme tarihiniz bu ayın 18'i.",fatura_paket,borc_sorgu,hayir,basarili
+2026-07-06,20:42,1097,1,"Merhaba, ödenmemiş faturam var mı lütfen","Toplam bakiyeniz 512 TL, ödeme kanallarını iletiyorum.",fatura_paket,borc_sorgu,hayir,basarili
+2026-07-06,20:58,1305,1,SIM kartımı aktifleştiremiyorum,"SIM kartınızı aktivasyon için sisteme tanımladım, 10 dakika içinde aktif olacaktır.",hat_sim,sim_islemleri,hayir,basarili
+2026-07-06,22:04,1143,1,"Selam, iki gündür internetim çalışmıyor lütfen?","Arıza kaydınız açıldı, kayıt numaranız üzerinden takip edebilirsiniz.",internet_kesintisi,tam_kesinti,hayir,basarili
+2026-07-06,22:59,1295,1,"Yeni modem talep etmek istiyorum, eskisi bozuldu?","Modem yenileme hakkınız bulunuyor, kargo süreci başlatıldı.",modem_ariza,cihaz_degisim_talebi,hayir,basarili
+2026-07-07,10:00,1213,1,Ödeme yaptım ama hala açılmadı acil?,"Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",fatura_paket,belirsiz,evet,fallback
+2026-07-07,11:50,1278,1,Hattimi gecici olarak dondurmak istiyorum,"Hat dondurma talebinizi oluşturdum, 6 aya kadar hattınızı dondurabilirsiniz.",hat_sim,hat_durumu,hayir,basarili
+2026-07-07,16:01,1246,1,"Merhabalar, numara taşıma işlemi ne kadar sürer","Numara taşıma talebinizi başlattım, işlem 1-2 iş günü içinde tamamlanacak.",hat_sim,numara_tasima,hayir,basarili
+2026-07-07,17:52,1036,1,Hattim neden kapali gorunuyor,"Hattınız ödeme gecikmesi nedeniyle kapatılmış, ödeme sonrası otomatik açılacaktır.",hat_sim,hat_durumu,hayir,basarili
+2026-07-07,20:02,1477,1,Online oyunda gecikme çok fazla ne yapmalıyım,"Kablolu bağlantı denemenizi öneririm, kablosuz bağlantıda gecikme daha yüksek olabilir.",hiz_performans,uygulama_bazli,hayir,basarili
+2026-07-07,20:13,1048,1,"Merhabalar, dün akşamdan beri hiç internet gelmiyor acil","Hattınızda arıza kaydı oluşturdum, teknik ekip en kısa sürede sizinle iletişime geçecek.",internet_kesintisi,tam_kesinti,hayir,basarili
+2026-07-07,20:49,1021,1,Bağlanamıyorum ne yapmalıyım!,"Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",internet_kesintisi,belirsiz,evet,fallback
+2026-07-07,20:53,1021,2,"Anlamadınız galiba, tekrar söylüyorum: bağlanamıyorum","Bu talebinizi bir müşteri temsilcisine yönlendiriyorum, en kısa sürede sizinle iletişime geçilecek.",internet_kesintisi,belirsiz,evet,yetkiliye_yonlendirme
+2026-07-08,14:09,1301,1,"Merhaba, mevcut tarifemi düşürmek istiyorum ne yapmalıyım!","Paket değişikliği talebinizi oluşturdum, bir sonraki fatura döneminde geçerli olacak.",fatura_paket,paket_degisikligi,hayir,basarili
+2026-07-08,16:52,1159,1,"İyi günler, ödenmemiş faturam var mı","Toplam bakiyeniz 512 TL, ödeme kanallarını iletiyorum.",fatura_paket,borc_sorgu,hayir,basarili
+2026-07-08,17:51,1126,1,"Merhaba, daha uygun bir kampanyali pakete gecmek istiyorum lutfen","Paket değişikliği talebinizi oluşturdum, bir sonraki fatura döneminde geçerli olacak.",fatura_paket,paket_degisikligi,hayir,basarili
+2026-07-08,21:00,1252,1,Sorun bir turlu cozulmuyor,"Adresinizde şu an aktif bir altyapı arızası görünüyor, ekiplerimiz sahada çalışıyor.",internet_kesintisi,belirsiz,evet,basarili
+2026-07-08,21:21,1522,1,"Selam, kaç gündür kurulum bekliyorum, kimse aramadı lütfen","Bu konuda size bir temsilcimiz daha iyi yardımcı olabilir, aktarıyorum.",randevu_kurulum,kurulum_gecikmesi,hayir,yetkiliye_yonlendirme
+2026-07-09,11:09,1440,1,Teknisyen randevusunu erkene alabilir miyim çok mağdur oldum,"Konunuzu ilgili birime aktarıyorum, bir uzmanımız sizi arayacaktır.",randevu_kurulum,randevu_degisiklik,hayir,yetkiliye_yonlendirme
+2026-07-09,12:40,1388,1,"İnternet birden gitti, hiçbir cihazda çalışmıyor","Hattınızı uzaktan yeniden başlattım, lütfen 5 dakika sonra tekrar deneyin.",internet_kesintisi,tam_kesinti,hayir,basarili
+2026-07-09,17:11,1214,1,100 Mbps paketim var ama 20 Mbps aliyorum cok magdur oldum,"Hat mesafeniz nedeniyle maksimum hız sınırlı olabiliyor, detaylı ölçüm talebi oluşturdum.",hiz_performans,paket_hizi_alamama,hayir,basarili
+2026-07-09,20:14,1578,1,Online oyunda gecikme çok fazla lütfen,"Kablolu bağlantı denemenizi öneririm, kablosuz bağlantıda gecikme daha yüksek olabilir.",hiz_performans,uygulama_bazli,hayir,basarili
+2026-07-10,09:59,1044,1,"Merhabalar, taşıma başvurum ne durumda","Taşıma başvurunuz onay aşamasında, sonucu SMS ile bildirilecek.",hat_sim,numara_tasima,hayir,basarili
+2026-07-10,15:37,1504,1,"İyi gunler, odeme yaptim ama hala acilmadi?","Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",fatura_paket,belirsiz,evet,fallback
+2026-07-10,17:15,1030,1,"Merhabalar, kurulum ne zaman yapılacak çok mağdur oldum","Kaçan randevunuz için yeni bir tarih oluşturdum, teknisyen sizi arayacak.",randevu_kurulum,kurulum_gecikmesi,hayir,basarili
+2026-07-10,18:18,1500,1,Hattimi gecici olarak dondurmak istiyorum lutfen,"Hattınızı yeniden aktif ettim, birkaç dakika içinde kullanabilirsiniz.",hat_sim,hat_durumu,hayir,basarili
+2026-07-10,20:41,1410,1,"Teknisyen gelmedi, randevum kaçtı?","Kaçan randevunuz için yeni bir tarih oluşturdum, teknisyen sizi arayacak.",randevu_kurulum,kurulum_gecikmesi,hayir,basarili
+2026-07-10,20:57,1164,1,"Selam, daha uygun bir kampanyalı pakete geçmek istiyorum lütfen","Sizi uygun kampanyalara yönlendiriyorum, mevcut paketinizden %20 daha ucuz bir seçenek var.",fatura_paket,paket_degisikligi,hayir,basarili
+2026-07-10,21:17,1585,1,Modemin ışıkları hiç yanmıyor çok mağdur oldum,"Modeminizin garanti durumunu kontrol ettim, ücretsiz değişim hakkınız var, kargo ile göndereceğiz.",modem_ariza,modem_acilmiyor,hayir,basarili
+2026-07-11,09:00,1324,1,Teknisyen randevusu almak istiyorum,"Randevunuzu yarın 14:00-16:00 saat aralığına oluşturdum, teknisyen sizi arayacaktır.",randevu_kurulum,randevu_alma,hayir,basarili
+2026-07-11,12:53,1470,1,"Merhaba, internet bazen çalışıyor bazen çok yavaş ne yapmalıyım","Sorunuzu anlamadım, biraz daha detay verebilir misiniz?",hiz_performans,belirsiz,evet,fallback
+2026-07-11,12:57,1470,2,Tekrar ediyorum: internet bazen çalışıyor bazen çok yavaş,"Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",hiz_performans,belirsiz,evet,tekrarli_soru
+2026-07-11,15:52,1111,1,"Merhabalar, komşularımın da interneti yok, genel bir sorun mu","Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",internet_kesintisi,bolge_kesintisi,hayir,fallback
+2026-07-11,15:54,1111,2,"Demin de söyledim ama tekrar yazıyorum: komşularımın da interneti yok, genel bir sorun mu","Bu konuda size bir temsilcimiz daha iyi yardımcı olabilir, aktarıyorum.",internet_kesintisi,bolge_kesintisi,hayir,yetkiliye_yonlendirme
+2026-07-11,18:46,1475,1,İki gündür internetim çalışmıyor acil,"Arıza kaydınız açıldı, kayıt numaranız üzerinden takip edebilirsiniz.",internet_kesintisi,tam_kesinti,hayir,basarili
+2026-07-12,10:54,1010,1,Kampanyalarınız hakkında bilgi alabilir miyim ne yapmalıyım,"Hattınıza uygun üç kampanya bulunuyor, detaylarını iletiyorum.",fatura_paket,paket_degisikligi,hayir,basarili
+2026-07-12,15:22,1284,1,"Selam, internet bazen çalışıyor bazen çok yavaş acil","Paketinizin üst limitini kontrol ettim, hattınızda kayıp tespit edildi, kayıt açıyorum.",hiz_performans,belirsiz,evet,basarili
+2026-07-12,15:31,1461,1,Hem yavaş hem kopuyor,"Kablolu bağlantı denemenizi öneririm, kablosuz bağlantıda gecikme daha yüksek olabilir.",hiz_performans,belirsiz,evet,basarili
+2026-07-12,18:23,1271,1,Hız düşüklüğünden şikayetçiyim lütfen,"Hattınızda hız testi başlattım, sonuçlara göre gerekirse teknik ekip yönlendirmesi yapacağım.",hiz_performans,genel_yavaslik,hayir,basarili
+2026-07-13,10:12,1209,1,Sayfalar çok geç açılıyor,"Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",hiz_performans,genel_yavaslik,hayir,fallback
+2026-07-13,10:15,1209,2,"Hala çözülmedi, bir daha anlatıyorum: sayfalar çok geç açılıyor","Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",hiz_performans,genel_yavaslik,hayir,tekrarli_soru
+2026-07-13,11:46,1274,1,100 Mbps paketim var ama 20 Mbps alıyorum,"Hız ölçüm sonuçlarınızı teknik ekibe ilettim, 24 saat içinde dönüş yapılacak.",hiz_performans,paket_hizi_alamama,hayir,basarili
+2026-07-13,14:40,1490,1,"İyi günler, mevcut tarifemi düşürmek istiyorum çok mağdur oldum","Hattınıza uygun üç kampanya bulunuyor, detaylarını iletiyorum.",fatura_paket,paket_degisikligi,hayir,basarili
+2026-07-13,16:43,1280,1,En erken hangi güne randevu var,"Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",randevu_kurulum,randevu_alma,hayir,fallback
+2026-07-13,16:44,1280,2,Aynı sorunum devam ediyor: en erken hangi güne randevu var,"Bu konuda size bir temsilcimiz daha iyi yardımcı olabilir, aktarıyorum.",randevu_kurulum,randevu_alma,hayir,yetkiliye_yonlendirme
+2026-07-13,16:44,1568,1,"Merhaba, kaç gündür kurulum bekliyorum, kimse aramadı","Gecikme için özür dileriz, talebinizi öncelikli listeye aldım.",randevu_kurulum,kurulum_gecikmesi,hayir,basarili
+2026-07-13,18:50,1539,1,Numara taşıma işlemi ne kadar sürer,"Numara taşıma talebinizi başlattım, işlem 1-2 iş günü içinde tamamlanacak.",hat_sim,numara_tasima,hayir,basarili
+2026-07-13,20:17,1156,1,"Merhabalar, randevumu haftaya ertelemek istiyorum","Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",randevu_kurulum,randevu_degisiklik,hayir,fallback
+2026-07-13,20:20,1156,2,"Anlamadınız galiba, tekrar söylüyorum: randevumu haftaya ertelemek istiyorum","Konunuzu ilgili birime aktarıyorum, bir uzmanımız sizi arayacaktır.",randevu_kurulum,randevu_degisiklik,hayir,yetkiliye_yonlendirme
+2026-07-13,20:52,1523,1,"Merhaba, bu ayki fatura tutarım nedir acil","Toplam bakiyeniz 512 TL, ödeme kanallarını iletiyorum.",fatura_paket,borc_sorgu,hayir,basarili
+2026-07-14,09:11,1596,1,eSIM'e geçiş yapabilir miyim çok mağdur oldum,"Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",hat_sim,sim_islemleri,hayir,fallback
+2026-07-14,09:12,1596,2,Beni bir yetkiliye aktarın,"Bu talebinizi bir müşteri temsilcisine yönlendiriyorum, en kısa sürede sizinle iletişime geçilecek.",hat_sim,sim_islemleri,hayir,yetkiliye_yonlendirme
+2026-07-14,09:57,1582,1,Modemin ışıkları hiç yanmıyor,"Modeminizin garanti durumunu kontrol ettim, ücretsiz değişim hakkınız var, kargo ile göndereceğiz.",modem_ariza,modem_acilmiyor,hayir,basarili
+2026-07-14,14:15,1193,1,Fatura tutarım neden bu kadar yüksek geldi!,"Fatura itirazınızı oluşturdum, 24 saat içinde sonuç bilgisi tarafınıza iletilecek.",fatura_paket,fatura_itiraz,hayir,basarili
+2026-07-14,17:17,1593,1,"Merhaba, internetim tamamen gitti, telefondan yazıyorum lütfen?","Konunuzu ilgili birime aktarıyorum, bir uzmanımız sizi arayacaktır.",internet_kesintisi,tam_kesinti,hayir,yetkiliye_yonlendirme
+2026-07-14,19:58,1287,1,Param gitti ama hizmet yok acil,"Hattınıza uygun üç kampanya bulunuyor, detaylarını iletiyorum.",fatura_paket,belirsiz,evet,basarili
+2026-07-14,20:05,1560,1,Randevu almak icin ne yapmam gerekiyor yardimci olur musunuz,"Randevunuzu yarın 14:00-16:00 saat aralığına oluşturdum, teknisyen sizi arayacaktır.",randevu_kurulum,randevu_alma,hayir,basarili
+2026-07-14,20:30,1425,1,Sadece belli saatlerde yavaşlıyor çok mağdur oldum,Yoğunluk kaynaklı yavaşlama için hat profilinizi güncelledim.,hiz_performans,zamana_bagli,hayir,basarili
+2026-07-14,21:10,1153,1,"Merhabalar, kaç gündür kurulum bekliyorum, kimse aramadı","Bu talebinizi bir müşteri temsilcisine yönlendiriyorum, en kısa sürede sizinle iletişime geçilecek.",randevu_kurulum,kurulum_gecikmesi,hayir,yetkiliye_yonlendirme
+2026-07-15,11:49,1323,1,"Merhabalar, teknisyen randevusu almak istiyorum lutfen","Size en yakın uygun randevu perşembe sabahı, oluşturmamı ister misiniz?",randevu_kurulum,randevu_alma,hayir,basarili
+2026-07-15,15:23,1268,1,Randevumu haftaya ertelemek istiyorum lütfen,"Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",randevu_kurulum,randevu_degisiklik,hayir,fallback
+2026-07-15,16:55,1430,1,"İyi günler, teknisyen randevusunu erkene alabilir miyim","Bu konuda size yardımcı olamıyorum, başka bir sorunuz var mı?",randevu_kurulum,randevu_degisiklik,hayir,fallback
+2026-07-15,16:59,1525,1,"Mahallede herkesin interneti gitmiş, kesinti mi var","Adresinizde şu an aktif bir altyapı arızası görünüyor, ekiplerimiz sahada çalışıyor.",internet_kesintisi,bolge_kesintisi,hayir,basarili
+2026-07-15,19:51,1443,1,Randevu almak için ne yapmam gerekiyor çok mağdur oldum,"Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",randevu_kurulum,randevu_alma,hayir,fallback
+2026-07-15,20:07,1400,1,"İnternet sık sık kesiliyor, çok rahatsız edici çok mağdur oldum","Hat kalitenizde dalgalanma tespit ettim, teknik ekip yönlendirmesi yapıyorum.",internet_kesintisi,kesintili_baglanti,hayir,basarili
+2026-07-15,20:29,1127,1,Borcumu öğrenebilir miyim acil,"Toplam bakiyeniz 512 TL, ödeme kanallarını iletiyorum.",fatura_paket,borc_sorgu,hayir,basarili
+2026-07-15,20:29,1519,1,Bu ay faturam iki katına çıkmış,"Fatura itirazınızı oluşturdum, 24 saat içinde sonuç bilgisi tarafınıza iletilecek.",fatura_paket,fatura_itiraz,hayir,basarili
+2026-07-15,21:30,1353,1,Daha uygun bir kampanyali pakete gecmek istiyorum,"Paket değişikliği talebinizi oluşturdum, bir sonraki fatura döneminde geçerli olacak.",fatura_paket,paket_degisikligi,hayir,basarili
+2026-07-15,22:08,1463,1,"Selam, internetim gitti geldi gidiyor sürekli","Hattınızda kararlılık testi başlattım, sonuçları birkaç dakika içinde paylaşacağım.",internet_kesintisi,kesintili_baglanti,hayir,basarili
+2026-07-15,22:23,1546,1,Randevu saatimi değiştirmek istiyorum,"Randevunuzu talep ettiğiniz güne taşıdım, onay SMS'i gönderildi.",randevu_kurulum,randevu_degisiklik,hayir,basarili
+2026-07-16,14:31,1035,1,"Bağlantım sürekli düşüyor, kesik kesik gidiyor çok mağdur oldum","Hattınızda kararlılık testi başlattım, sonuçları birkaç dakika içinde paylaşacağım.",internet_kesintisi,kesintili_baglanti,hayir,basarili
+2026-07-16,14:46,1601,1,"Selam, güncel borcum ne kadar!","Toplam bakiyeniz 512 TL, ödeme kanallarını iletiyorum.",fatura_paket,borc_sorgu,hayir,basarili
+2026-07-16,17:45,1292,1,"Selam, dün akşamdan beri hiç internet gelmiyor","Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",internet_kesintisi,tam_kesinti,hayir,fallback
+2026-07-16,17:47,1292,2,"Anlamadınız galiba, tekrar söylüyorum: dün akşamdan beri hiç internet gelmiyor","Bu konuda size bir temsilcimiz daha iyi yardımcı olabilir, aktarıyorum.",internet_kesintisi,tam_kesinti,hayir,yetkiliye_yonlendirme
+2026-07-16,19:30,1450,1,"Selam, randevumu iptal etmek istiyorum lütfen","Randevunuzu iptal ettim, dilediğinizde yeni bir tarih için tekrar yazabilirsiniz.",randevu_kurulum,randevu_degisiklik,hayir,basarili
+2026-07-17,09:32,1116,1,"Kurulum yapilmadi, modem de gelmedi","Gecikme için özür dileriz, talebinizi öncelikli listeye aldım.",randevu_kurulum,kurulum_gecikmesi,hayir,basarili
+2026-07-17,11:21,1572,1,"Teknisyen gelmedi, randevum kaçtı?","Kaçan randevunuz için yeni bir tarih oluşturdum, teknisyen sizi arayacak.",randevu_kurulum,kurulum_gecikmesi,hayir,basarili
+2026-07-17,12:15,1478,1,İki haftadır kurulum bekliyorum,"Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",randevu_kurulum,kurulum_gecikmesi,hayir,fallback
+2026-07-17,12:17,1478,2,"Hala çözülmedi, bir daha anlatıyorum: iki haftadır kurulum bekliyorum","Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",randevu_kurulum,kurulum_gecikmesi,hayir,tekrarli_soru
+2026-07-17,13:59,1413,1,"Merhaba, wifi çok yavaş ama kabloyla da fark yok","Bu konuda size yardımcı olamıyorum, başka bir sorunuz var mı?",internet_kesintisi,belirsiz,evet,fallback
+2026-07-17,14:03,1413,2,Tekrar ediyorum: wifi çok yavaş ama kabloyla da fark yok,"Konunuzu ilgili birime aktarıyorum, bir uzmanımız sizi arayacaktır.",internet_kesintisi,belirsiz,evet,yetkiliye_yonlendirme
+2026-07-17,16:03,1154,1,Borcumu öğrenebilir miyim,"Güncel borcunuz 340 TL, son ödeme tarihiniz bu ayın 18'i.",fatura_paket,borc_sorgu,hayir,basarili
+2026-07-18,12:26,1055,1,"Selam, kurulum yapılmadı, modem de gelmedi","Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",randevu_kurulum,kurulum_gecikmesi,hayir,fallback
+2026-07-18,19:00,1494,1,Kampanyalarınız hakkında bilgi alabilir miyim lütfen,"Paket değişikliği talebinizi oluşturdum, bir sonraki fatura döneminde geçerli olacak.",fatura_paket,paket_degisikligi,hayir,basarili
+2026-07-18,19:33,1606,1,Gün içinde defalarca bağlantı kopuyor?,"Modeminizi 30 saniye kapatıp açmanızı rica ederim, bu genellikle kopma sorununu giderir.",internet_kesintisi,kesintili_baglanti,hayir,basarili
+2026-07-19,15:36,1599,1,Hafta sonları internet çok yavaşlıyor?,"Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",hiz_performans,zamana_bagli,hayir,fallback
+2026-07-20,10:07,1279,1,Hızımı yükseltmek için paket değişikliği yapmak istiyorum,"Paket değişikliği talebinizi oluşturdum, bir sonraki fatura döneminde geçerli olacak.",fatura_paket,paket_degisikligi,hayir,basarili
+2026-07-20,14:16,1105,1,"İnternetim tamamen gitti, telefondan yazıyorum acil","Hattınızda arıza kaydı oluşturdum, teknik ekip en kısa sürede sizinle iletişime geçecek.",internet_kesintisi,tam_kesinti,hayir,basarili
+2026-07-20,17:15,1037,1,Ödeme yaptım ama hala açılmadı ne yapmalıyım?,"Bu konuda size yardımcı olamıyorum, başka bir sorunuz var mı?",fatura_paket,belirsiz,evet,fallback
+2026-07-20,17:17,1037,2,Aynı sorunum devam ediyor: ödeme yaptım ama hala açılmadı,"Konunuzu ilgili birime aktarıyorum, bir uzmanımız sizi arayacaktır.",fatura_paket,belirsiz,evet,yetkiliye_yonlendirme
+2026-07-20,17:40,1282,1,"İnternet birden gitti, hiçbir cihazda çalışmıyor","Hattınızda arıza kaydı oluşturdum, teknik ekip en kısa sürede sizinle iletişime geçecek.",internet_kesintisi,tam_kesinti,hayir,basarili
+2026-07-20,18:04,1449,1,Faturama tanımadığım bir hizmet eklenmiş acil,"Fatura detayınızı e-posta adresinize gönderdim, kalem kalem inceleyebilirsiniz.",fatura_paket,fatura_itiraz,hayir,basarili
+2026-07-20,18:28,1373,1,"İyi günler, iki gündür internetim çalışmıyor","Arıza kaydınız açıldı, kayıt numaranız üzerinden takip edebilirsiniz.",internet_kesintisi,tam_kesinti,hayir,basarili
+2026-07-20,19:22,1530,1,Bu ayki fatura tutarım nedir çok mağdur oldum,"Güncel borcunuz 340 TL, son ödeme tarihiniz bu ayın 18'i.",fatura_paket,borc_sorgu,hayir,basarili
+2026-07-20,21:37,1466,1,"Selam, fatura son ödeme tarihi ne zaman yardımcı olur musunuz","Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",fatura_paket,borc_sorgu,hayir,fallback
+2026-07-20,21:39,1466,2,"Anlamadınız galiba, tekrar söylüyorum: fatura son ödeme tarihi ne zaman","Bu talebinizi bir müşteri temsilcisine yönlendiriyorum, en kısa sürede sizinle iletişime geçilecek.",fatura_paket,borc_sorgu,hayir,yetkiliye_yonlendirme
+2026-07-21,15:04,1591,1,Teknisyen randevusunu erkene alabilir miyim?,"Randevunuzu iptal ettim, dilediğinizde yeni bir tarih için tekrar yazabilirsiniz.",randevu_kurulum,randevu_degisiklik,hayir,basarili
+2026-07-21,18:15,1289,1,"Merhabalar, bölgemizde genel bir kesinti mi var","Bölgenizde toplu bir kesinti kaydı bulunmuyor, hattınızı ayrıca kontrol ediyorum.",internet_kesintisi,bolge_kesintisi,hayir,basarili
+2026-07-21,18:46,1106,1,"Selam, toplantıda kameram sürekli donuyor ne yapmalıyım","Kablolu bağlantı denemenizi öneririm, kablosuz bağlantıda gecikme daha yüksek olabilir.",hiz_performans,uygulama_bazli,hayir,basarili
+2026-07-21,19:00,1163,1,"Merhaba, hattımı geçici olarak dondurmak istiyorum acil","Hat dondurma talebinizi oluşturdum, 6 aya kadar hattınızı dondurabilirsiniz.",hat_sim,hat_durumu,hayir,basarili
+2026-07-21,19:06,1051,1,"Selam, bağlantım sürekli düşüyor, kesik kesik gidiyor","Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",internet_kesintisi,kesintili_baglanti,hayir,fallback
+2026-07-21,20:03,1256,1,En erken hangi güne randevu var ne yapmalıyım,"Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",randevu_kurulum,randevu_alma,hayir,fallback
+2026-07-21,20:07,1256,2,Müşteri temsilcisine bağlanmak istiyorum,"Konunuzu ilgili birime aktarıyorum, bir uzmanımız sizi arayacaktır.",randevu_kurulum,randevu_alma,hayir,yetkiliye_yonlendirme
+2026-07-21,20:28,1496,1,"Semtimizde toplu bir arıza olduğunu duydum, doğru mu çok mağdur oldum","Adresinizde şu an aktif bir altyapı arızası görünüyor, ekiplerimiz sahada çalışıyor.",internet_kesintisi,bolge_kesintisi,hayir,basarili
+2026-07-21,20:41,1229,1,"Selam, teknisyen randevusunu erkene alabilir miyim","Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",randevu_kurulum,randevu_degisiklik,hayir,fallback
+2026-07-21,21:02,1608,1,"Hattım çalışmıyor, ne yapmalıyım","Taşıma başvurunuz onay aşamasında, sonucu SMS ile bildirilecek.",hat_sim,belirsiz,evet,basarili
+2026-07-21,22:28,1079,1,"Selam, geçen ayki faturamı itiraz etmek istiyorum yardımcı olur musunuz","Fatura itirazınızı oluşturdum, 24 saat içinde sonuç bilgisi tarafınıza iletilecek.",fatura_paket,fatura_itiraz,hayir,basarili
+2026-07-21,22:39,1452,1,"Merhaba, hattımı geçici olarak dondurmak istiyorum","Hat dondurma talebinizi oluşturdum, 6 aya kadar hattınızı dondurabilirsiniz.",hat_sim,hat_durumu,hayir,basarili
+2026-07-22,12:00,1306,1,"Merhaba, sabahtan beri internetim yok","Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",internet_kesintisi,tam_kesinti,hayir,fallback
+2026-07-22,12:01,1306,2,Aynı sorunum devam ediyor: sabahtan beri internetim yok,"Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",internet_kesintisi,tam_kesinti,hayir,tekrarli_soru
+2026-07-22,13:27,1445,1,"İyi günler, sIM kartım okunmuyor, arızalı galiba","Bu konuda size yardımcı olamıyorum, başka bir sorunuz var mı?",hat_sim,sim_islemleri,hayir,fallback
+2026-07-22,13:29,1445,2,"Hala çözülmedi, bir daha anlatıyorum: sım kartım okunmuyor, arızalı galiba","Sorunuzu anlamadım, biraz daha detay verebilir misiniz?",hat_sim,sim_islemleri,hayir,tekrarli_soru
+2026-07-22,17:21,1372,1,"Komşularımın da interneti yok, genel bir sorun mu?","Bu talebinizi bir müşteri temsilcisine yönlendiriyorum, en kısa sürede sizinle iletişime geçilecek.",internet_kesintisi,bolge_kesintisi,hayir,yetkiliye_yonlendirme
+2026-07-22,17:37,1556,1,Kurulum için randevu oluşturabilir miyiz çok mağdur oldum,"Randevunuzu yarın 14:00-16:00 saat aralığına oluşturdum, teknisyen sizi arayacaktır.",randevu_kurulum,randevu_alma,hayir,basarili
+2026-07-22,18:15,1266,1,Gece geç saatlerde hız normale dönüyor acil,"Bölgenizdeki kapasite raporunu talep ettim, sonucu sizinle paylaşacağım.",hiz_performans,zamana_bagli,hayir,basarili
+2026-07-22,18:47,1462,1,"Selam, semtimizde toplu bir arıza olduğunu duydum, doğru mu çok mağdur oldum","Adresinizde şu an aktif bir altyapı arızası görünüyor, ekiplerimiz sahada çalışıyor.",internet_kesintisi,bolge_kesintisi,hayir,basarili
+2026-07-22,18:52,1085,1,"Modem hiç açılmıyor, internetim de yok ne yapmalıyım?","Adaptörü farklı bir prizde denemenizi rica ederim, sorun devam ederse değişim başlatacağım.",modem_ariza,modem_acilmiyor,hayir,basarili
+2026-07-22,19:34,1310,1,"İyi günler, eski modemimi değiştirmek istiyorum","Sorunuzu anlamadım, biraz daha detay verebilir misiniz?",modem_ariza,cihaz_degisim_talebi,hayir,fallback
+2026-07-22,20:30,1123,1,"İyi günler, bu ayki fatura tutarım nedir","Toplam bakiyeniz 512 TL, ödeme kanallarını iletiyorum.",fatura_paket,borc_sorgu,hayir,basarili
+2026-07-23,13:41,1275,1,Daha yeni model bir modem alabilir miyim lütfen,"Cihaz yenileme talebinizi oluşturdum, uygunluk kontrolü sonrası bilgi verilecek.",modem_ariza,cihaz_degisim_talebi,hayir,basarili
+2026-07-23,17:16,1194,1,Modemim aşırı ısınıyor ve kapanıyor çok mağdur oldum,"Yedek parça talebiniz alındı, kargo takip numarası SMS ile iletilecek.",modem_ariza,fiziksel_hasar,hayir,basarili
+2026-07-23,17:43,1363,1,İki haftadır kurulum bekliyorum ne yapmalıyım?,"Kaçan randevunuz için yeni bir tarih oluşturdum, teknisyen sizi arayacak.",randevu_kurulum,kurulum_gecikmesi,hayir,basarili
+2026-07-23,18:13,1600,1,"İnternetim cok yavas, bazen hic gitmiyor","Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",internet_kesintisi,belirsiz,evet,fallback
+2026-07-23,21:15,1503,1,Daha yeni model bir modem alabilir miyim lütfen!,"Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",modem_ariza,cihaz_degisim_talebi,hayir,fallback
+2026-07-23,21:30,1514,1,"Merhaba, sabahtan beri internetim yok ne yapmalıyım","Arıza kaydınız açıldı, kayıt numaranız üzerinden takip edebilirsiniz.",internet_kesintisi,tam_kesinti,hayir,basarili
+2026-07-24,10:47,1316,1,Akşamları internet hızı düşüyor acil!,"Sorunuzu anlamadım, biraz daha detay verebilir misiniz?",hiz_performans,zamana_bagli,hayir,fallback
+2026-07-24,11:14,1311,1,"Merhabalar, internetim gitti geldi gidiyor sürekli","Hattınızda kararlılık testi başlattım, sonuçları birkaç dakika içinde paylaşacağım.",internet_kesintisi,kesintili_baglanti,hayir,basarili
+2026-07-24,11:22,1248,1,Ek paket satın almak istiyorum,"Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",fatura_paket,paket_degisikligi,hayir,fallback
+2026-07-24,11:23,1248,2,"Hala çözülmedi, bir daha anlatıyorum: ek paket satın almak istiyorum","Konunuzu ilgili birime aktarıyorum, bir uzmanımız sizi arayacaktır.",fatura_paket,paket_degisikligi,hayir,yetkiliye_yonlendirme
+2026-07-24,14:06,1263,1,"Selam, randevu günü kimse gelmedi, haber de vermediniz","Gecikme için özür dileriz, talebinizi öncelikli listeye aldım.",randevu_kurulum,kurulum_gecikmesi,hayir,basarili
+2026-07-24,14:40,1227,1,"Merhaba, hattımı iptal etmek istiyorum ne yapmalıyım","Hattınızı yeniden aktif ettim, birkaç dakika içinde kullanabilirsiniz.",hat_sim,hat_durumu,hayir,basarili
+2026-07-24,14:41,1620,1,Kurulum için randevu oluşturabilir miyiz,"Randevu talebiniz alındı, saat aralığı SMS ile bildirilecek.",randevu_kurulum,randevu_alma,hayir,basarili
+2026-07-24,14:53,1250,1,"Merhaba, modemim asiri isiniyor ve kapaniyor","Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",modem_ariza,fiziksel_hasar,hayir,fallback
+2026-07-24,18:59,1444,1,Her yarım saatte bir internet kopuyor çok mağdur oldum!,"Modeminizi 30 saniye kapatıp açmanızı rica ederim, bu genellikle kopma sorununu giderir.",internet_kesintisi,kesintili_baglanti,hayir,basarili
+2026-07-24,20:36,1576,1,"SIM kartım okunmuyor, arızalı galiba acil","Yeni SIM kart talebiniz alındı, en yakın bayiden teslim alabilirsiniz.",hat_sim,sim_islemleri,hayir,basarili
+2026-07-25,09:25,1270,1,Toplantıda kameram sürekli donuyor?,"Hattınızda gecikme ölçümü başlattım, sonuçlara göre yönlendirme yapacağım.",hiz_performans,uygulama_bazli,hayir,basarili
+2026-07-25,11:34,1236,1,"Selam, her yarim saatte bir internet kopuyor ne yapmaliyim","Bu talebinizi bir müşteri temsilcisine yönlendiriyorum, en kısa sürede sizinle iletişime geçilecek.",internet_kesintisi,kesintili_baglanti,hayir,yetkiliye_yonlendirme
+2026-07-25,17:50,1006,1,"Merhabalar, kaç gündür kurulum bekliyorum, kimse aramadı lütfen?","Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",randevu_kurulum,kurulum_gecikmesi,hayir,fallback
+2026-07-25,21:19,1069,1,"SIM kartım okunmuyor, arızalı galiba yardımcı olur musunuz","SIM kartınızı aktivasyon için sisteme tanımladım, 10 dakika içinde aktif olacaktır.",hat_sim,sim_islemleri,hayir,basarili
+2026-07-26,09:10,1176,1,Faturama tanımadığım bir hizmet eklenmiş çok mağdur oldum,"Faturanızı inceledim, ek ücretin yurt dışı kullanımdan kaynaklandığını görüyorum.",fatura_paket,fatura_itiraz,hayir,basarili
+2026-07-26,09:57,1492,1,"Merhabalar, hafta sonları internet çok yavaşlıyor ne yapmalıyım","Bölgenizdeki kapasite raporunu talep ettim, sonucu sizinle paylaşacağım.",hiz_performans,zamana_bagli,hayir,basarili
+2026-07-26,20:10,1356,1,Geçen ayki faturamı itiraz etmek istiyorum,"Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",fatura_paket,fatura_itiraz,hayir,fallback
+2026-07-26,21:28,1319,1,Kampanyalarınız hakkında bilgi alabilir miyim ne yapmalıyım,"Paket değişikliği talebinizi oluşturdum, bir sonraki fatura döneminde geçerli olacak.",fatura_paket,paket_degisikligi,hayir,basarili
+2026-07-27,09:21,1455,1,"İnternetim tamamen gitti, telefondan yazıyorum lütfen","Hattınızda arıza kaydı oluşturdum, teknik ekip en kısa sürede sizinle iletişime geçecek.",internet_kesintisi,tam_kesinti,hayir,basarili
+2026-07-27,09:40,1038,1,"Merhaba, internet gelmiyor!","Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",modem_ariza,belirsiz,evet,fallback
+2026-07-27,09:42,1038,2,Aynı sorunum devam ediyor: internet gelmiyor,"Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",modem_ariza,belirsiz,evet,tekrarli_soru
+2026-07-27,16:42,1231,1,"Merhaba, dizi izlerken kalite otomatik düşüyor?","Hattınızda gecikme ölçümü başlattım, sonuçlara göre yönlendirme yapacağım.",hiz_performans,uygulama_bazli,hayir,basarili
+2026-07-27,17:50,1512,1,Ödenmemiş faturam var mı lütfen,"Toplam bakiyeniz 512 TL, ödeme kanallarını iletiyorum.",fatura_paket,borc_sorgu,hayir,basarili
+2026-07-27,18:23,1465,1,Bu ayki fatura tutarım nedir lütfen,"Toplam bakiyeniz 512 TL, ödeme kanallarını iletiyorum.",fatura_paket,borc_sorgu,hayir,basarili
+2026-07-27,18:24,1581,1,"İyi gunler, teknisyen randevusunu erkene alabilir miyim","Erken randevu için bekleme listesine eklendiniz, yer açılırsa bilgilendirileceksiniz.",randevu_kurulum,randevu_degisiklik,hayir,basarili
+2026-07-27,19:05,1590,1,"Merhabalar, eSIM'e geçiş yapabilir miyim","SIM kartınızı aktivasyon için sisteme tanımladım, 10 dakika içinde aktif olacaktır.",hat_sim,sim_islemleri,hayir,basarili
+2026-07-27,19:11,1439,1,"Merhabalar, randevumu haftaya ertelemek istiyorum yardımcı olur musunuz","Randevunuzu iptal ettim, dilediğinizde yeni bir tarih için tekrar yazabilirsiniz.",randevu_kurulum,randevu_degisiklik,hayir,basarili
+2026-07-27,21:04,1077,1,"İyi günler, randevu saatimi değiştirmek istiyorum lütfen","Bu talebi işleyemiyorum, lütfen farklı bir şekilde belirtir misiniz?",randevu_kurulum,randevu_degisiklik,hayir,fallback
+2026-07-27,21:06,1077,2,Tekrar ediyorum: randevu saatimi değiştirmek istiyorum,"Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",randevu_kurulum,randevu_degisiklik,hayir,tekrarli_soru
+2026-07-28,10:46,1428,1,"İyi günler, modem kablosu koptu, yeni kablo lazım","Adaptör kablosu talebinizi oluşturdum, 3-5 iş günü içinde adresinize ulaşacak.",modem_ariza,fiziksel_hasar,hayir,basarili
+2026-07-28,12:51,1422,1,"Hattim calismiyor, ne yapmaliyim","Sorunuzu anlamadım, biraz daha detay verebilir misiniz?",hat_sim,belirsiz,evet,fallback
+2026-07-28,12:52,1422,2,"Demin de söyledim ama tekrar yazıyorum: hattım çalışmıyor, ne yapmalıyım","Bu talebinizi bir müşteri temsilcisine yönlendiriyorum, en kısa sürede sizinle iletişime geçilecek.",hat_sim,belirsiz,evet,yetkiliye_yonlendirme
+2026-07-28,13:00,1060,1,"Yeni modem talep etmek istiyorum, eskisi bozuldu","Modem yenileme hakkınız bulunuyor, kargo süreci başlatıldı.",modem_ariza,cihaz_degisim_talebi,hayir,basarili
+2026-07-28,16:18,1223,1,"Merhaba, kampanyalarınız hakkında bilgi alabilir miyim acil","Sizi uygun kampanyalara yönlendiriyorum, mevcut paketinizden %20 daha ucuz bir seçenek var.",fatura_paket,paket_degisikligi,hayir,basarili
+2026-07-28,16:46,1245,1,"İnternetim tamamen kesildi, hiç bağlanamıyorum yardımcı olur musunuz","Arıza kaydınız açıldı, kayıt numaranız üzerinden takip edebilirsiniz.",internet_kesintisi,tam_kesinti,hayir,basarili
+2026-07-28,18:12,1152,1,"Merhabalar, ek paket satın almak istiyorum ne yapmalıyım?","Sizi uygun kampanyalara yönlendiriyorum, mevcut paketinizden %20 daha ucuz bir seçenek var.",fatura_paket,paket_degisikligi,hayir,basarili
+2026-07-28,18:28,1179,1,Faturama tanımadığım bir hizmet eklenmiş ne yapmalıyım?,"Fatura detayınızı e-posta adresinize gönderdim, kalem kalem inceleyebilirsiniz.",fatura_paket,fatura_itiraz,hayir,basarili
+2026-07-28,19:05,1121,1,"Merhaba, gece geç saatlerde hız normale dönüyor?","Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",hiz_performans,zamana_bagli,hayir,fallback
+2026-07-28,19:06,1121,2,Aynı sorunum devam ediyor: gece geç saatlerde hız normale dönüyor,"Ne demek istediğinizi anlayamadım, sorunuzu yeniden yazar mısınız?",hiz_performans,zamana_bagli,hayir,tekrarli_soru
+2026-07-28,19:47,1481,1,Oyun oynarken ping çok yüksek çıkıyor,"Hattınızda gecikme ölçümü başlattım, sonuçlara göre yönlendirme yapacağım.",hiz_performans,uygulama_bazli,hayir,basarili
+2026-07-28,20:10,1161,1,Sayfalar çok geç açılıyor,"Modem konumunu değiştirmenizi öneririm, duvar ve metal yüzeyler sinyali zayıflatır.",hiz_performans,genel_yavaslik,hayir,basarili
+2026-07-28,20:32,1408,1,"İyi günler, bölgesel kesinti varsa ne zaman düzelecek!","Bölgenizde toplu bir kesinti kaydı bulunmuyor, hattınızı ayrıca kontrol ediyorum.",internet_kesintisi,bolge_kesintisi,hayir,basarili
+2026-07-28,20:33,1147,1,"İyi günler, semtimizde toplu bir arıza olduğunu duydum, doğru mu acil","Bölgenizde toplu bir kesinti kaydı bulunmuyor, hattınızı ayrıca kontrol ediyorum.",internet_kesintisi,bolge_kesintisi,hayir,basarili
+2026-07-28,20:42,1110,1,"Kaç gündür kurulum bekliyorum, kimse aramadı ne yapmalıyım","Kurulum talebinizi kontrol ettim, 3 iş günü içinde planlanmış görünüyor.",randevu_kurulum,kurulum_gecikmesi,hayir,basarili
+2026-07-29,09:44,1090,1,"Modemin ışıkları kırmızı yanıyor, internet yok","Üzgünüm, isteğinizi tam olarak anlayamadım. Lütfen tekrar ifade eder misiniz?",modem_ariza,belirsiz,evet,fallback
+2026-07-29,09:48,1090,2,Yetkiliye bağlayın lütfen,"Bu talebinizi bir müşteri temsilcisine yönlendiriyorum, en kısa sürede sizinle iletişime geçilecek.",modem_ariza,belirsiz,evet,yetkiliye_yonlendirme
+2026-07-29,12:11,1101,1,Modem portlarından biri çalışmıyor acil,"Adaptör kablosu talebinizi oluşturdum, 3-5 iş günü içinde adresinize ulaşacak.",modem_ariza,fiziksel_hasar,hayir,basarili
+2026-07-29,13:51,1027,1,"Modem hiç açılmıyor, internetim de yok?","Modeminizin garanti durumunu kontrol ettim, ücretsiz değişim hakkınız var, kargo ile göndereceğiz.",modem_ariza,modem_acilmiyor,hayir,basarili
+2026-07-29,13:55,1418,1,"Merhabalar, iki gündür internetim çalışmıyor acil","Hattınızda arıza kaydı oluşturdum, teknik ekip en kısa sürede sizinle iletişime geçecek.",internet_kesintisi,tam_kesinti,hayir,basarili
+2026-07-29,15:34,1261,1,Servisi kullanamıyorum acil,"Taşıma başvurunuz onay aşamasında, sonucu SMS ile bildirilecek.",hat_sim,belirsiz,evet,basarili
+2026-07-29,16:22,1548,1,"Merhaba, bu ay faturam iki katina cikmis","Faturanızı inceledim, ek ücretin yurt dışı kullanımdan kaynaklandığını görüyorum.",fatura_paket,fatura_itiraz,hayir,basarili
+2026-07-29,16:46,1302,1,"İyi gunler, teknisyen randevusunu erkene alabilir miyim","Sorunuzu anlamadım, biraz daha detay verebilir misiniz?",randevu_kurulum,randevu_degisiklik,hayir,fallback
+2026-07-29,16:49,1302,2,Yetkiliye bağlayın lütfen,"Bu talebinizi bir müşteri temsilcisine yönlendiriyorum, en kısa sürede sizinle iletişime geçilecek.",randevu_kurulum,randevu_degisiklik,hayir,yetkiliye_yonlendirme
+2026-07-29,17:38,1499,1,İnternet bazen çalışıyor bazen çok yavaş acil,"Sorunuzu anlamadım, biraz daha detay verebilir misiniz?",internet_kesintisi,belirsiz,evet,fallback

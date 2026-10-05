@@ -1,0 +1,23 @@
+# Python environment
+.venv/
+__pycache__/
+*.py[cod]
+
+# macOS
+.DS_Store
+
+# Local settings. API keys are never written to disk; ayarlar.json only
+# stores provider/model, but it is user-specific so it stays out of git.
+ayarlar.json
+
+# Third-party datasets - not shipped, the README explains how to download them
+bitext_*.csv
+Bitext_*.csv
+
+# Analysis output (regenerated on every run)
+yuklenen_analiz/
+yuklenen_analiz_yedek_*/
+
+# Logs
+*_log.txt
+streamlit_log.txt
