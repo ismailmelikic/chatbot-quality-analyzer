@@ -245,3 +245,9 @@ real logs will score lower.
 | Setup failed halfway | Delete the `.venv` folder and start again |
 | Report or cluster names are empty | Enter an API key in the LLM settings, then press the button |
 | Port 8501 is busy | The launcher picks the next free port; use the address it prints |
+
+---
+
+## 📄 License
+
+[MIT](LICENSE) — free to use, modify and share; keep the license notice.
