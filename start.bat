@@ -15,15 +15,17 @@ echo   Chatbot Quality Analyzer
 echo ==============================================
 echo.
 
-if exist ".venv\Scripts\streamlit.exe" goto calistir
+rem Checked by importing streamlit: streamlit.exe hard-codes the folder
+rem path and breaks when the project is moved or renamed.
+".venv\Scripts\python.exe" -c "import streamlit" >nul 2>nul && goto calistir
 
 set "PY="
-where py >nul 2>nul && py -3 -c "import sys; sys.exit(0 if sys.version_info >= (3, 11) else 1)" >nul 2>nul && set "PY=py -3"
+where py >nul 2>nul && py -3 -c "import sys; sys.exit(0 if sys.version_info >= (3, 12) else 1)" >nul 2>nul && set "PY=py -3"
 if not defined PY (
-    where python >nul 2>nul && python -c "import sys; sys.exit(0 if sys.version_info >= (3, 11) else 1)" >nul 2>nul && set "PY=python"
+    where python >nul 2>nul && python -c "import sys; sys.exit(0 if sys.version_info >= (3, 12) else 1)" >nul 2>nul && set "PY=python"
 )
 if not defined PY (
-    echo ERROR: Python 3.11 or newer is required.
+    echo ERROR: Python 3.12 or newer is required.
     echo Download it from https://www.python.org/downloads/
     echo During installation, tick "Add python.exe to PATH". Then run this again.
     pause
@@ -42,7 +44,7 @@ echo.
 echo Starting the panel. Your browser will open shortly.
 echo Stop with Ctrl+C.
 echo.
-".venv\Scripts\streamlit.exe" run dashboard.py
+".venv\Scripts\python.exe" -m streamlit run dashboard.py
 echo.
 echo The panel has stopped.
 pause

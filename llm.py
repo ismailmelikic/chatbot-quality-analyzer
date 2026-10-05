@@ -390,8 +390,10 @@ def guvenli_markdown(metin):
     ihtiyac yok; hepsi metne indiriliyor."""
     if not metin:
         return metin
-    metin = re.sub(r"!\[([^\]]*)\]\([^)]*\)", r"\1", metin)
-    metin = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", metin)
+    # Adres icinde bir seviye ic ice parantez olabilir: (javascript:f(1))
+    adres = r"\((?:[^()]|\([^()]*\))*\)"
+    metin = re.sub(r"!\[([^\]]*)\]" + adres, r"\1", metin)
+    metin = re.sub(r"\[([^\]]*)\]" + adres, r"\1", metin)
     metin = re.sub(r"<(https?://[^>]+)>", r"\1", metin)
     return re.sub(r"</?[a-zA-Z][^>]*>", "", metin)
 

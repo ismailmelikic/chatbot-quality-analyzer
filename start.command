@@ -33,17 +33,21 @@ echo "=============================================="
 echo ""
 
 # --- 1) Virtual environment (first run only) -----------------
-if [ ! -x ".venv/bin/streamlit" ]; then
+#
+# Checked by importing streamlit, not by looking for .venv/bin/streamlit:
+# that script hard-codes the folder path and breaks when the project is
+# moved or renamed, and a half-finished install would also pass the check.
+if ! ./.venv/bin/python -c "import streamlit" >/dev/null 2>&1; then
     PY=""
-    for aday in python3.13 python3.12 python3.11 python3; do
+    for aday in python3.14 python3.13 python3.12 python3; do
         if command -v "$aday" >/dev/null 2>&1 &&
-           "$aday" -c 'import sys; sys.exit(0 if sys.version_info >= (3, 11) else 1)' 2>/dev/null; then
+           "$aday" -c 'import sys; sys.exit(0 if sys.version_info >= (3, 12) else 1)' 2>/dev/null; then
             PY="$aday"
             break
         fi
     done
     if [ -z "$PY" ]; then
-        echo "ERROR: Python 3.11 or newer is required."
+        echo "ERROR: Python 3.12 or newer is required."
         echo "Download it from https://www.python.org/downloads/ and run this again."
         bekle_ve_cik 1
     fi
@@ -52,8 +56,8 @@ if [ ! -x ".venv/bin/streamlit" ]; then
     echo "This takes a few minutes and happens only once."
     echo ""
     "$PY" -m venv .venv || { echo "ERROR: could not create .venv"; bekle_ve_cik 1; }
-    ./.venv/bin/pip install --upgrade pip >/dev/null
-    ./.venv/bin/pip install -r requirements.txt || {
+    ./.venv/bin/python -m pip install --upgrade pip >/dev/null
+    ./.venv/bin/python -m pip install -r requirements.txt || {
         echo ""
         echo "ERROR: dependency installation failed (see the messages above)."
         echo "Delete the .venv folder and run this again to retry."
@@ -92,7 +96,7 @@ echo "Starting the panel on http://localhost:$PORT ..."
 echo "Your browser will open shortly. Stop with Ctrl+C."
 echo ""
 
-./.venv/bin/streamlit run dashboard.py --server.port $PORT
+./.venv/bin/python -m streamlit run dashboard.py --server.port $PORT
 
 echo ""
 echo "The panel has stopped."

@@ -213,6 +213,21 @@ def _kacis(seri):
     return [html.escape(str(v)) for v in seri]
 
 
+def _tr_mi():
+    return st.session_state.get("dil", "tr") == "tr"
+
+
+def yuzde(v):
+    """Turkcede isaret basta (%29.0), Ingilizcede sonda (29.0%)."""
+    return f"%{v}" if _tr_mi() else f"{v}%"
+
+
+def sayi(n):
+    """Binlik ayirici: Turkcede nokta (1.234), Ingilizcede virgul (1,234)."""
+    metin = f"{n:,}"
+    return metin.replace(",", ".") if _tr_mi() else metin
+
+
 def kume_rengi(no):
     return PALET[int(no) % len(PALET)]
 
@@ -224,7 +239,10 @@ def yan_panel():
     sb = st.sidebar
 
     # Dil secici en ustte: kullanici once dili secsin, sonra geri kalani okusun.
+    # Ilk acilista ?lang=en adres parametresi varsayilan dili belirler.
     kodlar = list(DILLER)
+    if "dil" not in st.session_state and st.query_params.get("lang") in DILLER:
+        st.session_state["dil"] = st.query_params["lang"]
     sb.radio(T("dil"), kodlar, key="dil", horizontal=True,
              format_func=lambda k: DILLER[k])
 
@@ -588,7 +606,7 @@ def sekme_basarisizlik(veri):
             y=[kume_adi(n, isimler) for n in kb["kume"]],
             orientation="h",
             marker=dict(color=[kume_rengi(n) for n in kb["kume"]], cornerradius=4),
-            text=[f"%{v}" for v in kb["basarisizlik_orani"]],
+            text=[yuzde(v) for v in kb["basarisizlik_orani"]],
             textposition="outside", textfont=dict(color=MUREKKEP_IKI, size=11),
             customdata=kb[["oturum_sayisi"]],
             hovertemplate="%{y}<br>%{x}% " + T("basarisiz") + " · %{customdata[0]} "
@@ -606,7 +624,7 @@ def sekme_basarisizlik(veri):
             fig = go.Figure(go.Bar(
                 x=kt["basarisizlik_orani"], y=_kacis(kt["gercek_konu"]), orientation="h",
                 marker=dict(color=PALET[0], cornerradius=4),
-                text=[f"%{v}" for v in kt["basarisizlik_orani"]],
+                text=[yuzde(v) for v in kt["basarisizlik_orani"]],
                 textposition="outside", textfont=dict(color=MUREKKEP_IKI, size=11),
                 customdata=kt[["oturum_sayisi"]],
                 hovertemplate="%{y}<br>%{x}% · %{customdata[0]} " + T("oturum")
@@ -659,7 +677,7 @@ def sekme_basarisizlik(veri):
                 y=be["basarisizlik_orani"],
                 marker=dict(color=[KRITIK if v == "evet" else PALET[0]
                                    for v in be["belirsiz_mesaj"]], cornerradius=4),
-                text=[f"%{v}" for v in be["basarisizlik_orani"]],
+                text=[yuzde(v) for v in be["basarisizlik_orani"]],
                 textposition="outside", textfont=dict(color=MUREKKEP_IKI, size=11),
                 hovertemplate="%{x}: %{y}% " + T("basarisiz") + "<extra></extra>",
             ))
@@ -672,8 +690,8 @@ def sekme_basarisizlik(veri):
         st.divider()
         st.markdown(T("kural_dogruluk_baslik"))
         c = st.columns(2)
-        c[0].metric(T("ikili_ayrim"), f"%{dog['kural_ikili_dogruluk']}")
-        c[1].metric(T("dort_sinif"), f"%{dog['kural_tam_dogruluk']}")
+        c[0].metric(T("ikili_ayrim"), yuzde(dog['kural_ikili_dogruluk']))
+        c[1].metric(T("dort_sinif"), yuzde(dog['kural_tam_dogruluk']))
         st.markdown(f'<div class="aciklama">{T("kural_dogruluk_aciklama")}</div>',
                     unsafe_allow_html=True)
 
@@ -906,14 +924,15 @@ def main():
     if "tarih" in df.columns:
         t = pd.to_datetime(df["tarih"], errors="coerce").dropna()
         if len(t):
-            donem = f"{t.min():%d.%m.%Y} – {t.max():%d.%m.%Y}"
+            bicim = "%d.%m.%Y" if _tr_mi() else "%b %d, %Y"
+            donem = f"{t.min():{bicim}} – {t.max():{bicim}}"
     if donem:
         st.markdown(f'<div class="altbilgi">{donem}</div>', unsafe_allow_html=True)
 
     belirsiz = int((df["belirsiz_mesaj"] == "evet").sum()) if "belirsiz_mesaj" in df.columns else None
     kartlar = [
-        (T("kpi_oturum"), f"{len(df):,}".replace(",", "."), T("kpi_oturum_not")),
-        (T("kpi_oran"), f"%{oz['genel_basarisizlik_orani']}", T("kpi_oran_not")),
+        (T("kpi_oturum"), sayi(len(df)), T("kpi_oturum_not")),
+        (T("kpi_oran"), yuzde(oz['genel_basarisizlik_orani']), T("kpi_oran_not")),
         (T("kpi_kume"), str(df["kume"].nunique()), T("kpi_kume_not")),
     ]
     if belirsiz is not None:
