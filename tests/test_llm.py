@@ -3,6 +3,7 @@ import json
 import pytest
 
 import llm
+from diller import T
 
 TEMSILI = {"0": ["a"], "1": ["b"], "2": ["c"]}
 OPENAI = {"saglayici": "OpenAI"}
@@ -63,3 +64,11 @@ def test_anahtar_diske_yazilmaz(tmp_path, monkeypatch):
     icerik = (tmp_path / "ayarlar.json").read_text()
     assert "sk-gizli" not in icerik
     assert llm.ayarlari_yukle()["model"] == llm.VARSAYILAN["model"]
+
+
+def test_kredi_bitti_hatasi_anlasilir():
+    import httpx
+    import openai
+    yanit = httpx.Response(402, request=httpx.Request("POST", "http://x"))
+    hata = openai.APIStatusError("no credits", response=yanit, body=None)
+    assert llm.hata_metni(hata) == T("hata_kredi_bitti")

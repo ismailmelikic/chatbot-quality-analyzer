@@ -137,7 +137,12 @@ def istemci(ayar, oturum_anahtari=None):
 
 def hata_metni(e):
     """Kendi RuntimeError mesajlarimiz zaten okunur; tip adi sadece
-    beklenmeyen (kutuphane) hatalarinda teshis icin eklenir."""
+    beklenmeyen (kutuphane) hatalarinda teshis icin eklenir.
+
+    402 = saglayicida kredi/kota bitti (or. Hugging Face'in ucretsiz aylik
+    kredisi). Ham APIStatusError kullaniciya ne yapacagini soylemiyordu."""
+    if getattr(e, "status_code", None) == 402:
+        return T("hata_kredi_bitti")
     return str(e) if type(e) is RuntimeError else f"{type(e).__name__}: {e}"
 
 

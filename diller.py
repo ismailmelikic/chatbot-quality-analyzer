@@ -339,6 +339,12 @@ M = {
                                  "Kopyalarken bozulmuş olabilir, elle yeniden yazın.",
                            "en": "Invalid API key: it contains no usable characters. It may "
                                  "have been corrupted while copying; type it again."},
+    "hata_kredi_bitti": {"tr": "Sağlayıcıdaki krediniz/kotanız bitti (402). Kredi yükleyin ya da "
+                               "kenar çubuğundan başka bir sağlayıcı seçin: NVIDIA NIM ücretsiz, "
+                               "Ollama ise tamamen yerel ve ücretsiz.",
+                         "en": "Your credits/quota with this provider are used up (402). Add "
+                               "credits or pick another provider in the sidebar: NVIDIA NIM is "
+                               "free, Ollama runs fully locally at no cost."},
     "hata_bos_cevap": {"tr": "Model boş cevap döndü. 'Reasoning' modellerinde düşünme aşaması "
                              "token payını tüketmiş olabilir - başka bir model seçin.",
                        "en": "The model returned an empty answer. With 'reasoning' models the "
