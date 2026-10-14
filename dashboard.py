@@ -401,11 +401,15 @@ def _llm_paneli():
         ayar["model"] = st.text_input(T("model"), ayar["model"])
         st.caption(T("onerilen") + " · ".join(f"`{m}`" for m in bilgi["modeller"][:3]))
 
+        # Anahtar saglayici basina tutulur. Tek ortak kutu varken HF token'i
+        # NVIDIA'ya gecince de gonderiliyor, NVIDIA 401 veriyordu.
+        anahtarlar = st.session_state.setdefault("anahtarlar", {})
         anahtar = st.text_input(
             T("api_anahtari"), type="password",
-            value=st.session_state.get("api_key", ""),
+            value=anahtarlar.get(yeni_sag, ""),
             placeholder=T("anahtar_bos").format(bilgi["anahtar_degiskeni"]),
         )
+        anahtarlar[yeni_sag] = anahtar
         st.session_state["api_key"] = anahtar
 
         cevre = llm.anahtar_bul(ayar, None)
@@ -472,9 +476,17 @@ def _llm_paneli():
                 ayar["model"] = sonuc
                 st.session_state["ayar"] = ayar
                 llm.ayarlari_kaydet(ayar)
-                bul_durum.success(T("model_bulundu").format(sonuc))
+                # "Model" kutusu bu dugmeden once ciziliyor; rerun olmadan
+                # bulunan ad kutuya yansimiyor, eski ad gorunuyordu ve
+                # kullanici modeli elle yazmak zorunda kaliyordu. Basari
+                # mesaji rerun'da kaybolmasin diye session_state'te tasiniyor.
+                st.session_state["model_bulundu"] = sonuc
+                st.rerun()
             else:
                 bul_durum.error(sonuc)
+        elif st.session_state.get("model_bulundu"):
+            bul_durum.success(T("model_bulundu").format(
+                st.session_state.pop("model_bulundu")))
 
         liste = st.session_state.get("model_listesi")
         if liste:

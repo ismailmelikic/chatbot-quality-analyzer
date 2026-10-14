@@ -72,3 +72,43 @@ def test_kredi_bitti_hatasi_anlasilir():
     yanit = httpx.Response(402, request=httpx.Request("POST", "http://x"))
     hata = openai.APIStatusError("no credits", response=yanit, body=None)
     assert llm.hata_metni(hata) == T("hata_kredi_bitti")
+
+
+def test_tek_modelin_401_vermesi_aramayi_durdurmaz(monkeypatch):
+    cevaplar = {"eski/a": (False, "AuthenticationError: Error code: 401"),
+                "eski/b": (False, "NotFoundError: Error code: 404"),
+                "yeni/c": (True, "ok")}
+    monkeypatch.setattr(llm, "baglanti_testi", lambda ayar, k=None: cevaplar[ayar["model"]])
+    monkeypatch.setattr(llm, "talimat_testi", lambda ayar, k=None: True)
+    assert llm.calisan_model_bul({}, adaylar=list(cevaplar)) == (True, "yeni/c")
+
+
+def test_hepsi_401_ise_anahtar_hatasi(monkeypatch):
+    monkeypatch.setattr(llm, "baglanti_testi",
+                        lambda ayar, k=None: (False, "AuthenticationError: Error code: 401"))
+    assert llm.calisan_model_bul({}, adaylar=["a", "b"]) == (False, T("hata_401"))
+
+
+def test_gemma_it_instruct_sayilir():
+    assert llm.sohbet_adaylari(["eski/x-7b", "google/gemma-3-12b-it"])[0] == "google/gemma-3-12b-it"
+
+
+def test_bos_model_adi_anlasilir_hata():
+    ok, mesaj = llm.baglanti_testi({"saglayici": "OpenAI", "base_url": "http://x", "model": " "},
+                                   "anahtar")
+    assert not ok and mesaj == T("hata_model_bos")
+
+
+def test_talimata_uymayan_model_secilmez(monkeypatch):
+    monkeypatch.setattr(llm, "baglanti_testi", lambda ayar, k=None: (True, "ok"))
+    monkeypatch.setattr(llm, "talimat_testi", lambda ayar, k=None: ayar["model"] == "sohbet/b")
+    assert llm.calisan_model_bul({}, adaylar=["ceviri/a", "sohbet/b"]) == (True, "sohbet/b")
+
+
+def test_ceviri_modelleri_elenir():
+    assert llm.sohbet_adaylari(["nvidia/riva-translate-4b-instruct-v2", "x/chat"]) == ["x/chat"]
+
+
+def test_bozuk_json_anlasilir_hata():
+    with pytest.raises(RuntimeError, match="JSON"):
+        llm._isimleri_ayikla("{bozuk: json}", TEMSILI)

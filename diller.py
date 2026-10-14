@@ -345,6 +345,16 @@ M = {
                          "en": "Your credits/quota with this provider are used up (402). Add "
                                "credits or pick another provider in the sidebar: NVIDIA NIM is "
                                "free, Ollama runs fully locally at no cost."},
+    "hata_model_bos": {"tr": "Model adı boş. 'Çalışan modeli otomatik bul' düğmesine basın "
+                             "ya da 'Model' kutusuna bir model adı yazın.",
+                       "en": "The model name is empty. Click 'Auto-find a working model' "
+                             "or type a model name in the 'Model' box."},
+    "hata_model_gecersiz": {"tr": "Sağlayıcı model adını kabul etmedi (400). 'Model' kutusundaki adı "
+                                  "kontrol edin ya da 'Çalışan modeli otomatik bul'u kullanın.\n\n"
+                                  "Ayrıntı: {}",
+                            "en": "The provider rejected the model name (400). Check the name in "
+                                  "the 'Model' box or use 'Auto-find a working model'.\n\n"
+                                  "Details: {}"},
     "hata_bos_cevap": {"tr": "Model boş cevap döndü. 'Reasoning' modellerinde düşünme aşaması "
                              "token payını tüketmiş olabilir - başka bir model seçin.",
                        "en": "The model returned an empty answer. With 'reasoning' models the "
@@ -353,8 +363,14 @@ M = {
                        "en": "Connection OK. The model replied: “{}”"},
     "hata_bos_liste": {"tr": "Sağlayıcı boş liste döndürdü.",
                        "en": "The provider returned an empty list."},
-    "hata_isim_json": {"tr": "Model geçerli JSON döndürmedi: {}",
-                       "en": "The model did not return valid JSON: {}"},
+    "hata_isim_json": {"tr": "Model istenen biçimde (JSON) cevap vermedi; bu iş için uygun "
+                             "olmayabilir. 'Çalışan modeli otomatik bul' ile başka bir model "
+                             "seçin.\n\nModelin cevabı: {}",
+                       "en": "The model did not answer in the requested format (JSON); it may "
+                             "not suit this task. Pick another model with 'Auto-find a working "
+                             "model'.\n\nModel's answer: {}"},
+    "hata_talimat": {"tr": "cevap verdi ama talimata uymadı (sohbet modeli değil)",
+                     "en": "answered but did not follow the instruction (not a chat model)"},
     "hata_isim_gecersiz": {"tr": "Model geçerli bir küme ismi döndürmedi.",
                            "en": "The model did not return any valid cluster name."},
     "hata_401":       {"tr": "API anahtarı reddedildi (401 Unauthorized).\n\nBu bir model "

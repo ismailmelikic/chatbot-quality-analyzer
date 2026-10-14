@@ -135,6 +135,15 @@ def istemci(ayar, oturum_anahtari=None):
     return OpenAI(base_url=ayar["base_url"], api_key=anahtar, timeout=60.0)
 
 
+def model_adi(ayar):
+    """Bos model adiyla istek atilirsa saglayici ham bir 400 donduruyor
+    ("model field is required"); kullaniciya ne yapacagini soyleyelim."""
+    model = (ayar.get("model") or "").strip()
+    if not model:
+        raise RuntimeError(T("hata_model_bos"))
+    return model
+
+
 def hata_metni(e):
     """Kendi RuntimeError mesajlarimiz zaten okunur; tip adi sadece
     beklenmeyen (kutuphane) hatalarinda teshis icin eklenir.
@@ -143,6 +152,8 @@ def hata_metni(e):
     kredisi). Ham APIStatusError kullaniciya ne yapacagini soylemiyordu."""
     if getattr(e, "status_code", None) == 402:
         return T("hata_kredi_bitti")
+    if getattr(e, "status_code", None) == 400 and "model" in str(e).lower():
+        return T("hata_model_gecersiz").format(e)
     return str(e) if type(e) is RuntimeError else f"{type(e).__name__}: {e}"
 
 
@@ -154,9 +165,11 @@ def baglanti_testi(ayar, oturum_anahtari=None):
     (eskiden 20 idi) butun pay dusunmeye gidip content=None donebiliyor,
     kod da None.strip() ile cokuyordu."""
     try:
-        cli = istemci(ayar, oturum_anahtari)
+        # Kisa test: varsayilan 60 sn zaman asimi + openai'nin 2 otomatik
+        # tekrari, cevap vermeyen tek bir modelde aramayi ~3 dk kilitliyordu.
+        cli = istemci(ayar, oturum_anahtari).with_options(timeout=20.0, max_retries=0)
         yanit = cli.chat.completions.create(
-            model=ayar["model"],
+            model=model_adi(ayar),
             messages=[{"role": "user", "content": "Merhaba de."}],
             max_tokens=300,
             temperature=0,
@@ -167,6 +180,26 @@ def baglanti_testi(ayar, oturum_anahtari=None):
         return True, T("baglanti_ok").format(icerik.strip()[:60])
     except Exception as e:
         return False, hata_metni(e)
+
+
+def talimat_testi(ayar, oturum_anahtari=None):
+    """Model basit bir talimata uyup JSON dondurebiliyor mu? Otomatik arama
+    icin: bir cevap gelmesi yetmiyor, ceviri gibi amac disi modeller de
+    cevap veriyor. Isimlendirme JSON istedigi icin onu olcuyoruz."""
+    try:
+        cli = istemci(ayar, oturum_anahtari).with_options(timeout=20.0, max_retries=0)
+        yanit = cli.chat.completions.create(
+            model=model_adi(ayar),
+            messages=[{"role": "user", "content":
+                       'Return only this JSON and nothing else, with the sum filled in: '
+                       '{"sum": <3 plus 4>}'}],
+            max_tokens=300,
+            temperature=0,
+        )
+        eslesme = re.search(r"\{.*?\}", yanit.choices[0].message.content or "", re.DOTALL)
+        return bool(eslesme) and json.loads(eslesme.group(0)).get("sum") in (7, "7")
+    except Exception:
+        return False
 
 
 def mevcut_modelleri_listele(ayar, oturum_anahtari=None):
@@ -374,7 +407,7 @@ def rapor_uret(basarisizlik, trend, kume_isimleri, ayar,
     )
 
     yanit = cli.chat.completions.create(
-        model=ayar["model"],
+        model=model_adi(ayar),
         messages=[{"role": "system", "content": sistem},
                   {"role": "user", "content": prompt}],
         temperature=ayar.get("sicaklik", 0.3),
@@ -436,7 +469,7 @@ def kumeleri_isimlendir(temsili, ayar, oturum_anahtari=None, dil="tr"):
         )
 
     yanit = cli.chat.completions.create(
-        model=ayar["model"],
+        model=model_adi(ayar),
         messages=[{"role": "user", "content": prompt}],
         temperature=0.2,
         max_tokens=500,
@@ -460,7 +493,10 @@ def _isimleri_ayikla(icerik, temsili):
     eslesme = re.search(r"\{.*\}", icerik, re.DOTALL)
     if not eslesme:
         raise RuntimeError(T("hata_isim_json").format(icerik[:120]))
-    veri = json.loads(eslesme.group(0))
+    try:
+        veri = json.loads(eslesme.group(0))
+    except json.JSONDecodeError:
+        raise RuntimeError(T("hata_isim_json").format(icerik[:120])) from None
     if not isinstance(veri, dict):
         raise RuntimeError(T("hata_isim_json").format(icerik[:120]))
 
@@ -484,6 +520,9 @@ ELENECEK_KALIPLAR = (
     "topic-control", "vision", "ocr", "parse", "speech", "tts", "asr",
     "audio", "image", "video", "diffusion", "flux", "reward", "genrm",
     "nemoguard", "-base", "clip", "depth", "segment",
+    # Ceviri modelleri "Merhaba de." testini geciyor ama talimat uygulamak
+    # yerine metni cevirip geri veriyor (riva-translate isimlendirmeyi bozdu).
+    "translate", "riva",
 )
 
 
@@ -504,7 +543,9 @@ def sohbet_adaylari(modeller):
                                              "thinking", "-r1", "qwq", "mimo", "glm"))
         buyuk = any(x in ml for x in ("405b", "253b", "120b", "70b", "72b",
                                       "8x22b", "8x7b", "large"))
-        instruct = "instruct" in ml or "chat" in ml
+        # "-it" Gemma'nin instruct eki; olmazsa yeni Gemma'lar eski
+        # "*-instruct" modellerin arkasinda kaliyordu.
+        instruct = "instruct" in ml or "chat" in ml or ml.endswith("-it")
         return (1 if akil_yurutme else 0, 0 if instruct else 1,
                 0 if buyuk else 1, ml)
 
@@ -512,7 +553,7 @@ def sohbet_adaylari(modeller):
     return adaylar
 
 
-def calisan_model_bul(ayar, oturum_anahtari=None, adaylar=None, deneme_siniri=12,
+def calisan_model_bul(ayar, oturum_anahtari=None, adaylar=None, deneme_siniri=30,
                       ilerleme=None):
     """Adaylari sirayla deneyip GERCEKTEN cevap verenleri bulur.
 
@@ -530,19 +571,26 @@ def calisan_model_bul(ayar, oturum_anahtari=None, adaylar=None, deneme_siniri=12
 
     denenen = adaylar[:deneme_siniri]
     hatalar = []
+    yetkisiz = 0
     for i, model in enumerate(denenen, 1):
         if ilerleme:
             ilerleme(i / len(denenen), T("ilr_deneniyor").format(model))
         deneme_ayar = dict(ayar, model=model)
         ok, mesaj = baglanti_testi(deneme_ayar, oturum_anahtari)
         if ok:
-            return True, model
+            if talimat_testi(deneme_ayar, oturum_anahtari):
+                return True, model
+            mesaj = T("hata_talimat")
 
-        # 401 = kimlik dogrulanamadi. Bu model sorunu DEGIL, anahtar sorunu —
-        # digerlerini denemenin anlami yok, hepsi ayni hatayi verir.
+        # 401 tek basina anahtarin gecersiz oldugunu gostermiyor: NVIDIA,
+        # hesapta acik olmayan (cogu eski) modeller icin de 401 donduruyor.
+        # Eskiden ilk 401'de duruluyordu; gecerli anahtarla bile arama
+        # calisan modele hic ulasmiyordu. Ancak HEPSI 401 ise anahtar sorunu.
         if "401" in mesaj or "Authentication" in mesaj or "Unauthorized" in mesaj:
-            return False, T("hata_401")
+            yetkisiz += 1
         hatalar.append(f"{model} -> {mesaj[:70]}")
 
+    if denenen and yetkisiz == len(denenen):
+        return False, T("hata_401")
     return False, T("hata_model_yok") + "\n" + "\n".join(hatalar[:6])
 
