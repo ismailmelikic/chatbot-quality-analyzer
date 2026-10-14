@@ -66,12 +66,21 @@ def test_anahtar_diske_yazilmaz(tmp_path, monkeypatch):
     assert llm.ayarlari_yukle()["model"] == llm.VARSAYILAN["model"]
 
 
+class _DurumHatasi(Exception):
+    """openai.APIStatusError yerine: hata_metni sadece status_code'a bakiyor,
+    gercek sinifi kurmak openai surumune ozel HTTP kutuphanesi istiyor."""
+    def __init__(self, kod, mesaj=""):
+        super().__init__(mesaj)
+        self.status_code = kod
+
+
 def test_kredi_bitti_hatasi_anlasilir():
-    import httpx
-    import openai
-    yanit = httpx.Response(402, request=httpx.Request("POST", "http://x"))
-    hata = openai.APIStatusError("no credits", response=yanit, body=None)
-    assert llm.hata_metni(hata) == T("hata_kredi_bitti")
+    assert llm.hata_metni(_DurumHatasi(402, "no credits")) == T("hata_kredi_bitti")
+
+
+def test_model_400_hatasi_anlasilir():
+    metin = llm.hata_metni(_DurumHatasi(400, "model field is required"))
+    assert metin.startswith(T("hata_model_gecersiz").split("{")[0])
 
 
 def test_tek_modelin_401_vermesi_aramayi_durdurmaz(monkeypatch):
