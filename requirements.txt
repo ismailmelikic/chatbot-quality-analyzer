@@ -3,13 +3,13 @@
 # (Versiyonlar bu projede calisir durumda olan surumlerdir.)
 
 # --- Veri isleme ve gorsellestirme ---
-pandas==3.0.5
+pandas==3.0.6
 numpy==2.5.2
 plotly==6.9.0
 
 # --- NLP / ML pipeline ---
 sentence-transformers==5.7.0
-scikit-learn==1.9.0
+scikit-learn==1.9.1
 umap-learn==0.5.12
 
 # --- LLM katmani (OpenAI uyumlu her endpoint: Hugging Face, NVIDIA, OpenAI, Ollama) ---
